@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>مشروع سقيا الماء</title>
+
+    <!--Bootstrap cdn -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <!--Font awsome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!--Animation -->
+    <link rel="stylesheet" href="css/animate.css" />
+    <!--Swiper-->
+    <link rel="stylesheet" href="css/swiper.min.css" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+
+    <!-- Custom Stylsheet-->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/project.css" />
+    <link rel="stylesheet" href="css/custom-card.css" />
+  </head>
+  <body>
+ <header>
+    <div class="topBar">
+      <img class="back" src="img/header_background.png" alt="">
+      <div class="UserBox ">
+        <div onclick="window.location.href='index.html'" class="logoBox p-4 ">
+          <img src="./img/00.png" class="img-fluid logo-img" alt="" />
+        </div>
+        <div class=" d-none d-lg-block phone">
+          <!-- <i class="fas fa-phone"></i> -->
+          <a class="header_contact " style="text-decoration:none;" href="tel:966537066621"><i
+              class="fas fa-phone phoneIcon text-white"></i><b class="navicon">اتصل بنا</b><br /><span
+              class="navicon">966537066621</span></a>
+        </div>
+        <div class="useraction mx-auto mx-lg-0">
+          <!-- <div onclick="window.location.href='index.html'" class="logoBoxModile  d-lg-none text-center">
+            <img src="img/00.png" class="img-fluid" alt="" />
+          </div> -->
+
+          <div class="loginbox ">
+            <div class="user ">
+              <div onclick="window.location.href='cart.html' " class="basket p-2 ms-3 position-relative">
+
+                <i class="fa-solid fa-cart-shopping fs-4 navicon"></i>
+
+                <span class="Badge position-absolute top-0 start-100 translate-middle badge rounded-pill">
+                  1
+                </span>
+              </div>
+              <div class="user-items">
+
+                <div onclick="window.location.href='profile.html'  " class="usericon p-2">
+                  <i class="fa-solid fa-user fs-4 navicon"></i>
+                </div>
+                <div onclick="window.location.href='login.html'  " class="usertext px-2">
+                  <a class="me-4" href="./login.html">تسجيل دخول</a>
+                </div>
+              </div>
+
+            </div>
+            <div class="DonateNow d-flex justify-content-end">
+              <!-- <div class="usertext DonateNowBox px-2 mt-3">
+                    <a class="me-4"> تبرع الان </a>
+                  </div> -->
+            </div>
+            <div class="nav-left">
+              <div class="user-mobile ">
+                <div onclick="window.location.href='cart.html' " class="basket-mobile  position-relative">
+
+                  <i class="fa-solid fa-cart-shopping fs-4"></i>
+
+                  <span class="Badge ">
+                    1
+                  </span>
+                </div>
+                <div class="user-items-mobile">
+
+                  <div onclick="window.location.href='profile.html'  " class="usericon-mobile ">
+                    <i class="fa-solid fa-user fs-4"></i>
+                  </div>
+
+                </div>
+
+              </div>
+
+
+              <div class="nav-icon">
+                <button class="navbar-toggler custom-hamburger" type="button">
+                  <span class="hamburger-bar"></span>
+                  <span class="hamburger-bar"></span>
+                  <span class="hamburger-bar"></span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+   <nav class="navbar navbar-expand-lg  position-relative">
+      <div class="blue-bar"></div>
+      <div class="container nav-content">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-end w-100 pe-0">
+
+            <!-- Example dropdown item -->
+            <li class="nav-item dropdown">
+              <a href="./index.html" class="nav-link ">الرئيسية</a>
+
+            </li>
+            <!-- Repeat for other nav items -->
+            <li class="nav-item dropdown">
+              <a class="nav-link " href="./about-us.html">من نحن</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="./category.html">الاقسام</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="./hawkama.html">الحوكمة</a>
+            </li>
+          <li class="nav-item dropdown">
+              <a class="nav-link " href="./Beneficiary-registration.html">المستفيدين</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link " href="./activities.html">الفعاليات</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
+              >الفرص التطوعية</a>
+              <ul class="dropdown-menu text-end">
+                <li><a class="dropdown-item">الفرص المتاحة</a></li>
+                <li><a class="dropdown-item"  href="./Volunteer-registration.html">سجل كمتطوع</a></li>
+                <li><a class="dropdown-item">دليل المتطوع</a></li>
+              </ul>
+            </li>
+            <!-- Search form -->
+            <!-- <form class="search-form position-relative" role="search">
+            <input type="search" placeholder="البحث" aria-label="Search" />
+            <i class="fa-solid fa-magnifying-glass position-absolute"></i>
+          </form> -->
+        </div>
+      </div>
+    </nav>
+
+  </header>
+
+
+    <div class="container  project-page">
+      <div class="project-header">
+        <figure class="head-img-container">
+          <img src="img/leave.png" alt="">
+        </figure>
+        <div class="project-header-content">
+          قال رسول الله ﷺ : ( من فطر صائمًا كان له مثل أجره ) 
+          <br>
+وجبة إفطار منك تٌطعم صائمًا و يكتب ثوابها لك ..
+        </div>
+      </div>
+      <div class="project-content">
+        <!-- Left Card - Donation Form -->
+        <div class="donation-card-container">
+          <div class="donation-card content">
+          <div class="hadith-text">
+            قال رسول الله ﷺ : ( أفضل الصدقة سقي الماء )
+          </div>
+
+          <div class="donation-amounts">
+            <button class="amount-btn secondary">500 <span >رس</span></button>
+            <button class="amount-btn green">100 <span>رس</span></button>
+            <button class="amount-btn blue">50 <span>رس</span></button>
+          </div>
+
+          <div class="custom-amount">
+            <input type="text" placeholder="مبلغ التبرع" class="amount-input" />
+            <span class="currency">رس</span>
+          </div>
+
+          <div class="gift-option">
+            <div class="gift-icon">
+              <svg
+                id="Group_2707"
+                data-name="Group 2707"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                width="29.111"
+                height="29.111"
+                viewBox="0 0 49.111 49.111"
+              >
+                <defs>
+                  <clipPath id="clip-path">
+                    <rect
+                      id="Rectangle_115878"
+                      data-name="Rectangle 115878"
+                      width="49.111"
+                      height="49.111"
+                      fill="none"
+                    />
+                  </clipPath>
+                </defs>
+                <g
+                  id="Group_2706"
+                  data-name="Group 2706"
+                  clip-path="url(#clip-path)"
+                >
+                  <image
+                    id="Rectangle_115877"
+                    data-name="Rectangle 115877"
+                    width="49.111"
+                    height="49.111"
+                    xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACcAAAAnCAYAAACMo1E1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAThSURBVFhH7ZhriNVVFMV/6zqpo6Njo/lKrTDBtKyklCJ6SFgkPdAiIxLCHlBhJUL0xTShjKD6UPSispAoDSsrgjKLEUErH0VlkCapqaWmY46mjnf3ofWXv6d779xx7AUt2Ayz9/6fs85jr3POVUTwb0UhdVQDST0kTZe0WtIqSbMl9U/z2gu1deYknQC8D4wA3gMOAWOAPcCYiFibfnPUiIg2GTAHaAbOzvn6A2uAhf5/KHCNSdembVRrf3JUMqAnsBeYWiI2EdgHzAcOeCYD+Bo4L82vxtq65/oBHYBVaQD4EegMjAfuBE4DzgGagAWS+qYftIqUbSXz8h0AbiwRu9gzdV/iHwi0ANPSb1qzNs1cRGwGPgKmSOqShPeb+Lt5Z0RsBDYAJ+b91aDVarVEXAA0AAeBc4Hbgc+BV4DfgCIwHLgLeBjY6OUvAvXAo8BC4C2gE/ArsLy1yq5ITtIYYJ47aLIuHrDVmgAm0RGoc8ctgHJNNQPHOSf8bQG4JSLm5vKOQFlykjoBX3qj35YjVwpF4EJgLnCFKzRPLo+M3AzgWmBIRGxNk6BCQQCDPUNj01gpM7m9wLA0Vsq8B/cDV6axzMrNBJaFg26gGtQkf1vDQS9/xzSQoRK5bL0r5bQHWbul91WVHe9LHWWQ5e1N/OXQ7L/l9mbFghjq83IZsBnomubkEEBvYKTzd1XoNEysHrgUGB8Rb6ZJtEKuFpgJ3GxiH6Y5CQ5Z8zKZKIcaV/Q6YBEwMyK2pElQoVpzVfUS0Jj622PAFuCe1J9apRFmqMmJbbvhY0+VqjRDNeT+MfxP7mjx3yInqSCpXlKPzGWZ+MsgqUbSdZJelvS8pHGSxgmYAozyFfx4a1pXYLcP8xnAJcALzmtwbIV1akVEFNMOy8HVuh6YHRGPSzofeAwY7TaLftkhK/Y2nwY/+TQQcIdF+AZgmFX/B6t7rW8Vvf3dB8B3HlRfoI+twbnNwOvAUz7mNvp6VQTuN6mpEdEoaTiwNBtMM/BAIpJ1JhPAZ8AEoE+S0wCMdafrgO0W17XAF0CjX2JP++reAiwBhjg/vAJ3AzVuc4LP5k9trAOeLUFup0+Hjqlyp2ZB7QX0yDpKzbO/3gNoAp4BBubiM0z4RaCbjaXA/KShzsCm9CV1NOY3Q08v9ywTmJyL1wNv2H/EexhgAbA4cXYAvgGeSDurZL52z/FDptHL+z3ws/daeJ+Ndv5w4CtvravT9grAVqCXpMOyEhGHgF9cvW3BWcCZQHcTWga8CjwE3ApcDoyMiOWSxjleBEZFxNtpYwAPugo7JbOwEHgnHc2xMGCaZ3EeUJ/GMyt4hur8dMtjh/fKMYOk7pJe8zt2OnB9RDSleRkycrUugjx2Wi7gj4YHSTpJUppXFSSd6n14FTAhImaFp7EcCiZRyBMxtgFdJF0mqdFi+y2wRtISSU9KmiRplKQBkkre+STVSboJWOnKHR0RC9K8UpB/algEXBQRyw8HpIlW8Q7AJ8BzfiaOsA0GBlnb9li/Nrj6tgBdgNN95A1wFd8bEbuOpFAecjmvBCYBi91ZN9/zZ/l4eaTUEkjqA5xs1R8BnAGc4mrdbyX4GJgXEavT76tBPx8tu30EtbiSwopetppKmQfcHeicxtpq8rJNtoJvtz7t8A8yWyNiUzqavwu/A0/KmcUwljcYAAAAAElFTkSuQmCC"
+                  />
+                </g>
+              </svg>
+            </div>
+            <span class="gift-text"
+              >تبرع عن أسرتك و أصدقائك و شاركهم الأجر</span
+            >
+            <input type="checkbox" id="gift_checkbox" class="gift-checkbox" />
+            <!-- <label for="gift_checkbox" class="gift-label">اختيار كهدية</label> -->
+          </div>
+          
+          <!-- Gift Container - Shows when checkbox is checked -->
+          <div class="gift-container" id="gift_container" style="display: none;">
+            <div class="gift-header">
+              <h4>بيانات المهدى إليه</h4>
+            </div>
+            
+            <!-- Donation Amount Section -->
+            <div class="gift-donation-section mb-4">
+              <div class="donation-label">مبلغ التبرع</div>
+              
+              <div class="donation-amount-buttons">
+                <button class="donation-amount-btn blue">50             <span >رس</span>
+</button>
+                <button class="donation-amount-btn secondary">100             <span >رس</span>
+</button>
+                <button class="donation-amount-btn green">200             <span >رس</span>
+</button>
+                <button class="donation-amount-btn accent">500             <span >رس</span>
+</button>
+<div class="other-amount-input">
+  <input type="text" placeholder="مبلغ آخر" class="form-control">
+</div>
+              </div>
+              
+            </div>
+            
+            <div class="gift-form">
+              <!-- Gift Category Selection -->
+              <div class="form-group mb-3">
+               
+               <div class="inputs-container">
+
+                 <!-- Recipient Information -->
+                 <div class="form-group mb-3">
+                   <label for="recipient_name" class="form-label">الاسم</label>
+                   <input type="text" class="form-control" id="recipient_name" placeholder="اسم المستلم">
+                 </div>
+               <div class="form-group mb-3">
+                   <label for="recipient_mobile" class="form-label">الجوال</label>
+                   <input type="tel" class="form-control" id="recipient_mobile" placeholder="رقم الجوال">
+                 </div>
+                 <div class="form-group mb-3">
+                   <label for="recipient_email" class="form-label">البريد الإلكتروني</label>
+                   <input type="email" class="form-control" id="recipient_email" placeholder="البريد الإلكتروني">
+                 </div>
+               </div>
+                <div class="form-check mb-3">
+                  <input type="checkbox" class="form-check-input" id="send_copy_checkbox">
+                  <label class="form-check-label" for="send_copy_checkbox">إرسال نسخة من البطاقة إلى جوالي</label>
+                </div>
+                <label for="gift_category" class="form-label">فئة الإهداء</label>
+                <div class="gift-category-wrapper">
+                  <select id="gift_category" class="form-select gift-category-select">
+                    <option value="" selected disabled>اختيار فئة الإهداء</option>
+                    <option value="mother">إلى أمي الغالية</option>
+                    <option value="father">إلى أبي الغالي</option>
+                    <option value="wife">إلى زوجتي الحبيبة</option>
+                    <option value="husband">إلى زوجي الغالي</option>
+                    <option value="friend">إلى صديقي العزيز</option>
+                  </select>
+                </div>
+                 <!-- Gift Cards Container - Shows when category is selected -->
+                 <div id="gift_cards_container" class="gift-cards-container" style="display: none;">
+                  <div class="gift-cards-grid">
+                    <div class="gift-card">
+                      <input type="radio" name="gift_card" id="card1" class="gift-card-input" checked>
+                      <label for="card1" class="gift-card-label">
+                        <img src="img/blue-card.jpg" alt="بطاقة إهداء">
+                      </label>
+                    </div>
+                    <div class="gift-card">
+                      <input type="radio" name="gift_card" id="card2" class="gift-card-input">
+                      <label for="card2" class="gift-card-label">
+                        <img src="img/blue-card.jpg" alt="بطاقة إهداء">
+                      </label>
+                    </div>
+                    <div class="gift-card">
+                      <input type="radio" name="gift_card" id="card3" class="gift-card-input">
+                      <label for="card3" class="gift-card-label">
+                        <img src="img/blue-card.jpg" alt="بطاقة إهداء">
+                      </label>
+                    </div>
+                    <div class="gift-card">
+                      <input type="radio" name="gift_card" id="card4" class="gift-card-input">
+                      <label for="card4" class="gift-card-label">
+                        <img src="img/blue-card.jpg" alt="بطاقة إهداء">
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                
+                
+                <div class="text-center">
+                  <button class="btn btn-primary gift-btn" id="add_another_gift">
+                    <i class="fa-solid fa-plus"></i> إضافة إهداء لشخص آخر
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        
+
+            <div class="checkout-container">
+              <button class="checkout-btn">
+                اتمام الطلب
+              </button>
+              <button class="cart-icon-btn">
+                <i class="fa-solid fa-cart-shopping"></i>
+              </button>
+            </div>
+          </div>
+          <div class="statistics-section">
+            <div class="stat-item">
+              <div class="stat-icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </div>
+              <div class="stat-content">
+                <div class="stat-title">عدد الزيارات 2,700 زيارة</div>
+              </div>
+            </div>
+
+            <div class="stat-item">
+              <div class="stat-icon">
+                <i class="fa-solid fa-hand-holding-dollar"></i>
+              </div>
+              <div class="stat-content">
+                <div class="stat-title">عمليات التبرع 5000 عملية</div>
+              </div>
+            </div>
+
+            <div class="stat-item">
+              <div class="stat-icon">
+                <i class="fa-solid fa-hourglass"></i>
+              </div>
+              <div class="stat-content">
+                <div class="stat-title">اخر عملية تبرع قبل 20 ثانية</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Card - Project Info -->
+        <div class="project-card-container">
+          <div class="project-card">
+
+          <div class="project-header-container">
+            <h2 class="project-title">سقيا الحرم المكي</h2>
+            <button class="share-btn">
+              <i class="fa-solid fa-share-nodes"></i>
+            </button>
+          </div>
+          <div class="project-image">
+            <img src="img/project1.png" alt="سقيا الحرم المكي" />
+          </div>
+          <div class="project-details">
+            نقدم وجبات جافة بعد تجهيزها و توصيلها و توزيعها نيابة عن المتبرع في ساحات الحرم ساهم الأن و كن من الفائزين بالأجر العظيم
+          </div>
+          <div class="money-collected ">
+
+            <div class="d-flex justify-content-between  custom-card-amount-row">
+              <span>تم جمع: <br>500,000 <span>ر.س</span> </br></span>
+              <span>المبلغ المتبقي: <br>500,000 <span>ر.س</span> </br></span>
+            </div>
+
+            <div class="progress mb-2 custom-card-progress">
+              <div class="progress-bar custom-card-progress-bar">
+                %50
+              </div>
+            </div>
+            
+          </div>
+        </div>
+
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="row">
+        <div class="col-12 col-lg-3 p-0">
+          <div class="first p-3">
+            <div class="footer-text">
+
+              <h2 class="first-title">عــن الجمعية</h2>
+              <p class="first-text">هي منظمة خيرية غير ربحية تهدف الي دعم و مساعدة اهالي الاحياء الاكثر احتياجا. من خلال تقديم حلول مستدامه تعزز جودة الحياة و تلبي الاحتياجات الاساسية.</p>
+            </div>
+            <div
+              class="socialIncons d-flex justify-content-center align-items-center mt-4"
+            >
+              <a class="icon">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+
+              <a class="icon">
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+
+              <a class="icon">
+                <i class="fa-brands fa-youtube"></i>
+              </a>
+
+              <a class="icon">
+                <i class="fa-brands fa-x-twitter"></i>
+              </a>
+
+              <a class="icon">
+                <i class="fa-brands fa-snapchat"></i>
+              </a>
+
+              <a class="icon">
+                <i class="fa-brands fa-whatsapp"></i>
+              </a>
+            </div>
+            <p class="mt-1 text-center d-none d-md-block">
+              جميع الحقوق محفوظة 2025 &#169;
+              
+            </p>
+          </div>
+        </div>
+        <div class="col-12 col-lg-3 p-0">
+          <div class="secand p-3 h-100">
+            <h5 >أهم الروابط :</h5>
+            <ul class="text-center">
+              <li>البرامج الخيرية</li>
+              <li>أهم المشارريع</li>
+              <li>الحالات الطارئة</li>
+              <li>الحسابات البنكية</li>
+              <li>المستفيدين</li>
+              <li>التبرع السريع</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-12 col-lg-3 p-0">
+          <div
+            class="thrid h-100 d-flex flex-column justify-content-center align-items-center p-3 p-lg-0"
+          >
+            <div
+              class="ImgContainer d-flex justify-content-between align-items-center"
+            >
+              <img src="img/Logo 1.png" class="img-fluid" alt="" />
+              <img src="img/Logo 1.png" class="img-fluid" alt="" />
+            </div>
+            <div
+              class="ImgContainer2 d-flex justify-content-center align-items-center mt-2"
+            >
+              <img src="img/pay-1.png" class="img-fluid" alt="" />
+              <img src="img/pay-2.png" class="img-fluid" alt="" />
+              <img src="img/pay-4.png" class="img-fluid" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-3  p-0">
+          <div
+            class="fourth d-flex flex-column justify-content-start align-items-center h-100"
+          >
+            <h2 class="fourth-title">معلومات الاتصال</h2>
+            <div
+              class="fristrow  d-flex justify-content-center align-items-center "
+            >
+              <a class="contact">
+                <span>0500000</span>
+                <i class="fa-solid fa-phone"></i>
+              </a>
+              <a class="contact">
+                <span>0120555</span>
+                <i class="fa-solid fa-blender-phone"></i>
+              </a>
+            </div>
+            <div class="Secandrow  my-3">
+              <a class="contact">
+                <span>
+                  email@gmail.com
+                </span> 
+                <i id="email-icon" class="fa-solid fa-envelope"></i>
+              </a>
+            </div>
+            <div
+              class="ThridRow d-flex justify-content-between align-items-center"
+            >
+              <img src="img/pay-6.png" class="img-fluid" alt="" />
+              <img src="img/pay-7.png" class="img-fluid" alt="" />
+            </div>
+            <p class="mt-3 text-center d-md-none">
+              جميع الحقوق محفوظة 2025 &#169;
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>  </body>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/swiper-bundle.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script src="js/project.js"></script>
+</html>

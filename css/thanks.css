@@ -1,0 +1,135 @@
+/* ===== صفحة شكراً – تنسيق رئيسي ===== */
+
+.thanks-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  direction: rtl;
+  text-align: center;
+}
+
+/* ===== رأس الصفحة (العنوان + المسار) ===== */
+
+.head {
+  margin-bottom: 30px;
+}
+
+.sub-title {
+  font-size: 1.7rem;
+  color: #04525a;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.breadcrumb {
+  font-size: 0.9rem;
+  color: #7d8b95;
+}
+
+.breadcrumb-item {
+  color: #469e8d;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.breadcrumb-item.active {
+  color: #04525a;
+  font-weight: 700;
+}
+
+.breadcrumb-separator {
+  margin: 0 6px;
+  color: #999;
+}
+
+/* ===== المحتوى الرئيسي ===== */
+
+.thanks-content {
+  background: #ffffff;
+  padding: 35px;
+  border-radius: 20px;
+  border: 1px solid #e8eff5;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.06);
+}
+
+/* ===== أيقونة النجاح ===== */
+
+.success-icon-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.success-icon img {
+  width: 140px;
+  height: 140px;
+  object-fit: contain;
+  filter: drop-shadow(0 6px 14px rgba(0, 0, 0, 0.15));
+}
+
+/* ===== رسالة الشكر ===== */
+
+.thanks-message h2 {
+  font-size: 1.6rem;
+  color: #04525a;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+/* ===== نص الشكر ===== */
+
+.thanks-text p {
+  font-size: 1rem;
+  line-height: 2;
+  color: #4c5b65;
+  margin-bottom: 25px;
+  background: #f8fbfc;
+  padding: 18px;
+  border-radius: 14px;
+  border-right: 4px solid #469e8d;
+}
+
+/* ===== زر سجل تبرعاتي ===== */
+
+.donation-record-btn {
+  display: inline-block;
+  padding: 12px 28px;
+  font-size: 1rem;
+  font-weight: 700;
+  background: #469e8d;
+  color: #fff;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.donation-record-btn:hover {
+  background: #04525a;
+  transform: translateY(-3px);
+  color: white;
+}
+
+/* ===== ريسبونسيف ===== */
+
+@media (max-width: 575px) {
+  .sub-title {
+    font-size: 1.3rem;
+  }
+
+  .thanks-content {
+    padding: 22px;
+  }
+
+  .thanks-message h2 {
+    font-size: 1.3rem;
+  }
+
+  .success-icon img {
+    width: 110px;
+    height: 110px;
+  }
+
+  .thanks-text p {
+    font-size: 0.9rem;
+  }
+}

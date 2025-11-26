@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>الحوكمة</title>
+
+    <!--Bootstrap cdn -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <!--Font awsome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!--Animation -->
+    <link rel="stylesheet" href="css/animate.css" />
+    <!--Swiper-->
+    <link rel="stylesheet" href="css/swiper.min.css" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+
+    <!-- Custom Stylsheet-->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/hawkama.css" />
+  </head>
+
+  <body>
+  <header>
+    <div class="topBar">
+      <img class="back" src="img/header_background.png" alt="">
+      <div class="UserBox ">
+        <div onclick="window.location.href='index.html'" class="logoBox p-4 ">
+          <img src="./img/00.png" class="img-fluid logo-img" alt="" />
+        </div>
+        <div class=" d-none d-lg-block phone">
+          <!-- <i class="fas fa-phone"></i> -->
+          <a class="header_contact " style="text-decoration:none;" href="tel:966537066621"><i
+              class="fas fa-phone phoneIcon text-white"></i><b class="navicon">اتصل بنا</b><br /><span
+              class="navicon">966537066621</span></a>
+        </div>
+        <div class="useraction mx-auto mx-lg-0">
+          <!-- <div onclick="window.location.href='index.html'" class="logoBoxModile  d-lg-none text-center">
+            <img src="img/00.png" class="img-fluid" alt="" />
+          </div> -->
+
+          <div class="loginbox ">
+            <div class="user ">
+              <div onclick="window.location.href='cart.html' " class="basket p-2 ms-3 position-relative">
+
+                <i class="fa-solid fa-cart-shopping fs-4 navicon"></i>
+
+                <span class="Badge position-absolute top-0 start-100 translate-middle badge rounded-pill">
+                  1
+                </span>
+              </div>
+              <div class="user-items">
+
+                <div onclick="window.location.href='profile.html'  " class="usericon p-2">
+                  <i class="fa-solid fa-user fs-4 navicon"></i>
+                </div>
+                <div onclick="window.location.href='login.html'  " class="usertext px-2">
+                  <a class="me-4" href="./login.html">تسجيل دخول</a>
+                </div>
+              </div>
+
+            </div>
+            <div class="DonateNow d-flex justify-content-end">
+              <!-- <div class="usertext DonateNowBox px-2 mt-3">
+                    <a class="me-4"> تبرع الان </a>
+                  </div> -->
+            </div>
+            <div class="nav-left">
+              <div class="user-mobile ">
+                <div onclick="window.location.href='cart.html' " class="basket-mobile  position-relative">
+
+                  <i class="fa-solid fa-cart-shopping fs-4"></i>
+
+                  <span class="Badge ">
+                    1
+                  </span>
+                </div>
+                <div class="user-items-mobile">
+
+                  <div onclick="window.location.href='profile.html'  " class="usericon-mobile ">
+                    <i class="fa-solid fa-user fs-4"></i>
+                  </div>
+
+                </div>
+
+              </div>
+
+
+              <div class="nav-icon">
+                <button class="navbar-toggler custom-hamburger" type="button">
+                  <span class="hamburger-bar"></span>
+                  <span class="hamburger-bar"></span>
+                  <span class="hamburger-bar"></span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+     <nav class="navbar navbar-expand-lg  position-relative">
+      <div class="blue-bar"></div>
+      <div class="container nav-content">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-end w-100 pe-0">
+
+            <!-- Example dropdown item -->
+            <li class="nav-item dropdown">
+              <a href="./index.html" class="nav-link ">الرئيسية</a>
+
+            </li>
+            <!-- Repeat for other nav items -->
+            <li class="nav-item dropdown">
+              <a class="nav-link " href="./about-us.html">من نحن</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="./category.html">الاقسام</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="./hawkama.html">الحوكمة</a>
+            </li>
+          <li class="nav-item dropdown">
+              <a class="nav-link " href="./Beneficiary-registration.html">المستفيدين</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link " href="./activities.html">الفعاليات</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
+              >الفرص التطوعية</a>
+              <ul class="dropdown-menu text-end">
+                <li><a class="dropdown-item">الفرص المتاحة</a></li>
+                <li><a class="dropdown-item"  href="./Volunteer-registration.html">سجل كمتطوع</a></li>
+                <li><a class="dropdown-item">دليل المتطوع</a></li>
+              </ul>
+            </li>
+            <!-- Search form -->
+            <!-- <form class="search-form position-relative" role="search">
+            <input type="search" placeholder="البحث" aria-label="Search" />
+            <i class="fa-solid fa-magnifying-glass position-absolute"></i>
+          </form> -->
+        </div>
+      </div>
+    </nav>
+
+  </header>
+
+
+    
+    <main>
+        <div class="hawkama-container">
+          <div class="hawkama-content">
+            <div class="row">
+                <div class="governance-section">
+                  <h2 class="section-title">أهمية الحوكمة:</h2>
+                  <ul class="governance-importance">
+                    <li>تعزيز ثقة المستثمرين: تساهم الحوكمة الجيدة في بناء ثقة للمستثمرين وجذب رؤوس الأموال.</li>
+                    <li>تحسين الأداء المالي: الشركات ذات الحوكمة القوية تميل إلى تحقيق أداء مالي أفضل على المدى الطويل.</li>
+                    <li>تقليل مخاطر الاحتيال والفساد: تساهم في وضع ضوابط داخلية قوية تمنع الممارسات غير الأخلاقية.</li>
+                    <li>تعزيز سمعة الشركة: تساهم في بناء سمعة طيبة للشركة وتعزيز علاقاتها مع الأطراف ذات المصلحة.</li>
+                    <li>تحقيق الاستدامة والنمو طويل الأجل: تساعد في اتخاذ قرارات مسؤولة تضمن استدامة الشركة على المدى الطويل.</li>
+                  </ul>
+                </div>
+                
+                <div class="governance-section">
+                  <h2 class="section-title policies-title">السياسات</h2>
+                  <ul class="policies-list">
+                    <li>
+                      <a href="policies/risk-management.pdf" class="policy-link">
+                        <div class="policy-content">
+                          <img src="img/pdf.png" alt="">
+                          <span class="policy-text">سياسة إدارة المخاطر</span>
+                        </div>
+                        <i class="fa-solid fa-arrow-down download-arrow"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="policies/whistleblower.pdf" class="policy-link">
+                        <div class="policy-content">
+                          <img src="img/pdf.png" alt="">
+                          <span class="policy-text">سياسة الإبلاغ عن المخالفات وحماية مقدمي البلاغات</span>
+                        </div>
+                        <i class="fa-solid fa-arrow-down download-arrow"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="policies/document-retention.pdf" class="policy-link">
+                        <div class="policy-content">
+                          <img src="img/pdf.png" alt="">
+                          <span class="policy-text">سياسة الاحتفاظ بالوثائق وإتلافها</span>
+                        </div>
+                        <i class="fa-solid fa-arrow-down download-arrow"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="policies/donation-policy.pdf" class="policy-link">
+                        <div class="policy-content">
+                          <img src="img/pdf.png" alt="">
+                          <span class="policy-text">سياسة الاستبدال والإرجاع الخاصة بالتبرعات</span>
+                        </div>
+                        <i class="fa-solid fa-arrow-down download-arrow"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="policies/investment.pdf" class="policy-link">
+                        <div class="policy-content">
+                          <img src="img/pdf.png" alt="">
+                          <span class="policy-text">سياسة الاستثمار</span>
+                        </div>
+                        <i class="fa-solid fa-arrow-down download-arrow"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                
+                <div class="governance-section">
+                  <h2 class="section-title regulations-title">اللوائح و النظم</h2>
+                  <ul class="regulations-list">
+                    <li>
+                      <a href="regulations/donations.pdf" class="policy-link">
+                        <div class="policy-content">
+                          <img src="img/pdf.png" alt="">
+                          <span class="policy-text">جمع التبرعات</span>
+                        </div>
+                        <i class="fa-solid fa-arrow-down download-arrow"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="regulations/donation-transfer.pdf" class="policy-link">
+                        <div class="policy-content">
+                          <img src="img/pdf.png" alt="">
+                          <span class="policy-text">توجيه مبلغ التبرع إلى مشروع آخر</span>
+                        </div>
+                        <i class="fa-solid fa-arrow-down download-arrow"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="regulations/conflict-of-interest.pdf" class="policy-link">
+                        <div class="policy-content">
+                          <img src="img/pdf.png" alt="">
+                          <span class="policy-text">تعارض المصالح</span>
+                        </div>
+                        <i class="fa-solid fa-arrow-down download-arrow"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                
+                <div class="governance-section">
+                  <h2 class="section-title reports-title">التقارير و الإداريات</h2>
+                  <ul class="reports-list">
+                    <li>
+                      <a href="reports/financial-procedures.pdf" class="policy-link">
+                        <div class="policy-content">
+                          <img src="img/pdf.png" alt="">
+                          <span class="policy-text">دليل الإجراءات المالية</span>
+                        </div>
+                        <i class="fa-solid fa-arrow-down download-arrow"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="reports/financial-policies.pdf" class="policy-link">
+                        <div class="policy-content">
+                          <img src="img/pdf.png" alt="">
+                          <span class="policy-text">دليل السياسات والإجراءات المالية والمحاسبية</span>
+                        </div>
+                        <i class="fa-solid fa-arrow-down download-arrow"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="reports/anti-money-laundering.pdf" class="policy-link">
+                        <div class="policy-content">
+                          <img src="img/pdf.png" alt="">
+                          <span class="policy-text">دليل المؤشرات الدالة وإجراءات عمليات غسيل الأموال وتمويل الإرهاب</span>
+                        </div>
+                        <i class="fa-solid fa-arrow-down download-arrow"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="reports/financial-statements-2024.pdf" class="policy-link">
+                        <div class="policy-content">
+                          <img src="img/pdf.png" alt="">
+                          <span class="policy-text">القوائم المالية لعام 2024م</span>
+                        </div>
+                        <i class="fa-solid fa-arrow-down download-arrow"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+      </main>
+
+    <footer>
+      <div class="row">
+        <div class="col-12 col-lg-3 p-0">
+          <div class="first p-3">
+            <div class="footer-text">
+
+              <h2 class="first-title">عــن الجمعية</h2>
+              <p class="first-text">هي منظمة خيرية غير ربحية تهدف الي دعم و مساعدة اهالي الاحياء الاكثر احتياجا. من خلال تقديم حلول مستدامه تعزز جودة الحياة و تلبي الاحتياجات الاساسية.</p>
+            </div>
+            <div
+              class="socialIncons d-flex justify-content-center align-items-center mt-4"
+            >
+              <a class="icon">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+
+              <a class="icon">
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+
+              <a class="icon">
+                <i class="fa-brands fa-youtube"></i>
+              </a>
+
+              <a class="icon">
+                <i class="fa-brands fa-x-twitter"></i>
+              </a>
+
+              <a class="icon">
+                <i class="fa-brands fa-snapchat"></i>
+              </a>
+
+              <a class="icon">
+                <i class="fa-brands fa-whatsapp"></i>
+              </a>
+            </div>
+            <p class="mt-1 text-center d-none d-md-block">
+              جميع الحقوق محفوظة 2025 &#169;
+              
+            </p>
+          </div>
+        </div>
+        <div class="col-12 col-lg-3 p-0">
+          <div class="secand p-3 h-100">
+            <h5 >أهم الروابط :</h5>
+            <ul class="text-center">
+              <li>البرامج الخيرية</li>
+              <li>أهم المشارريع</li>
+              <li>الحالات الطارئة</li>
+              <li>الحسابات البنكية</li>
+              <li>المستفيدين</li>
+              <li>التبرع السريع</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-12 col-lg-3 p-0">
+          <div
+            class="thrid h-100 d-flex flex-column justify-content-center align-items-center p-3 p-lg-0"
+          >
+            <div
+              class="ImgContainer d-flex justify-content-between align-items-center"
+            >
+              <img src="img/Logo 1.png" class="img-fluid" alt="" />
+              <img src="img/Logo 1.png" class="img-fluid" alt="" />
+            </div>
+            <div
+              class="ImgContainer2 d-flex justify-content-center align-items-center mt-2"
+            >
+              <img src="img/pay-1.png" class="img-fluid" alt="" />
+              <img src="img/pay-2.png" class="img-fluid" alt="" />
+              <img src="img/pay-4.png" class="img-fluid" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-3  p-0">
+          <div
+            class="fourth d-flex flex-column justify-content-start align-items-center h-100"
+          >
+            <h2 class="fourth-title">معلومات الاتصال</h2>
+            <div
+              class="fristrow  d-flex justify-content-center align-items-center "
+            >
+              <a class="contact">
+                <span>0500000</span>
+                <i class="fa-solid fa-phone"></i>
+              </a>
+              <a class="contact">
+                <span>0120555</span>
+                <i class="fa-solid fa-blender-phone"></i>
+              </a>
+            </div>
+            <div class="Secandrow  my-3">
+              <a class="contact">
+                <span>
+                  email@gmail.com
+                </span> 
+                <i id="email-icon" class="fa-solid fa-envelope"></i>
+              </a>
+            </div>
+            <div
+              class="ThridRow d-flex justify-content-between align-items-center"
+            >
+              <img src="img/pay-6.png" class="img-fluid" alt="" />
+              <img src="img/pay-7.png" class="img-fluid" alt="" />
+            </div>
+            <p class="mt-3 text-center d-md-none">
+              جميع الحقوق محفوظة 2025 &#169;
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--Bootstrap cdn -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+
+    </body>
+    <script src="js/swiper-bundle.js"></script>
+    <!--Animation-->
+    <script src="js/wow.min.js"></script>
+    <!--Custom Script-->
+    <script src="js/main.js"></script>
+    <script src="js/cart.js"></script>
+  </body>
+</html>
+
+
+

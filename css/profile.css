@@ -1,0 +1,306 @@
+/* ====== صفحة البروفايل العامة ====== */
+.profile-page {
+  background: #f6f7f9;
+  padding: 40px 0 60px;
+  direction: rtl;
+}
+
+/* حاوية أساسية */
+.profile-container {
+  max-width: 1200px;
+  margin: 0 auto 30px;
+  padding: 0 15px;
+}
+
+/* ====== كارت بيانات المستخدم ====== */
+.user-info-section {
+  background: #ffffff;
+  border-radius: 26px;
+  border: 1px solid #dde7f0;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.06);
+  padding: 24px 22px 28px;
+}
+
+/* الهيدر الترحيبي */
+.welcome-header h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #04525a;
+  margin-bottom: 4px;
+}
+
+.welcome-header h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #7a8a96;
+  margin-bottom: 18px;
+}
+
+/* كارت بيانات المتبرع */
+.user-data-section h4 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #04525a;
+  margin-bottom: 16px;
+}
+
+.user-data-section .row {
+  row-gap: 12px;
+}
+
+/* اللابل والفيلد */
+.form-group {
+  margin-bottom: 10px;
+}
+
+.float-label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #6b7a88;
+  margin-bottom: 4px;
+}
+
+.user-data-section .form-control {
+  border-radius: 12px;
+  border: 1px solid #d6dde5;
+  background: #f9fbfd;
+  height: 46px;
+  padding: 10px 12px;
+  font-size: 0.95rem;
+}
+
+.user-data-section .form-control[readonly] {
+  color: #4b5a66;
+}
+
+/* زر حفظ التعديلات */
+.save-changes-btn {
+  border: none;
+  border-radius: 999px;
+  background: #469e8d;
+  color: #fff;
+  padding: 10px 32px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(70, 158, 141, 0.35);
+  transition: 0.2s ease;
+}
+
+.save-changes-btn:hover {
+  background: #387a6e;
+  transform: translateY(-1px);
+}
+
+/* ====== تبرعاتي – الإحصائيات ====== */
+.statistics-header {
+  max-width: 1200px;
+  margin: 25px auto 12px;
+  padding: 0 15px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #04525a;
+}
+
+/* حاوية الكروت */
+.statistics-container {
+  max-width: 1200px;
+  margin: 0 auto 30px;
+  padding: 0 15px;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+}
+
+/* كارت إحصائية واحدة */
+.statistic {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 16px 14px;
+  border: 1px solid #e3edf4;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+}
+
+/* الكارت الكبير الأول */
+.total-statistic {
+  grid-column: span 2;
+  background: linear-gradient(135deg, #04525a, #469e8d);
+  color: #fff;
+}
+
+.statistic-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: inherit;
+}
+
+.statistic-value {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.total-statistic .statistic-value span {
+  font-size: 0.8rem;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.18);
+}
+
+.statistic-currency {
+  font-size: 0.8rem;
+  opacity: 0.9;
+}
+
+/* شريط التقدم */
+.progress-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.progress-value {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #04525a;
+}
+
+.bar {
+  flex: 1;
+  height: 6px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #469e8d, #f8d5ae);
+}
+
+/* ====== جدول التبرعات ====== */
+.orders-table-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  background: #ffffff;
+  border-radius: 26px;
+  border: 1px solid #dde7f0;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.06);
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+/* ترويسة الجدول */
+.orders-table thead {
+  background: #f1f6fb;
+}
+
+.orders-table thead th {
+  border-bottom: none;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #04525a;
+  white-space: nowrap;
+}
+
+/* جسم الجدول */
+.orders-table tbody tr {
+  font-size: 0.9rem;
+}
+
+.orders-table tbody tr:nth-child(even) {
+  background: #fafbfd;
+}
+
+.orders-table tbody tr:hover {
+  background: #eef5fb;
+}
+
+/* خانات الجدول */
+.orders-table td,
+.orders-table th {
+  padding: 10px 12px;
+  vertical-align: middle;
+  text-align: right;
+}
+
+/* شارات الحالة */
+.status-badge {
+  padding: 3px 10px;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.status-badge.completed {
+  background: #e6f6eb;
+  color: #248a3d;
+}
+
+.status-badge.pending {
+  background: #fff5e5;
+  color: #b87916;
+}
+
+.status-badge.canceled {
+  background: #ffe8e8;
+  color: #c13b3b;
+}
+
+/* زر عرض */
+.view-btn {
+  border-radius: 12px;
+  border: none;
+  padding: 5px 14px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  background: #469e8d;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.view-btn:hover {
+  background: #387a6e;
+}
+
+/* ====== ريسبونسيف ====== */
+@media (max-width: 991.98px) {
+  .user-info-section {
+    border-radius: 20px;
+  }
+
+  .statistics-container {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .total-statistic {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .profile-page {
+    padding-top: 25px;
+  }
+
+  .user-info-section {
+    padding: 20px 16px 24px;
+  }
+
+  .statistics-container {
+    grid-template-columns: 1fr;
+  }
+
+  .total-statistic {
+    grid-column: span 1;
+  }
+
+  .orders-table td,
+  .orders-table th {
+    font-size: 0.8rem;
+    padding-inline: 8px;
+  }
+}

@@ -1,0 +1,176 @@
+/* الحاوية العامة */
+.login-container {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 0 15px;
+  direction: rtl;
+}
+
+/* كروت تسجيل الدخول والتسجيل */
+.auth-card {
+  background: #ffffff;
+  border-radius: 26px;
+  padding: 24px 22px 26px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.06);
+  border: 1px solid #e5edf4;
+  margin-bottom: 20px;
+  display: none;        /* نخفيهم افتراضياً */
+}
+
+.auth-card.active {
+  display: block;       /* نظهر الكارت النشط فقط */
+}
+
+/* الهيدر */
+.auth-header .auth-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #04525a;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.auth-header .auth-title i {
+  color: #469e8d;
+}
+
+/* النص التعريفي */
+.auth-description {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.9;
+  margin-bottom: 8px;
+}
+
+/* الحقول */
+.auth-form .form-group {
+  margin-bottom: 12px;
+}
+
+.auth-form .form-control {
+  border-radius: 12px;
+  padding: 10px 12px;
+  height: 46px;
+  border: 1px solid #d4dce3;
+}
+
+.auth-form .form-control:focus {
+  border-color: #469e8d;
+  box-shadow: 0 0 0 3px rgba(70, 158, 141, 0.25);
+}
+
+/* زرار الدخول / التسجيل */
+.auth-btn {
+  width: 17%;
+  height: 46px;
+  border-radius: 12px;
+  background: #469e8d !important;
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 4px;
+  transition: 0.2s ease;
+}
+
+.auth-btn:hover {
+  background: #377d6f !important;
+  transform: translateY(-1px);
+}
+
+/* خيارات التحت (تذكرني، نسيت...) */
+.form-options {
+  margin-top: 14px;
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.form-options .form-check {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 4px;
+}
+
+.form-check-input {
+  width: 16px;
+  height: 16px;
+  margin: 0;
+  margin-left: 6px;
+}
+.form-check .form-check-input {
+    float: left;
+    margin-left: 0.2rem !important;
+}
+/* تبويبات أعلى الكروت */
+.login-switch {
+  display: inline-flex;
+  border-radius: 999px;
+  padding: 3px;
+  background: #e2f1ee;
+  margin-bottom: 20px;
+}
+
+.switch-btn {
+  border: none;
+  background: transparent;
+  padding: 8px 20px;
+  border-radius: 999px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #04525a;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.switch-btn.active {
+  background: #ffffff;
+  color: #04525a;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+}
+
+/* الكارت الثاني (تسجيل جديد) علامة على الطرف */
+.register-card {
+  border-left: 4px solid #469e8d;
+}
+
+/* كروت المستفيد / المتطوع */
+.special-card {
+  text-align: center;
+  padding: 22px 20px;
+  border-radius: 22px;
+  background: #ffffff;
+  border: 1px solid #e5edf4;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
+}
+
+.special-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #04525a;
+  margin-bottom: 10px;
+}
+
+.special-btn {
+  width: 60%;
+}
+
+/* ريسبونسيف */
+@media (max-width: 767.98px) {
+  .auth-card {
+    border-radius: 20px;
+    padding: 20px 18px 22px;
+  }
+
+  .login-switch {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .switch-btn {
+    flex: 1;
+    text-align: center;
+    padding-inline: 6px;
+  }
+}

@@ -1,0 +1,165 @@
+/* ===== صفحة تسجيل متطوع جديد ===== */
+
+.registration-container {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 0 15px;
+  direction: rtl;
+}
+
+.registration-content {
+  background: #ffffff;
+  border-radius: 26px;
+  padding: 28px 26px 32px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.06);
+  border: 1px solid #dde7f0;
+}
+
+/* العنوان الرئيسي */
+.registration-title {
+  font-size: 1.7rem;
+  font-weight: 800;
+  color: #04525a;
+  margin-bottom: 18px;
+  text-align: right;
+}
+
+/* صندوق التنبيه */
+.registration-notice {
+  background: #fff9e9;
+  border-radius: 18px;
+  padding: 14px 16px;
+  border-right: 4px solid #ee5a34;
+  margin-bottom: 24px;
+}
+
+.registration-notice p {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.9;
+  color: #5a4b2e;
+}
+
+/* أقسام الفورم */
+.form-section {
+  margin-top: 24px;
+  padding: 18px 16px 14px;
+  border-radius: 22px;
+  background: #f8fbfc;
+  border: 1px solid #e2ebf3;
+}
+
+.section-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #04525a;
+  margin-bottom: 14px;
+  position: relative;
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -5px;
+  width: 70px;
+  height: 3px;
+  border-radius: 999px;
+  background: #469e8d;
+}
+
+/* الإدخال مع الليبل الصغير فوقه */
+.labeled-input {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 10px 10px 6px;
+  border: 1px solid #d9e1ea;
+}
+
+.field-label {
+  display: block;
+  font-size: 0.8rem;
+  color: #7a8a96;
+  margin-bottom: 3px;
+  font-weight: 600;
+}
+
+.labeled-input .form-control,
+.labeled-input .form-select {
+  border: none;
+  padding: 4px -1px 0;
+  height: 36px;
+  box-shadow: none;
+}
+
+.labeled-input .form-control:focus,
+.labeled-input .form-select:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+/* باقي الحقول العادية */
+.form-section .form-control,
+.form-section .form-select {
+  border-radius: 12px;
+  border: 1px solid #d9e1ea;
+}
+
+/* تفضيلات – القوائم الجانبية */
+.preferences h5 {
+  font-size: 0.98rem;
+  font-weight: 700;
+  color: #04525a;
+}
+
+.preferences .form-check-label {
+  font-size: 0.9rem;
+  color: #4a5864;
+}
+
+/* صندوق الهدف من التطوع */
+.preferences textarea.form-control {
+  min-height: 210px;
+  resize: vertical;
+}
+
+/* مربع الموافقة */
+#agreement + .form-check-label {
+  font-size: 0.9rem;
+  color: #444f5a;
+}
+
+/* زر الإرسال */
+.submit-btn {
+  border: none;
+  border-radius: 999px;
+  padding: 10px 40px;
+  background: #469e8d;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 10px 24px rgba(70, 158, 141, 0.35);
+  transition: 0.2s ease;
+}
+
+.submit-btn:hover {
+  background: #387a6e;
+  transform: translateY(-2px);
+}
+
+/* ريسبونسيف */
+@media (max-width: 767.98px) {
+  .registration-content {
+    padding: 20px 16px 24px;
+    border-radius: 20px;
+  }
+
+  .registration-title {
+    font-size: 1.4rem;
+  }
+
+  .preferences textarea.form-control {
+    min-height: 160px;
+  }
+}

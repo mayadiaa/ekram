@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>إهداء التبرع</title>
+
+    <!--Bootstrap cdn -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <!--Font awsome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!--Animation -->
+    <link rel="stylesheet" href="css/animate.css" />
+    <!--Swiper-->
+    <link rel="stylesheet" href="css/swiper.min.css" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+
+    <!-- Custom Stylsheet-->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/registration.css" />
+    <link rel="stylesheet" href="css/gift.css" />
+  </head>
+
+  <body>
+ <header>
+    <div class="topBar">
+      <img class="back" src="img/header_background.png" alt="">
+      <div class="UserBox ">
+        <div onclick="window.location.href='index.html'" class="logoBox p-4 ">
+          <img src="./img/00.png" class="img-fluid logo-img" alt="" />
+        </div>
+        <div class=" d-none d-lg-block phone">
+          <!-- <i class="fas fa-phone"></i> -->
+          <a class="header_contact " style="text-decoration:none;" href="tel:966537066621"><i
+              class="fas fa-phone phoneIcon text-white"></i><b class="navicon">اتصل بنا</b><br /><span
+              class="navicon">966537066621</span></a>
+        </div>
+        <div class="useraction mx-auto mx-lg-0">
+          <!-- <div onclick="window.location.href='index.html'" class="logoBoxModile  d-lg-none text-center">
+            <img src="img/00.png" class="img-fluid" alt="" />
+          </div> -->
+
+          <div class="loginbox ">
+            <div class="user ">
+              <div onclick="window.location.href='cart.html' " class="basket p-2 ms-3 position-relative">
+
+                <i class="fa-solid fa-cart-shopping fs-4 navicon"></i>
+
+                <span class="Badge position-absolute top-0 start-100 translate-middle badge rounded-pill">
+                  1
+                </span>
+              </div>
+              <div class="user-items">
+
+                <div onclick="window.location.href='profile.html'  " class="usericon p-2">
+                  <i class="fa-solid fa-user fs-4 navicon"></i>
+                </div>
+                <div onclick="window.location.href='login.html'  " class="usertext px-2">
+                  <a class="me-4" href="./login.html">تسجيل دخول</a>
+                </div>
+              </div>
+
+            </div>
+            <div class="DonateNow d-flex justify-content-end">
+              <!-- <div class="usertext DonateNowBox px-2 mt-3">
+                    <a class="me-4"> تبرع الان </a>
+                  </div> -->
+            </div>
+            <div class="nav-left">
+              <div class="user-mobile ">
+                <div onclick="window.location.href='cart.html' " class="basket-mobile  position-relative">
+
+                  <i class="fa-solid fa-cart-shopping fs-4"></i>
+
+                  <span class="Badge ">
+                    1
+                  </span>
+                </div>
+                <div class="user-items-mobile">
+
+                  <div onclick="window.location.href='profile.html'  " class="usericon-mobile ">
+                    <i class="fa-solid fa-user fs-4"></i>
+                  </div>
+
+                </div>
+
+              </div>
+
+
+              <div class="nav-icon">
+                <button class="navbar-toggler custom-hamburger" type="button">
+                  <span class="hamburger-bar"></span>
+                  <span class="hamburger-bar"></span>
+                  <span class="hamburger-bar"></span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <nav class="navbar navbar-expand-lg  position-relative">
+      <div class="blue-bar"></div>
+      <div class="container nav-content">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-end w-100 pe-0">
+
+            <!-- Example dropdown item -->
+            <li class="nav-item dropdown">
+              <a href="./index.html" class="nav-link ">الرئيسية</a>
+
+            </li>
+            <!-- Repeat for other nav items -->
+            <li class="nav-item dropdown">
+              <a class="nav-link " href="./about-us.html">من نحن</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="./category.html">الاقسام</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="./hawkama.html">الحوكمة</a>
+            </li>
+          <li class="nav-item dropdown">
+              <a class="nav-link " href="./Beneficiary-registration.html">المستفيدين</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link " href="./activities.html">الفعاليات</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
+              >الفرص التطوعية</a>
+              <ul class="dropdown-menu text-end">
+                <li><a class="dropdown-item">الفرص المتاحة</a></li>
+                <li><a class="dropdown-item"  href="./Volunteer-registration.html">سجل كمتطوع</a></li>
+                <li><a class="dropdown-item">دليل المتطوع</a></li>
+              </ul>
+            </li>
+            <!-- Search form -->
+            <!-- <form class="search-form position-relative" role="search">
+            <input type="search" placeholder="البحث" aria-label="Search" />
+            <i class="fa-solid fa-magnifying-glass position-absolute"></i>
+          </form> -->
+        </div>
+      </div>
+    </nav>
+
+  </header>
+
+
+    <main>
+      <div class="gift-container">
+        <h1 class="gift-title">إهداء التبرع</h1>
+        
+        <div class="gift-card">
+          
+          
+          <!-- Right side - Form -->
+          <div class="gift-right">
+            <h3 class="form-section-title">اختر طريقة الدفع</h3>
+            
+            <div class="form-section">
+              <h4 class="mb-3">المرسل</h4>
+              
+              <div class="form-group">
+                <div class="labeled-input">
+                  <span class="field-label">الاسم</span>
+                  <input type="text" class="form-control" value="فاطمة حمود الدوسري" />
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <div class="labeled-input">
+                  <span class="field-label">البريد الإلكتروني</span>
+                  <input type="email" class="form-control" value="Fatimaalsousery@gmail.com" />
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <div class="labeled-input">
+                  <span class="field-label">رقم الجوال</span>
+                  <input type="tel" class="form-control" value="+966 65550000" />
+                </div>
+              </div>
+            </div>
+            
+            <div class="form-section">
+              <h4 class="mb-3">المرسل إليه</h4>
+              
+              <div class="form-group">
+                <div class="labeled-input">
+                  <span class="field-label">الاسم</span>
+                  <input type="text" class="form-control" value="العنود سالم ناصر الهاجري" />
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <div class="labeled-input">
+                  <span class="field-label">البريد الإلكتروني</span>
+                  <input type="email" class="form-control" value="anoudsalemalhajry@hotmail.com" />
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <div class="labeled-input">
+                  <span class="field-label">رقم الجوال</span>
+                  <input type="tel" class="form-control" value="+966 5955 0606" />
+                </div>
+              </div>
+            </div>
+            
+            <div class="form-section">
+              <h4 class="mb-3">التبرع</h4>
+              
+              <div class="form-group">
+                <div class="labeled-input">
+                  <span class="field-label">مبلغ التبرع</span>
+                  <input type="text" class="form-control" value="9500 ر.س" />
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <div class="labeled-input">
+                  <span class="field-label">المشروع</span>
+                  <select class="form-select">
+                    <option selected>سقيا الماء في الحرم المكي</option>
+                    <option>مشروع آخر</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            
+            <button class="submit-donation">إرسال التبرع</button>
+          </div>
+          <!-- Left side - Certificate/Text -->
+          <div class="gift-left">
+            <h2 class="gift-heading large">إهداء تبرع</h2>
+            <p class="gift-subheading normal">بمشاعر المحبة والوفاء</p>
+            
+            <p class="gift-project normal">
+                 تم التبرع ب
+                 <span class="strong">
+
+                     [سقيا الماء في الحرم المكي
+                     ]
+                    </span>
+                </p>
+            
+            <p class="gift-name large">فاطمة حمود الدوسري</p>
+            
+            <p class="gift-message normal">سائلين الله أن يجعل هذا العمل في ميزان حسناتك،<br>وأن ينفع(ي) به في الدنيا والآخرة، و(ت)يجعل له به نوراً وسروراً.</p>
+            <div class="normal">
+                قال الله تعالى:
+            </div>
+            <p class="gift-quote normal">"إن تُبْدُوا الصَّدَقَاتِ فَنِعِمَّا هِيَ وَإِن تُخْفُوهَا وَتُؤْتُوهَا الْفُقَرَاءَ فَهُوَ خَيْرٌ لَّكُمْ" - (البقرة: 271)</p>
+            
+            <p class="gift-quote normal">وقال رسول الله ﷺ:<br>"على كل سلامى من الناس صدقة، كل يوم تطلع فيه الشمس، تعدل بين اثنين صدقة، وتعين الرجل على دابته صدقة..." [رواه مسلم]</p>
+            
+            <p class="gift-message normal">نسأل الله أن يتقبل، ويبارك في هذا العطاء، ويجعلنا وإياكم من أهل الإحسان.</p>
+            
+            <p class="gift-sender">العنود سالم ناصر الهاجري</p>
+            
+            <img src="img/gift.jpg" alt="" class="gift-decoration">
+          </div>
+        </div>
+      </div>
+    </main>
+
+
+    <footer>
+        <div class="row">
+          <div class="col-12 col-lg-3 p-0">
+            <div class="first p-3">
+              <div class="footer-text">
+  
+                <h2 class="first-title">عــن الجمعية</h2>
+                <p class="first-text">هي منظمة خيرية غير ربحية تهدف الي دعم و مساعدة اهالي الاحياء الاكثر احتياجا. من خلال تقديم حلول مستدامه تعزز جودة الحياة و تلبي الاحتياجات الاساسية.</p>
+              </div>
+              <div
+                class="socialIncons d-flex justify-content-center align-items-center mt-4"
+              >
+                <a class="icon">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+  
+                <a class="icon">
+                  <i class="fa-brands fa-facebook"></i>
+                </a>
+  
+                <a class="icon">
+                  <i class="fa-brands fa-youtube"></i>
+                </a>
+  
+                <a class="icon">
+                  <i class="fa-brands fa-x-twitter"></i>
+                </a>
+  
+                <a class="icon">
+                  <i class="fa-brands fa-snapchat"></i>
+                </a>
+  
+                <a class="icon">
+                  <i class="fa-brands fa-whatsapp"></i>
+                </a>
+              </div>
+              <p class="mt-1 text-center d-none d-md-block">
+                جميع الحقوق محفوظة 2025 &#169;
+                
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-lg-3 p-0">
+            <div class="secand p-3 h-100">
+              <h5 >أهم الروابط :</h5>
+              <ul class="text-center">
+                <li>البرامج الخيرية</li>
+                <li>أهم المشارريع</li>
+                <li>الحالات الطارئة</li>
+                <li>الحسابات البنكية</li>
+                <li>المستفيدين</li>
+                <li>التبرع السريع</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-lg-3 p-0">
+            <div
+              class="thrid h-100 d-flex flex-column justify-content-center align-items-center p-3 p-lg-0"
+            >
+              <div
+                class="ImgContainer d-flex justify-content-between align-items-center"
+              >
+                <img src="img/Logo 1.png" class="img-fluid" alt="" />
+                <img src="img/Logo 1.png" class="img-fluid" alt="" />
+              </div>
+              <div
+                class="ImgContainer2 d-flex justify-content-center align-items-center mt-2"
+              >
+                <img src="img/pay-1.png" class="img-fluid" alt="" />
+                <img src="img/pay-2.png" class="img-fluid" alt="" />
+                <img src="img/pay-4.png" class="img-fluid" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-3  p-0">
+            <div
+              class="fourth d-flex flex-column justify-content-start align-items-center h-100"
+            >
+              <h2 class="fourth-title">معلومات الاتصال</h2>
+              <div
+                class="fristrow  d-flex justify-content-center align-items-center "
+              >
+                <a class="contact">
+                  <span>0500000</span>
+                  <i class="fa-solid fa-phone"></i>
+                </a>
+                <a class="contact">
+                  <span>0120555</span>
+                  <i class="fa-solid fa-blender-phone"></i>
+                </a>
+              </div>
+              <div class="Secandrow  my-3">
+                <a class="contact">
+                  <span>
+                    email@gmail.com
+                  </span> 
+                  <i id="email-icon" class="fa-solid fa-envelope"></i>
+                </a>
+              </div>
+              <div
+                class="ThridRow d-flex justify-content-between align-items-center"
+              >
+                <img src="img/pay-6.png" class="img-fluid" alt="" />
+                <img src="img/pay-7.png" class="img-fluid" alt="" />
+              </div>
+              <p class="mt-3 text-center d-md-none">
+                جميع الحقوق محفوظة 2025 &#169;
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    <!--Bootstrap cdn -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/swiper-bundle.js"></script>
+    <!--Animation-->
+    <script src="js/wow.min.js"></script>
+    <!--Custom Script-->
+    <script src="js/main.js"></script>
+    <script src="js/cart.js"></script>
+  </body>
+</html>
