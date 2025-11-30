@@ -197,7 +197,10 @@
   text-align: center;
   box-shadow: 0 4px 6px rgba(247, 164, 28, 0.2);
 }
-
+.donation_A{
+  color: white;
+  text-decoration: none;
+}
 .donate-now-btn:hover {
   background-color: #04525a;
   transform: translateY(-2px);
