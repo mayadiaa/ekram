@@ -2429,12 +2429,12 @@ html[dir="rtl"] .RamdanProjects .swiper-button-prev {
 
 .RamdanProject-button-next {
   position: absolute;
-  right: 0% !important;
+  right: -4% !important;
 }
 
 .RamdanProject-button-prev {
   position: absolute;
-  right: 90% !important;
+  right: 106% !important;
 }
 
 .RamdanProjects {
