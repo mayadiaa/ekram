@@ -23,6 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const statisticsSwiperElement = document.querySelector(".statisticsSwiper");
   if (statisticsSwiperElement) {
     const statisticsSwiper = new Swiper(".statisticsSwiper", {
+       loop: true,
       slidesPerView: 1,
       spaceBetween: 10,
       autoplay: {
@@ -54,13 +55,11 @@ document.addEventListener("DOMContentLoaded", function () {
   const projectSectionsElement = document.querySelector(".ProjectSections");
   if (projectSectionsElement) {
     const Cardswiper = new Swiper(".ProjectSections", {
-      loop: !isMobile,
+      loop: true,
       slidesPerView: 1,
       spaceBetween: 1,
       allowTouchMove: !isMobile,
-      autoplay: isMobile
-        ? false
-        : {
+      autoplay: {
             delay: 2000,
             disableOnInteraction: false,
           },
@@ -95,6 +94,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const ramdanProjectElement = document.querySelector(".RamdanProjectSwiper");
   if (ramdanProjectElement) {
     const ramdanSwiper = new Swiper(".RamdanProjectSwiper", {
+       loop: true,
       navigation: {
         nextEl: ".RamdanProject-button-next",
         prevEl: ".RamdanProject-button-prev",
@@ -116,10 +116,10 @@ document.addEventListener("DOMContentLoaded", function () {
           spaceBetween: 10,
         },
       },
-      autoplay: isMobile
-        ? false
-        : {
-            delay: 5000,
+      autoplay:
+       
+         {
+            delay: 3000,
             disableOnInteraction: false,
           },
       slidesPerView: 3,
