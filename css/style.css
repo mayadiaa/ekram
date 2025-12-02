@@ -3420,10 +3420,9 @@ html[dir="rtl"] .RamdanProjects .swiper-button-prev {
 .news-btn {
   background: #469e8d;
   color: #fff !important;
-  padding: 8px 20px;
+  padding: 12px 20px;
   border-radius: 999px;
   font-size: 13px;
-  margin-right: 50px;
   font-weight: 600;
   display: inline-block;
   transition: 0.2s ease;
