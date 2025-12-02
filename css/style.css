@@ -3083,12 +3083,11 @@ html[dir="rtl"] .RamdanProjects .swiper-button-prev {
 
 /* الشريط العلوي */
 .creative-top {
-  position: relative;
   z-index: 2;
   width: 100%;
   display: flex;
-  justify-content: space-between;
-  margin-bottom: 25px;
+  justify-content: center;
+  align-items: center;
 }
 
 /* الشيب */
@@ -3098,9 +3097,6 @@ html[dir="rtl"] .RamdanProjects .swiper-button-prev {
   padding: 0px 9px;
   border-radius: 999px;
   color: var(--c-dark);
-  position: absolute;
-  left: 5rem;
-
 }
 
 .creative-icon {
