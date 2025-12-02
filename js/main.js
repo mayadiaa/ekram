@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const statisticsSwiperElement = document.querySelector(".statisticsSwiper");
   if (statisticsSwiperElement) {
     const statisticsSwiper = new Swiper(".statisticsSwiper", {
-       loop: true,
+      loop: true,
       slidesPerView: 1,
       spaceBetween: 10,
       autoplay: {
@@ -56,13 +56,12 @@ document.addEventListener("DOMContentLoaded", function () {
   if (projectSectionsElement) {
     const Cardswiper = new Swiper(".ProjectSections", {
       loop: true,
-      slidesPerView: 1,
-      spaceBetween: 1,
-      allowTouchMove: !isMobile,
       autoplay: {
-            delay: 2000,
-            disableOnInteraction: false,
-          },
+        delay: 2000,
+        disableOnInteraction: false,
+      },
+      slidesPerView: 3,
+      spaceBetween: 30,
       breakpoints: {
         320: {
           slidesPerView: 1,
@@ -84,9 +83,7 @@ document.addEventListener("DOMContentLoaded", function () {
         nextEl: ".ProjectSection-button-next",
         prevEl: ".ProjectSection-button-prev",
       },
-      pagination: {
-        el: ".swiper-pagination",
-      },
+     
     });
   }
 
@@ -94,13 +91,13 @@ document.addEventListener("DOMContentLoaded", function () {
   const ramdanProjectElement = document.querySelector(".RamdanProjectSwiper");
   if (ramdanProjectElement) {
     const ramdanSwiper = new Swiper(".RamdanProjectSwiper", {
-       loop: true,
+      loop: true,
       navigation: {
         nextEl: ".RamdanProject-button-next",
         prevEl: ".RamdanProject-button-prev",
       },
       breakpoints: {
-         320: {
+        320: {
           slidesPerView: 1,
         },
         640: {
@@ -117,11 +114,11 @@ document.addEventListener("DOMContentLoaded", function () {
         },
       },
       autoplay:
-       
-         {
-            delay: 3000,
-            disableOnInteraction: false,
-          },
+
+      {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
       slidesPerView: 3,
       spaceBetween: 30,
     });
@@ -191,8 +188,8 @@ document.addEventListener("DOMContentLoaded", function () {
       link.classList.toggle("show");
       console.log('link');
       console.log(link);
-      
-      
+
+
     });
   });
 });
