@@ -818,7 +818,7 @@ main {
       display: flex;
       align-items: center;
       justify-content: center;
-      margin: 0 auto 2rem auto;
+      margin: 30px !important;
       border-radius: 2rem;
 
 
@@ -3043,12 +3043,12 @@ html[dir="rtl"] .RamdanProjects .swiper-button-prev {
   padding: 16px 16px 18px;
   background: rgba(255, 255, 255, 0.92);
   backdrop-filter: blur(10px);
-  box-shadow: 0 1px 27px rgba(0, 0, 0, 0.12);
+  /* box-shadow: 0 1px 27px rgba(0, 0, 0, 0.12); */
   overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
-  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  transition: transform 0.35s ease, 0.35s ease;
 }
 
 /* دائرة خلفية */
@@ -3417,13 +3417,13 @@ html[dir="rtl"] .RamdanProjects .swiper-button-prev {
   min-height: 75%;
 }
 
-/* زر المزيد */
 .news-btn {
   background: #469e8d;
   color: #fff !important;
   padding: 8px 20px;
   border-radius: 999px;
   font-size: 13px;
+  margin-right: 50px;
   font-weight: 600;
   display: inline-block;
   transition: 0.2s ease;

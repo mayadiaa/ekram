@@ -55,11 +55,11 @@ document.addEventListener("DOMContentLoaded", function () {
   const projectSectionsElement = document.querySelector(".ProjectSections");
   if (projectSectionsElement) {
     const Cardswiper = new Swiper(".ProjectSections", {
-      // loop: true,
-      // autoplay: {
-      //   delay: 2000,
-      //   disableOnInteraction: false,
-      // },
+      loop: true,
+      autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+      },
       slidesPerView: 3,
       spaceBetween: 30,
       breakpoints: {
