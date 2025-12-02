@@ -26,7 +26,7 @@
   <link rel="stylesheet" href="css/cart.css" />
   <link rel="stylesheet" href="css/custom-card.css" />
   <link rel="stylesheet" href="css/fast-pay.css">
-
+<script src="https://unpkg.com/swiper@9/swiper-bundle.min.js"></script>
 
 </head>
 
@@ -110,7 +110,7 @@
     </div>
 
 <nav class="navbar navbar-expand-lg  position-relative">
-      <div class="blue-bar"></div>
+     
       <div class="container nav-content">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
           <span class="navbar-toggler-icon"></span>
@@ -138,7 +138,7 @@
               <a class="nav-link " href="./Beneficiary-registration.html">المستفيدين</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link " href="./activities.html">الفعاليات</a>
+              <a class="nav-link " href="./activities.html">المركز الاعلامى</a>
             </li>
 
             <li class="nav-item dropdown">
@@ -461,7 +461,7 @@
     <!-- our story -->
 
     <section class="story-section">
-      <div class="container">
+      <div class="container contain">
         <div class="row align-items-center g-4">
           <!-- Image -->
           <div class="col-lg-6 col-md-6 col-sm-12">
@@ -522,12 +522,12 @@
 
                   <div class="creative-top">
                     <span class="creative-chip">رمضان</span>
-                    <span class="creative-icon">
+                    <!-- <span class="creative-icon">
                       <i class="fa-solid fa-moon"></i>
-                    </span>
+                    </span> -->
                   </div>
                   <div class="creative-image-wrap">
-                    <img class="category-img" src="img/project1.png" alt="مشاريع رمضان">
+                    <img class="category-img" src="img/duaa.jpg" alt="مشاريع رمضان">
                   </div>
 
                   <div class="creative-body">
@@ -551,13 +551,13 @@
 
                   <div class="creative-top">
                     <span class="creative-chip">زكاة</span>
-                    <span class="creative-icon">
+                    <!-- <span class="creative-icon">
                       <i class="fa-solid fa-hand-holding-heart"></i>
-                    </span>
+                    </span> -->
                   </div>
 
                   <div class="creative-image-wrap">
-                    <img class="category-img" src="img/project2.png" alt="زكاة المال">
+                    <img class="category-img" src="img/activities.jpg" alt="زكاة المال">
                   </div>
 
                   <div class="creative-body">
@@ -579,9 +579,9 @@
 
                   <div class="creative-top">
                     <span class="creative-chip">كفالة</span>
-                    <span class="creative-icon">
+                    <!-- <span class="creative-icon">
                       <i class="fa-solid fa-child-reaching"></i>
-                    </span>
+                    </span> -->
                   </div>
 
                   <div class="creative-image-wrap">
@@ -608,9 +608,9 @@
 
                   <div class="creative-top">
                     <span class="creative-chip">وقف</span>
-                    <span class="creative-icon">
+                    <!-- <span class="creative-icon">
                       <i class="fa-solid fa-seedling"></i>
-                    </span>
+                    </span> -->
                   </div>
 
                   <div class="creative-image-wrap">
@@ -1518,7 +1518,86 @@
             </div>
     </section> -->
   <!-- partner End -->
+   <!--  -->
+  <section class="news-section py-5">
+  <div class="container ">
+    <h2 class="news-title text-center mb-5">المركز الاعلامى </h2>
 
+    <div class="row contain">
+
+      <!-- خبر 1 -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="activity-card news-card">
+          <div class="activity-img news-img">
+            <img src="img/duaa.jpg" alt="">
+            <!-- <span class="news-badge">جديد</span> -->
+          </div>
+
+          <div class="activity-content news-content">
+            <h3 class="activity-title">تقرير بالحملات الخيرية للجمعية خلال النصف الأول من العام الميلادي 2025</h3>
+
+            <p class="activity-desc">
+              يهدف مشروع سقيا إلى تقديم عبوات مياه مجانية للمعتمرين داخل الحرم خاصة في أوقات الذروة، ضمن جهود الجمعية لخدمة ضيوف الرحمن.
+            </p>
+
+            <button style="width: 20rem; background: transparent;"  class="newbtn">
+            <a href="new.html" class="activity-btn news-btn" style="width: 9rem;">المزيــــــــد</a>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- خبر 2 -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="activity-card news-card">
+          <div class="activity-img news-img">
+            <img src="img/salam.png" alt="">
+            <!-- <span class="news-badge">تنويه</span> -->
+          </div>
+
+          <div class="activity-content news-content">
+            <h3 class="activity-title">إنجازات الجمعية في شهر رمضان وصولاً لأكثر من 120 ألف مستفيد</h3>
+
+            <p class="activity-desc">
+              قدّمت الجمعية العديد من البرامج الرمضانية، من بينها السلال الغذائية والإفطار الجاهز، لتغطية احتياجات آلاف الأسر المحتاجة.
+            </p>
+ <button style="width: 20rem; background: transparent;"  class="newbtn">
+            <a href="new.html" class="activity-btn news-btn" style="width: 9rem;">المزيــــــــد</a>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- خبر 3 -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="activity-card news-card">
+          <div class="activity-img news-img">
+            <img src="img/project1.png" alt="">
+            <!-- <span class="news-badge">خبر</span> -->
+          </div>
+
+          <div class="activity-content news-content">
+            <h3 class="activity-title">إطلاق مشروع كسوة الشتاء للعام الجديد 2025</h3>
+
+            <p class="activity-desc">
+              بدأت الجمعية في إطلاق حملة "كسوة الشتاء" التي تستهدف الأسر المتعففة والأيتام بتوفير الملابس الشتوية والبطانيات.
+            </p>
+
+            <button style="width: 20rem; background: transparent;" class="newbtn">
+            <a href="new.html" class="activity-btn news-btn" style="width: 9rem;">المزيــــــــد</a>
+            </button>
+          </div>
+        </div>
+      </div>
+ <button class="button1">
+    <a href="activities.html" class="activity-btn news-btn buttonA">المزيــــــــد</a>
+    </button>
+    </div>
+  </div>
+ 
+</section>
+
+  <!--  -->
   <footer>
     <div class="row">
       <div class="col-12 col-lg-3 p-0">
@@ -1630,6 +1709,7 @@
 <!--Custom Script-->
 <script src="js/main.js"></script>
 <script src="js/cart.js"></script>
+
 </body>
 
 </html>

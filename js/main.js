@@ -373,3 +373,31 @@ document.addEventListener("DOMContentLoaded", function () {
   // Call the function when page loads
   setActiveNavLink();
 });
+
+const projectSwiper = new Swiper(".ProjectSections", {
+  slidesPerView: 1,
+  spaceBetween: 20,
+  loop: false,
+  navigation: {
+    nextEl: ".ProjectSection-button-next",
+    prevEl: ".ProjectSection-button-prev",
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    992: {
+      slidesPerView: 3,
+      spaceBetween: 22,
+    },
+    1200: {
+      slidesPerView: 4,
+      spaceBetween: 24,
+    },
+  },
+});
