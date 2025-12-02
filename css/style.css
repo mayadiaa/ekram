@@ -1476,7 +1476,9 @@ footer {
   .back {
     display: none;
   }
-
+.creative-chip {
+  left: 6.5rem !important;
+}
   main {
     .banner {
       .text_Layer {
@@ -3085,13 +3087,13 @@ html[dir="rtl"] .RamdanProjects .swiper-button-prev {
 
 /* الشيب */
 .creative-chip {
-  font-weight: 600;
-  font-size: 18px;
-  padding: 7px 9px;
-  border-radius: 999px;
-  color: var(--c-dark);
-  position: absolute;
-  left: 0.4rem;
+font-weight: 700;
+    font-size: 25px;
+    padding: 0px 9px;
+    border-radius: 999px;
+    color: var(--c-dark);
+    position: absolute;
+    left: 5rem;
 
 }
 
