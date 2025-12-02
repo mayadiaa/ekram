@@ -1101,6 +1101,8 @@ main {
   }
 }
 
+
+
 .high-sales-projects {
   position: relative;
 
@@ -1476,9 +1478,11 @@ footer {
   .back {
     display: none;
   }
-.creative-chip {
-  left: 6.5rem !important;
-}
+
+  .creative-chip {
+    left: 6.5rem !important;
+  }
+
   main {
     .banner {
       .text_Layer {
@@ -1520,9 +1524,11 @@ footer {
     bottom: 20px;
     left: 20px;
   }
-.whatsapp-icon i {
-  font-size: 45px;
-}
+
+  .whatsapp-icon i {
+    font-size: 45px;
+  }
+
   .category-container {
     padding-bottom: 0 !important;
   }
@@ -1656,7 +1662,7 @@ footer {
 
 .RamdanProjects .swiper-button-next:hover:after,
 .RamdanProjects .swiper-button-prev:hover:after {
-  color: #fff;
+  color: #8a7a5a !important;
 }
 
 .RamdanProjects .swiper-button-next {
@@ -3087,13 +3093,13 @@ html[dir="rtl"] .RamdanProjects .swiper-button-prev {
 
 /* الشيب */
 .creative-chip {
-font-weight: 700;
-    font-size: 25px;
-    padding: 0px 9px;
-    border-radius: 999px;
-    color: var(--c-dark);
-    position: absolute;
-    left: 5rem;
+  font-weight: 700;
+  font-size: 25px;
+  padding: 0px 9px;
+  border-radius: 999px;
+  color: var(--c-dark);
+  position: absolute;
+  left: 5rem;
 
 }
 
