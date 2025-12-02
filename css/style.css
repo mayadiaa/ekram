@@ -137,8 +137,8 @@ button {
   background-color: #25d366;
   color: white;
   border-radius: 50%;
-  width: 60px;
-  height: 60px;
+  width: 40px;
+  height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1760,7 +1760,7 @@ html[dir="rtl"] .RamdanProjects .swiper-button-prev {
   }
 
   .statisticsSwiper .stat-value {
-    color: #22b573;
+    color: #469e8d;
     font-size: 22px;
     font-weight: 700;
     margin-bottom: 5px;
@@ -1786,7 +1786,7 @@ html[dir="rtl"] .RamdanProjects .swiper-button-prev {
   }
 
   .statisticsSwiper .swiper-pagination-bullet-active {
-    background: #22b573;
+    background: #469e8d;
     width: 20px;
     border-radius: 4px;
   }
@@ -1859,7 +1859,7 @@ html[dir="rtl"] .RamdanProjects .swiper-button-prev {
   }
 
   .ramadan-card-progress .progress-bar {
-    background-color: #22b573;
+    background-color: #469e8d;
     color: white;
     text-align: center;
     line-height: 15px;
@@ -1918,7 +1918,7 @@ html[dir="rtl"] .RamdanProjects .swiper-button-prev {
 
   .donate-now-btn {
     flex: 1;
-    background-color: #22b573;
+    background-color: #469e8d;
     border: none;
     border-radius: 25px;
     padding: 8px 5px;
@@ -2198,7 +2198,7 @@ html[dir="rtl"] .RamdanProjects .swiper-button-prev {
   }
 
   .statisticsSwiper .swiper-pagination-bullet-active {
-    background: #22b573;
+    background: #469e8d;
   }
 }
 

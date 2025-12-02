@@ -67,7 +67,7 @@ input{
 
 .cancel-btn:hover,
 .cancel-btn:focus {
-  background: #a11d23;
+  background: #ee5a34;
   color: #fff;
 }
 
@@ -296,7 +296,7 @@ label,.text{
 }
 
 .pay-btn {
-  background: #22B573;
+  background: #469e8d;
   color: #fff;
   border: none;
   font-size: 1.2rem;
@@ -312,7 +312,7 @@ label,.text{
 }
 
 .cancel-btn {
-  background: #C1272D;
+  background: #ee5a34;
   color: #fff;
   border: none;
   border-radius: 8px;
