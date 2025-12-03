@@ -434,3 +434,24 @@ const projectSwiper = new Swiper(".ProjectSections", {
     },
   },
 });
+  document.addEventListener('DOMContentLoaded', function() {
+            const toggler = document.querySelector('.navbar-toggler');
+            const hamburger = document.querySelector('.custom-hamburger');
+            
+            toggler.addEventListener('click', function() {
+                hamburger.classList.toggle('active');
+            });
+
+            // Close menu when clicking on a link (mobile)
+            const navLinks = document.querySelectorAll('.nav-link');
+            navLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    if (window.innerWidth < 992) {
+                        const collapse = document.querySelector('.navbar-collapse');
+                        const bsCollapse = new bootstrap.Collapse(collapse, {toggle: false});
+                        bsCollapse.hide();
+                        hamburger.classList.remove('active');
+                    }
+                });
+            });
+        });
