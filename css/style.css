@@ -3874,6 +3874,8 @@ width: 53% !important;    min-height: calc(100% + 50px); /* أطول من اله
         display: none;
     }
 
+
+}
 .blog1 {
   background-color: #ee5a34;
 }
@@ -3884,5 +3886,4 @@ width: 53% !important;    min-height: calc(100% + 50px); /* أطول من اله
 
 .blog3 {
   background-color: #faa440;
-}
 }
