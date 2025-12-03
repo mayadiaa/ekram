@@ -71,7 +71,7 @@ document.addEventListener("DOMContentLoaded", function () {
           spaceBetween: 10,
         },
         1008: {
-          slidesPerView: 4,
+          slidesPerView: 3,
           spaceBetween: 10,
         },
         1400: {
@@ -87,6 +87,42 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
+  // programcard Swiper
+  const programcardElement = document.querySelector(".programcardSwiper");
+  if (programcardElement) {
+    const programSwiper = new Swiper(".programcardSwiper", {
+      loop: true,
+      navigation: {
+        nextEl: ".programcard-button-next",
+        prevEl: ".programcard-button-prev",
+      },
+      breakpoints: {
+        320: {
+          slidesPerView: 1,
+        },
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 10,
+        },
+        1008: {
+          slidesPerView: 3,
+          spaceBetween: 20,
+        },
+        1400: {
+          slidesPerView: 3,
+          spaceBetween: 10,
+        },
+      },
+      autoplay:
+
+      {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      slidesPerView: 3,
+      spaceBetween: 30,
+    });
+  }
   // Ramdan Project Swiper
   const ramdanProjectElement = document.querySelector(".RamdanProjectSwiper");
   if (ramdanProjectElement) {
