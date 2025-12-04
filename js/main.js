@@ -455,3 +455,5 @@ const projectSwiper = new Swiper(".ProjectSections", {
                 });
             });
         });
+
+        
