@@ -3664,8 +3664,7 @@ html[dir="rtl"] .RamdanProjects .swiper-button-prev {
 
 @keyframes float {
 
-  0%,
-  100% {
+  0%, 100% {
     transform: translateY(0px);
   }
 
@@ -3942,25 +3941,29 @@ html[dir="rtl"] .RamdanProjects .swiper-button-prev {
   color: #fff;
 }
 
-/* الباترن على الشمال */
+/* Pattern على الشمال */
 .pattern-section {
   position: absolute;
   left: 0;
   top: 0;
   bottom: 0;
   width: 210px;
+  z-index: 1; /* مهم جداً */
 }
 
-.pattern-section .pattern-img {
+.pattern-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
-/* نخلي الكونتينر فوق الباترن */
+/* الكونتينر لازم يكون فوق الباترن */
 .hero-section .container-fluid {
   position: relative;
-  z-index: 1;
+  z-index: 0; /* فوق الباترن */
 }
 
 /* صورة النص */
