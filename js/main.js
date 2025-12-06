@@ -1,4 +1,45 @@
 document.addEventListener("DOMContentLoaded", function () {
+  // ==================== NAVBAR TOGGLE FIX ====================
+  const toggler = document.querySelector('.navbar-toggler');
+  const hamburger = document.querySelector('.custom-hamburger');
+  const navbarCollapse = document.querySelector('.navbar-collapse');
+  
+  if (toggler && hamburger) {
+    // عند الضغط على زرار القائمة
+    toggler.addEventListener('click', function() {
+      hamburger.classList.toggle('active');
+    });
+
+    // مراقبة التغيير في حالة القائمة (Bootstrap events)
+    if (navbarCollapse) {
+      navbarCollapse.addEventListener('hidden.bs.collapse', function () {
+        // لما القائمة تقفل، شيل الـ active class
+        hamburger.classList.remove('active');
+      });
+      
+      navbarCollapse.addEventListener('shown.bs.collapse', function () {
+        // لما القائمة تفتح، ضيف الـ active class
+        hamburger.classList.add('active');
+      });
+    }
+
+    // إغلاق القائمة عند الضغط على أي لينك (موبايل فقط)
+    const navLinks = document.querySelectorAll('.nav-link');
+    navLinks.forEach(link => {
+      link.addEventListener('click', function() {
+        if (window.innerWidth < 992) {
+          const bsCollapse = bootstrap.Collapse.getInstance(navbarCollapse);
+          if (bsCollapse) {
+            bsCollapse.hide();
+          }
+          hamburger.classList.remove('active');
+        }
+      });
+    });
+  }
+
+  // ==================== SWIPER INITIALIZATION ====================
+  
   // Banner Swiper
   const bannerSwiperElement = document.querySelector(".bannerSwiper");
   if (bannerSwiperElement) {
@@ -15,9 +56,6 @@ document.addEventListener("DOMContentLoaded", function () {
       },
     });
   }
-
-  // Check if we're on a mobile device
-  const isMobile = window.innerWidth < 640;
 
   // Statistics Swiper
   const statisticsSwiperElement = document.querySelector(".statisticsSwiper");
@@ -83,11 +121,14 @@ document.addEventListener("DOMContentLoaded", function () {
         nextEl: ".ProjectSection-button-next",
         prevEl: ".ProjectSection-button-prev",
       },
-     
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
     });
   }
 
-  // programcard Swiper
+  // Program Card Swiper
   const programcardElement = document.querySelector(".programcardSwiper");
   if (programcardElement) {
     const programSwiper = new Swiper(".programcardSwiper", {
@@ -113,9 +154,7 @@ document.addEventListener("DOMContentLoaded", function () {
           spaceBetween: 10,
         },
       },
-      autoplay:
-
-      {
+      autoplay: {
         delay: 3000,
         disableOnInteraction: false,
       },
@@ -123,7 +162,8 @@ document.addEventListener("DOMContentLoaded", function () {
       spaceBetween: 30,
     });
   }
-  // Ramdan Project Swiper
+
+  // Ramadan Project Swiper
   const ramdanProjectElement = document.querySelector(".RamdanProjectSwiper");
   if (ramdanProjectElement) {
     const ramdanSwiper = new Swiper(".RamdanProjectSwiper", {
@@ -149,9 +189,7 @@ document.addEventListener("DOMContentLoaded", function () {
           spaceBetween: 10,
         },
       },
-      autoplay:
-
-      {
+      autoplay: {
         delay: 3000,
         disableOnInteraction: false,
       },
@@ -160,39 +198,16 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  // Get the modal element
-  const modal = document.getElementById("exampleModal");
-
-  // MY WORK
-
-  document.addEventListener("DOMContentLoaded", function () {
-    // document.querySelector('.custom-hamburger').addEventListener('click', function() {
-    //   this.classList.toggle('active');
-    //   console.log('ssssssssss');
-
-    // });
-
-    // document.querySelector('.custom-hamburger').addEventListener('click', function() {
-    //   this.classList.toggle('active');
-    //   console.log('ssssssssss');
-
-    // });
-
-    // Select all elements with the class 'Card'
-    const cards = document.querySelectorAll(".home .Card");
-
-    // Add a click event listener to each card
-    cards.forEach((card, idx) => {
-      card.addEventListener("click", function () {
-        // Store the clicked card index in localStorage
-        localStorage.setItem("selectedCardIndex", idx);
-
-        // Redirect to category.html
-        window.location.href = "category.html";
-      });
+  // ==================== CARDS CLICK EVENT ====================
+  const cards = document.querySelectorAll(".home .Card");
+  cards.forEach((card, idx) => {
+    card.addEventListener("click", function () {
+      localStorage.setItem("selectedCardIndex", idx);
+      window.location.href = "category.html";
     });
   });
 
+  // ==================== AMOUNT BUTTONS ====================
   document.querySelectorAll(".swiper-slide").forEach(function (slide) {
     var amountBtns = slide.querySelectorAll(".amount-btn");
     amountBtns.forEach(function (btn) {
@@ -201,51 +216,23 @@ document.addEventListener("DOMContentLoaded", function () {
           b.classList.remove("active-amount");
         });
         btn.classList.add("active-amount");
-        // Optionally, set the input value if present
         var input = slide.querySelector(".custom-card-input");
         if (input) input.value = btn.textContent.replace(/[^\d]/g, "");
       });
     });
   });
-});
 
-//NAV-BAR
-document.addEventListener("DOMContentLoaded", function () {
-  const navLinks = document.querySelectorAll(".navbar-nav .nav-item");
-  const navIcon = document.querySelector(".nav-icon");
-  const collapse = document.querySelector(".navbar-collapse");
-  const customHamburger = document.querySelector(".custom-hamburger");
-  navIcon.addEventListener("click", function () {
-    customHamburger.classList.toggle("active");
-    collapse.classList.toggle("active");
-  });
-  navLinks.forEach((link) => {
-    link.addEventListener("click", function () {
-      link.classList.toggle("show");
-      console.log('link');
-      console.log(link);
-
-
-    });
-  });
-});
-// Fast Pay Animation Implementation
-document.addEventListener("DOMContentLoaded", function () {
-  // Fast Pay functionality
-
+  // ==================== FAST PAY FUNCTIONALITY ====================
   const fastPay = document.querySelector(".fast-pay");
   const fastPayContainer = document.querySelector(".fast-pay .container");
   const donationForm = document.querySelector(".fast-pay .donation-form");
-  const donationOptions = document.querySelectorAll(
-    ".fast-pay .donation-option"
-  );
+  const donationOptions = document.querySelectorAll(".fast-pay .donation-option");
   const projectGroups = document.querySelectorAll(".fast-pay .project-group");
   const projectSelects = document.querySelectorAll(".fast-pay .project-select");
   const donationAmounts = document.getElementById("donation-amounts");
   const amountGroups = document.querySelectorAll(".fast-pay .amount-group");
 
   if (fastPayContainer) {
-    // Toggle expanded state when clicking the container
     fastPayContainer.addEventListener("click", function (e) {
       if (!fastPay.classList.contains("expanded")) {
         fastPay.classList.add("expanded");
@@ -254,16 +241,12 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
 
-    // Handle donation option selection
     donationOptions.forEach((option) => {
       option.addEventListener("click", function (e) {
         e.stopPropagation();
-        // Remove active class from all options
         donationOptions.forEach((opt) => opt.classList.remove("active"));
-        // Add active class to clicked option
         this.classList.add("active");
 
-        // Show corresponding project group
         const selectedOption = this.dataset.option;
         projectGroups.forEach((group) => {
           if (group.dataset.for === selectedOption) {
@@ -273,30 +256,23 @@ document.addEventListener("DOMContentLoaded", function () {
           }
         });
 
-        // Hide donation amounts when changing donation type
         if (donationAmounts) {
           donationAmounts.style.display = "none";
         }
 
-        // Reset project selects
         projectSelects.forEach((select) => {
           select.selectedIndex = 0;
         });
       });
     });
 
-    // Handle project selection
     projectSelects.forEach((select) => {
       select.addEventListener("change", function () {
-        // Show donation amounts section
         if (donationAmounts) {
           donationAmounts.style.display = "block";
         }
 
-        // Get the donation type from the data attribute
         const donationType = this.dataset.type;
-
-        // Show the corresponding amount group
         amountGroups.forEach((group) => {
           if (group.dataset.for === donationType) {
             group.style.display = "block";
@@ -307,32 +283,20 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     });
 
-    // Handle amount button selection
     const amountButtons = document.querySelectorAll(".fast-pay .amount-btn");
     amountButtons.forEach((button) => {
       button.addEventListener("click", function (e) {
         e.stopPropagation();
-
-        // Find the parent amount group
         const parentGroup = this.closest(".amount-group");
-
-        // Remove active class from all buttons in this group
         const groupButtons = parentGroup.querySelectorAll(".amount-btn");
         groupButtons.forEach((btn) => btn.classList.remove("active"));
-
-        // Add active class to clicked button
         this.classList.add("active");
-
-        // You can also update a hidden input or variable with the selected amount
         const amountValue = this.textContent.replace(/[^\d]/g, "");
         console.log("Selected amount:", amountValue);
       });
     });
 
-    // Show initial project group based on active donation option
-    const initialActiveOption = document.querySelector(
-      ".fast-pay .donation-option.active"
-    );
+    const initialActiveOption = document.querySelector(".fast-pay .donation-option.active");
     if (initialActiveOption) {
       const selectedOption = initialActiveOption.dataset.option;
       const correspondingGroup = document.querySelector(
@@ -343,14 +307,12 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     }
 
-    // Prevent form clicks from closing the container
     if (donationForm) {
       donationForm.addEventListener("click", function (e) {
         e.stopPropagation();
       });
     }
 
-    // Close fast pay when clicking outside
     document.addEventListener("click", function (e) {
       if (
         fastPay.classList.contains("expanded") &&
@@ -361,38 +323,24 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
 
-    // Handle escape key to close
     document.addEventListener("keydown", function (e) {
       if (e.key === "Escape" && fastPay.classList.contains("expanded")) {
         fastPay.classList.remove("expanded");
       }
     });
   }
-});
 
-document.addEventListener("DOMContentLoaded", function () {
-  // ... existing code ...
-
-  // Make navigation links active based on current page
+  // ==================== ACTIVE NAV LINK ====================
   function setActiveNavLink() {
-    // Get current page URL
     const currentPage = window.location.pathname.split("/").pop();
-
-    // Get all nav links
     const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
 
-    // Remove active class from all links
     navLinks.forEach((link) => {
       link.classList.remove("active");
     });
 
-    // Add active class to current page link
     navLinks.forEach((link) => {
-      console.log("currentPage", currentPage);
-      console.log("////////");
       const linkHref = link.getAttribute("href");
-      console.log("link", link);
-
       if (
         linkHref === currentPage ||
         (currentPage === "" && linkHref === "index.html") ||
@@ -403,57 +351,5 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  // Call the function when page loads
   setActiveNavLink();
 });
-
-const projectSwiper = new Swiper(".ProjectSections", {
-  slidesPerView: 1,
-  spaceBetween: 20,
-  loop: false,
-  navigation: {
-    nextEl: ".ProjectSection-button-next",
-    prevEl: ".ProjectSection-button-prev",
-  },
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  breakpoints: {
-    768: {
-      slidesPerView: 2,
-      spaceBetween: 20,
-    },
-    992: {
-      slidesPerView: 3,
-      spaceBetween: 22,
-    },
-    1200: {
-      slidesPerView: 4,
-      spaceBetween: 24,
-    },
-  },
-});
-  document.addEventListener('DOMContentLoaded', function() {
-            const toggler = document.querySelector('.navbar-toggler');
-            const hamburger = document.querySelector('.custom-hamburger');
-            
-            toggler.addEventListener('click', function() {
-                hamburger.classList.toggle('active');
-            });
-
-            // Close menu when clicking on a link (mobile)
-            const navLinks = document.querySelectorAll('.nav-link');
-            navLinks.forEach(link => {
-                link.addEventListener('click', function() {
-                    if (window.innerWidth < 992) {
-                        const collapse = document.querySelector('.navbar-collapse');
-                        const bsCollapse = new bootstrap.Collapse(collapse, {toggle: false});
-                        bsCollapse.hide();
-                        hamburger.classList.remove('active');
-                    }
-                });
-            });
-        });
-
-        

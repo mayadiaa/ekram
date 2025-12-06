@@ -3476,7 +3476,7 @@ html[dir="rtl"] .RamdanProjects .swiper-button-prev {
     color: #2c5f5d !important;
     font-weight: 600;
     font-size: 1.1rem;
-    padding: 0.5rem 1rem !important;
+    /* padding: 0.5rem 1rem !important; */
     transition: all 0.3s ease;
     position: relative;
   }
@@ -3656,7 +3656,8 @@ html[dir="rtl"] .RamdanProjects .swiper-button-prev {
   /* أطول من الهيدر */
   object-fit: cover;
   position: absolute;
-  top: -170px;
+  top: -204px;
+  z-index: 9000;
   /* طالعة فوق الهيدر */
   left: -45px !important;
   /* animation: float 6s ease-in-out infinite; */
@@ -3929,70 +3930,7 @@ html[dir="rtl"] .RamdanProjects .swiper-button-prev {
 /* ========================================= */
 /* HERO */
 /* ========================================= */
-.hero-section {
-  position: relative;
-  min-height: calc(100vh - 80px);
-  /* ارتفاع الشاشة تقريبًا بعد النافبار */
-  display: flex;
-  align-items: center;
-  overflow: hidden;
-  background: #1f6f68;
-  /* اللون الأخضر الرئيسي */
-  color: #fff;
-}
 
-/* Pattern على الشمال */
-.pattern-section {
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  width: 210px;
-  z-index: 1; /* مهم جداً */
-}
-
-.pattern-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-/* الكونتينر لازم يكون فوق الباترن */
-.hero-section .container-fluid {
-  position: relative;
-  z-index: 0; /* فوق الباترن */
-}
-
-/* صورة النص */
-.main-image-container {
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-.main-image {
-  width: 100%;
-  height: auto;
-  border-radius: 24px;
-  object-fit: cover;
-}
-
-/* جزء النص */
-.content-section {
-  color: #fff;
-  text-align: right;
-}
-
-.content-wrapper {
-  max-width: 380px;
-  margin-right: auto;
-}
-
-.logo-img {
-  width: 150px;
-}
 
 /* الوصف */
 .description {
@@ -4080,4 +4018,12 @@ html[dir="rtl"] .RamdanProjects .swiper-button-prev {
   .star {
     font-size: 26px;
   }
+}
+
+.user-cart {
+      margin-left: 17rem;
+
+      a {
+        color: #2c5f5d !important;
+      }
 }
