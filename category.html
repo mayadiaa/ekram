@@ -1,553 +1,639 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>الاقسام</title>
+<html lang="ar">
 
-    <!--Bootstrap cdn -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>الصفحة الرئيسية</title>
+  <!--Bootstrap cdn -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/bootstrap-icons.css" rel="stylesheet">
 
-    <!--Font awsome-->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <!--Animation -->
-    <link rel="stylesheet" href="css/animate.css" />
-    <!--Swiper-->
-    <link rel="stylesheet" href="css/swiper.min.css" />
-    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
 
-    <!-- Custom Stylsheet-->
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/category.css" />
-    <link rel="stylesheet" href="css/custom-card.css" />
-  </head>
+  <!--Font awsome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!--Animation -->
+  <link rel="stylesheet" href="css/animate.css" />
+  <!--Swiper-->
+  <link rel="stylesheet" href="css/swiper.min.css" />
+  <link rel="stylesheet" href="css/swiper-bundle.min.css" />
 
-  <body>
- <header>
-    <div class="topBar">
-      <img class="back" src="img/header_background.png" alt="">
-      <div class="UserBox ">
-        <div onclick="window.location.href='index.html'" class="logoBox p-4 ">
-          <img src="./img/00.png" class="img-fluid logo-img" alt="" />
+  <link rel="stylesheet" href="css\bootstrap.min.css">
+  <!-- Custom Stylsheet-->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/category.css" />
+  <link rel="stylesheet" href="css/cart.css" />
+  <link rel="stylesheet" href="css/custom-card.css" />
+  <link rel="stylesheet" href="css/fast-pay.css">
+  <script src="https://unpkg.com/swiper@9/swiper-bundle.min.js"></script>
+
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom" dir="ltr">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <div class="custom-hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
-        <div class=" d-none d-lg-block phone">
-          <!-- <i class="fas fa-phone"></i> -->
-          <a class="header_contact " style="text-decoration:none;" href="tel:966537066621"><i
-              class="fas fa-phone phoneIcon text-white"></i><b class="navicon">اتصل بنا</b><br /><span
-              class="navicon">966537066621</span></a>
+      </button>
+
+      <!-- Logo -->
+      <a class="navbar-brand d-lg-none " href="#">
+        <img src="img/00.png" alt="Logo">
+      </a>
+
+      <div class="user-cart d-none d-lg-flex">
+        <a href="login.html"><i class="fa-solid fa-user fs-5"></i></a>
+        <a href="cart.html"><i class="fa-solid fa-cart-shopping mx-3 fs-5"></i></a>
+      </div>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav gap-3">
+          <li class="nav-divider"></li>
+
+          <li class="nav-item">
+                    <a class="nav-link" href="#">الرئيسية</a>
+                </li>
+                <li class="nav-divider"></li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">الخدمات</a>
+                </li>
+                <li class="nav-divider"></li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">من نحن</a>
+                </li>
+                <li class="nav-divider"></li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">تواصل معنا</a>
+                </li>
+                <li class="nav-divider"></li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">المركز الإعلامي</a>
+                </li>
+
+          <div class="user-cart d-lg-none mt-3">
+            <a href="login.html"><i class="fa-solid fa-user fs-5"></i></a>
+            <a href="cart.html"><i class="fa-solid fa-cart-shopping mx-3 fs-5"></i></a>
+          </div>
+        </ul>
+
+      </div>
+
+
+    </div>
+  </nav>
+
+  <!-- Header Section -->
+  <header class="hero-section" dir="ltr">
+
+    <!-- Left Side - Decorative Pattern -->
+    <div class="pattern-section d-none d-lg-block">
+      <img src="./img/1.png" alt="زخارف" class="pattern-img">
+    </div>
+    <div class="container-fluid h-100">
+      <div class="row h-100 align-items-center">
+
+        <div class="col-lg- col-md-3 d-none d-md-block">
+
         </div>
-        <div class="useraction mx-auto mx-lg-0">
-          <!-- <div onclick="window.location.href='index.html'" class="logoBoxModile  d-lg-none text-center">
-            <img src="img/00.png" class="img-fluid" alt="" />
-          </div> -->
 
-          <div class="loginbox ">
-            <div class="user ">
-              <div onclick="window.location.href='cart.html' " class="basket p-2 ms-3 position-relative">
+        <!-- Center - Main Image -->
+        <div class="col-lg-5 col-md-6 col-12 text-center">
+          <div class="main-image-container">
+            <img src="./img/3.png" alt="كبار السن" class="img-fluid rounded-4  main-image">
+          </div>
+        </div>
 
-                <i class="fa-solid fa-cart-shopping fs-4 navicon"></i>
-
-                <span class="Badge position-absolute top-0 start-100 translate-middle badge rounded-pill">
-                  1
-                </span>
-              </div>
-              <div class="user-items">
-
-                <div onclick="window.location.href='profile.html'  " class="usericon p-2">
-                  <i class="fa-solid fa-user fs-4 navicon"></i>
-                </div>
-                <div onclick="window.location.href='login.html'  " class="usertext px-2">
-                  <a class="me-4" href="./login.html">تسجيل دخول</a>
-                </div>
-              </div>
-
+        <!-- Right Side - Content -->
+        <div class="col-lg-4 col-md-3 col-12 content-section">
+          <div class="content-wrapper">
+            <!-- Logo -->
+            <div class="logo-container mb-4">
+              <img src="./img/00.png" alt="جمعية إكرام المسنين" class="logo-img">
             </div>
-            <div class="DonateNow d-flex justify-content-end">
-              <!-- <div class="usertext DonateNowBox px-2 mt-3">
-                    <a class="me-4"> تبرع الان </a>
-                  </div> -->
-            </div>
-            <div class="nav-left">
-              <div class="user-mobile ">
-                <div onclick="window.location.href='cart.html' " class="basket-mobile  position-relative">
 
-                  <i class="fa-solid fa-cart-shopping fs-4"></i>
+            <!-- Description -->
+            <p class="description second-font">
+              نسعى لتقديم أفضل الخدمات الإنسانية لتحسين
+              جودة حياة كبار السن من خلال البرامج والمبادرات
+              النوعية والشراكات الفاعلة
+            </p>
 
-                  <span class="Badge ">
-                    1
-                  </span>
-                </div>
-                <div class="user-items-mobile">
+            <!-- CTA Button -->
+            <a href="#testimonials" class="btn btn-outline-light btn-lg second-font cta-button">
+              ماذا قالوا عنا ؟؟
+            </a>
 
-                  <div onclick="window.location.href='profile.html'  " class="usericon-mobile ">
-                    <i class="fa-solid fa-user fs-4"></i>
-                  </div>
-
-                </div>
-
-              </div>
-
-
-              <div class="nav-icon">
-                <button class="navbar-toggler custom-hamburger" type="button">
-                  <span class="hamburger-bar"></span>
-                  <span class="hamburger-bar"></span>
-                  <span class="hamburger-bar"></span>
-                </button>
-              </div>
+            <!-- Decorative Stars -->
+            <div class="stars-decoration">
+              <span class="star star-1">✦</span>
+              <span class="star star-2">✦</span>
             </div>
           </div>
         </div>
+
       </div>
     </div>
-
-<nav class="navbar navbar-expand-lg  position-relative">
-      <div class="container nav-content">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-end w-100 pe-0">
-
-            <!-- Example dropdown item -->
-            <li class="nav-item dropdown">
-              <a href="./index.html" class="nav-link ">الرئيسية</a>
-
-            </li>
-            <!-- Repeat for other nav items -->
-            <li class="nav-item dropdown">
-              <a class="nav-link " href="./about-us.html">من نحن</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link" href="./category.html">الاقسام</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link" href="./hawkama.html">الحوكمة</a>
-            </li>
-          <li class="nav-item dropdown">
-              <a class="nav-link " href="./Beneficiary-registration.html">المستفيدين</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link " href="./activities.html">المركز الاعلامى</a>
-            </li>
-
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
-              >الفرص التطوعية</a>
-              <ul class="dropdown-menu text-end">
-                <li><a class="dropdown-item"  href="./Volunteer-registration.html">الفرص المتاحة</a></li>
-                <li><a class="dropdown-item"  href="./Volunteer-registration.html">سجل كمتطوع</a></li>
-                <li><a class="dropdown-item"  href="./Volunteer-registration.html">دليل المتطوع</a></li>
-              </ul>
-            </li>
-              <li class="nav-item dropdown">
-              <a class="nav-link " href="./profile.html">الملف الشخصى</a>
-            </li>
-            <!-- Search form -->
-            <!-- <form class="search-form position-relative" role="search">
-            <input type="search" placeholder="البحث" aria-label="Search" />
-            <i class="fa-solid fa-magnifying-glass position-absolute"></i>
-          </form> -->
-        </div>
-      </div>
-    </nav>
   </header>
-   <main  class="category-page">
-  <section class="sections home">
-    <div class="category-container">
-      <p class="title text-center">الأقســـــــام</p>
 
-      <div class="SectionSwiper mt-5">
-        <div class="swiper ProjectSections">
-          <div class="swiper-wrapper">
 
-            <!-- كارت 1 - مشاريع رمضان -->
-            <div class="swiper-slide">
-              <div class="category-content Card creative-card creative-ramadan">
-                <div class="creative-bg-circle"></div>
+  <div class="fast-pay">
+    <div class="container">
+      <div class="white-layer"></div>
+      <span class="plus-btn">+</span>
+      <h6>تبرع سريع</h6>
+    </div>
 
-                <div class="creative-top">
-                  <span class="creative-chip">رمضان</span>
-                  <span class="creative-icon">
-                    <i class="fa-solid fa-moon"></i>
-                  </span>
-                </div>
 
-                <div class="creative-image-wrap">
-                  <img class="category-img" src="img/project1.png" alt="مشاريع رمضان">
-                </div>
+    <div class="donation-form">
+      <div class="form-title">اختر نوع التبرع</div>
 
-                <div class="creative-body">
-                  <div class="category-desc"></div>
-                  <p class="creative-text">
-                    إفطار صائم، سلال غذائية، كفالة أسر محتاجة في أفضل مواسم الخير.
-                  </p>
-                  <button class="creative-btn">مشاريع رمضان</button>
-                </div>
+      <div class="donation-options">
+        <div class="donation-option active" data-option="الإطعام">الإطعام</div>
+        <div class="donation-option" data-option="السكن">السكن</div>
+        <div class="donation-option" data-option="الكسوة">الكسوة</div>
+      </div>
+
+      <!-- Project selection groups - each for a specific donation type -->
+      <div class="project-selection-container">
+        <!-- Projects for الإطعام -->
+        <div class="project-group" data-for="الإطعام">
+          <div class="form-group">
+            <select class="project-select" data-type="الإطعام">
+              <option selected disabled>اختيار مشروع الإطعام</option>
+              <option value="إفطار صائم">مشروع إفطار صائم</option>
+              <option value="إطعام مسكين">مشروع إطعام مسكين</option>
+              <option value="وجبات الخير">مشروع وجبات الخير</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Projects for السكن -->
+        <div class="project-group" data-for="السكن" style="display: none;">
+          <div class="form-group">
+            <select class="project-select" data-type="السكن">
+              <option selected disabled>اختيار مشروع السكن</option>
+              <option value="ترميم منازل">مشروع ترميم منازل</option>
+              <option value="بناء وحدات سكنية">مشروع بناء وحدات سكنية</option>
+              <option value="تأثيث منازل">مشروع تأثيث منازل</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Projects for الكسوة -->
+        <div class="project-group" data-for="الكسوة" style="display: none;">
+          <div class="form-group">
+            <select class="project-select" data-type="الكسوة">
+              <option selected disabled>اختيار مشروع الكسوة</option>
+              <option value="كسوة العيد">مشروع كسوة العيد</option>
+              <option value="كسوة الشتاء">مشروع كسوة الشتاء</option>
+              <option value="كسوة المدارس">مشروع كسوة المدارس</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <!-- Donation Amount Buttons - Initially Hidden -->
+      <div class="donation-amounts" id="donation-amounts" style="display: none;">
+        <!-- Default amounts for الإطعام -->
+        <div class="amount-group" data-for="الإطعام">
+          <div class="form-title">اختر مبلغ التبرع</div>
+          <div class="amount-buttons">
+            <button type="button" class="amount-btn amount-btn-1">50 <span class="currency">ر.س</span></button>
+            <button type="button" class="amount-btn amount-btn-2">100 <span class="currency">ر.س</span></button>
+            <button type="button" class="amount-btn amount-btn-3">200 <span class="currency">ر.س</span></button>
+            <button type="button" class="amount-btn amount-btn-4">500 <span class="currency">ر.س</span></button>
+          </div>
+        </div>
+
+        <!-- Amounts for السكن -->
+        <div class="amount-group" data-for="السكن" style="display: none;">
+          <div class="form-title">اختر مبلغ التبرع</div>
+          <div class="amount-buttons">
+            <button type="button" class="amount-btn amount-btn-1">200 <span class="currency">ر.س</span></button>
+            <button type="button" class="amount-btn amount-btn-2">500 <span class="currency">ر.س</span></button>
+            <button type="button" class="amount-btn amount-btn-3">1000 <span class="currency">ر.س</span></button>
+            <button type="button" class="amount-btn amount-btn-4">2000 <span class="currency">ر.س</span></button>
+          </div>
+        </div>
+
+        <!-- Amounts for الكسوة -->
+        <div class="amount-group" data-for="الكسوة" style="display: none;">
+          <div class="form-title">اختر مبلغ التبرع</div>
+          <div class="amount-buttons">
+            <button type="button" class="amount-btn amount-btn-1">150 <span class="currency">ر.س</span></button>
+            <button type="button" class="amount-btn amount-btn-3">450 <span class="currency">ر.س</span></button>
+            <button type="button" class="amount-btn amount-btn-4">600 <span class="currency">ر.س</span></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <input type="tel" class="form-control" placeholder="الجوال">
+      </div>
+
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="الاسم">
+      </div>
+
+      <div class="form-title">وسيلة الدفع</div>
+
+      <div class="payment-methods">
+        <div class="img-container">
+
+          <img src="img/pay-4.png" alt="MasterCard">
+          <img src="img/pay-2.png" alt="Visa">
+          <img src="img/pay-1.png" alt="Apple Pay">
+        </div>
+
+      </div>
+
+
+      <div class="bank payment-content">
+        <div class="payment-fields bank-fields">
+          <div class="form-group bank-form">
+            <label for="bank-name">اسم البنك</label>
+            <select class="bank-input" id="bank-name">
+              <option value="alrajhi">مصرف الراجحي</option>
+              <option value="alahli">البنك الأهلي</option>
+              <option value="sabb">بنك ساب</option>
+              <option value="riyad">بنك الرياض</option>
+              <!-- Add more banks as needed -->
+            </select>
+          </div>
+          <div class="form-group bank-form">
+            <label for="account-owner">اسم صاحب الحساب</label>
+            <input class="bank-input " type="text" id="account-owner">
+          </div>
+          <div class="form-group bank-form">
+            <label for="account-number">رقم الحساب</label>
+            <input class="bank-input" type="text" id="account-number">
+          </div>
+          <div class="form-group bank-form">
+            <label for="iban-number">رقم الايبان</label>
+            <input class="bank-input" type="text" id="iban-number">
+          </div>
+          <button type="button" class="pay-btn attach-btn" style="background: #469e8d; min-width: 180px;">
+            ارفاق إيصال الدفع
+            <span style="font-size: 0.9rem; margin-right: 8px; color: #333;">Pdf - jpeg - png</span>
+            <i class="fa fa-paperclip"></i>
+          </button>
+
+        </div>
+        <div class="cart-form-actions">
+          <p class="proceed-text">
+            اتمام الدفع
+          </p>
+          <button type="submit" class="pay-btn"><i class="fa fa-check"></i> الدفع</button>
+          <button type="button" class="cancel-btn"><i class="fa fa-times"></i></button>
+        </div>
+      </div>
+
+      <div class="applepay payment-content">
+        <div class="payment-fields applepay-fields" style="text-align:center;">
+          <div class="form-group applepay-form" style="justify-content:center;">
+            <span class="bank-text" style="font-size:1.2rem;display:block;margin-bottom:.5rem;">الدفع من خلال ابل
+              باي</span>
+          </div>
+        </div>
+        <div class="cart-form-actions">
+          <p class="proceed-text">
+            اتمام الدفع
+          </p>
+          <button type="submit" class="pay-btn"><i class="fa fa-check"></i> الدفع</button>
+          <button type="button" class="cancel-btn"><i class="fa fa-times"></i></button>
+        </div>
+      </div>
+
+      <div class="visa payment-content">
+
+        <div class="label bank-text">
+          <p>الدفع من خلال البطاقة البنكية</p>
+        </div>
+        <div class="payment-fields bank-fields">
+          <div class="form-group bank-form">
+            <label for="card-number">رقم البطاقة</label>
+            <input class="bank-input" type="text" id="card-number">
+          </div>
+          <div class="form-group bank-form">
+            <label for="card-name">اسم على البطاقة</label>
+            <input class="bank-input" type="text" id="card-name">
+          </div>
+          <div class="payment-row fast-pay-payment-row ">
+            <div class="form-group bank-form exp-form">
+              <label for="exp-month">تاريخ الانتهاء</label>
+              <div class="exp-date-inputs">
+                <input class="bank-input" type="text" id="exp-month" name="exp-month" maxlength="2" placeholder="MM">
+                <span class="exp-divider">|</span>
+                <input class="bank-input" type="text" id="exp-year" name="exp-year" maxlength="2" placeholder="YY">
               </div>
             </div>
-
-         
-            <!--
-            <div class="swiper-slide">
-              ...
+            <div class="form-group bank-form ccv-form">
+              <label for="ccv">رمز الامان CCV</label>
+              <input class="bank-input ccv-input" type="text" id="ccv" name="ccv">
             </div>
-            -->
+
+          </div>
+        </div>
+        <div class="cart-form-options ">
+          <label class="custom-checkbox">
+            <input type="checkbox">
+            <span class="checkmark"></span>
+            أرغب في حفظ بيانات البطاقة
+          </label>
+          <div class="accept-code-form ">
+            <label> ادخل كود التحقق</label>
+            <input type="text" class="bank-input accept-input">
+          </div>
+        </div>
+        <div class="cart-form-actions">
+          <p class="proceed-text">
+            اتمام الدفع
+          </p>
+          <button type="submit" class="pay-btn"><i class="fa fa-check"></i> الدفع</button>
+          <button type="button" class="cancel-btn"><i class="fa fa-times"></i></button>
+        </div>
+        <div class="cart-form-policy bank-form">
+          <label class="custom-checkbox">
+            <input type="checkbox" checked>
+            <span class="checkmark"></span>
+            الموافقة على
+            <a>
+              سياسات التبرع</a>
+          </label>
+        </div>
+
+
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ... existing code ... -->
+
+  <main>
+    <div class="banner">
+      <!-- WhatsApp Icon -->
+      <a href="https://wa.me/+966XXXXXXXXX" class="whatsapp-icon">
+        <i class="fa-brands fa-whatsapp"></i>
+      </a>
+
+
+    
+
+
+      <!-- الاقسام -->
+      <section class="programs-section py-5" dir="rtl">
+        <div class="container">
+
+          <!-- Title -->
+          <div class="text-center mb-5">
+            <h1 class="fw-bold main-font mb-3">
+              <span style="color:#469e8d ;">البرامج</span>
+              <span style="color:#faa440 ;">والمبادرات </span>
+              <span style="color:#ee5a34 ;">والفعاليات</span>
+            </h1>
+
 
           </div>
 
-          <!-- لو حابب تضيف نقاط أو أزرار تنقّل -->
-          <div class="swiper-pagination"></div>
-          <!--
-          <div class="swiper-button-prev ProjectSection-button-prev"></div>
-          <div class="swiper-button-next ProjectSection-button-next"></div>
-          -->
+          <!-- Cards -->
+
+          <div class="swiper ProjectSections">
+            <div class="swiper-wrapper">
+              <!-- Card 1 -->
+
+              <div class=" swiper-slide">
+                <a href="singlecategory.html" class="text-decoration-none">
+                     <div class="program-card h-100">
+                  <div class="program-card-img">
+                    <img src="img/Capture.PNG" class="img-fluid" alt="برنامج ترفيهي">
+                  </div>
+                  <div class="program-card-body program-card-entertain">
+                    <div class="program_title">
+                      <h1 class="program-card-title fw-bold mb-3 main-font">ترفيهية</h1>
+                      <img src="./img/3 (4).png" class="programImg">
+                    </div>
+                    <div class="programP">
+                      <p class="mb-0 desc_P second-font">
+                        تهدف البرامج الترفيهية إلى إدخال البهجة في
+                        حياة كبار السن عبر أنشطة ممتعة تحفز الحركة
+                        والابتسامة.وتشمل الهوايات والعاب والرحلات
+                        والفعاليات التي تساعد على تنشيط الذاكرة
+                        .وتحسين الحالة المزاجية وتحسين الحالة المزاجية.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                </a>
+             
+              </div>
+
+              <!-- Card 2 -->
+              <div class=" swiper-slide">
+                <a href="singlecategory.html" class="text-decoration-none">
+                <div class="program-card h-100">
+                  <div class="program-card-img">
+                    <img src="img/Capture2.PNG" class="img-fluid" alt="برامج اجتماعية">
+                  </div>
+                  <div class="program-card-body program-card-social">
+                    <div class="program_title">
+                      <h1 class="program-card-title fw-bold mb-3 main-font">اجتماعية</h1>
+                      <img src="img/2 (4).png" class="programImg">
+                    </div>
+
+                    <div class="programP">
+                      <p class="mb-0 desc_P second-font">
+                        تركز البرامج الاجتماعية على تعزيز الروابط بين كبار السن من خلال
+                        لقاءات ودورات وأنشطة جماعية تسهم في الحد من العزلة الاجتماعية وبناء
+                        شبكة دعم إيجابية تشجّع على التفاعل والمشاركة المستمرة.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                 </a>
+
+              </div>
+
+              <!-- Card 3 -->
+              <div class=" swiper-slide">
+                <a href="singlecategory.html" class="text-decoration-none">
+                <div class="program-card h-100">
+                  <div class="program-card-img">
+                    <img src="img/Capture3.PNG" class="img-fluid" alt="برامج توعوية">
+                  </div>
+                  <div class="program-card-body program-card-awareness">
+                    <div class="program_title">
+                      <h1 class="program-card-title fw-bold mb-3 main-font">توعوية</h1>
+                      <img src="img/1 (7).png" class="programImg">
+                    </div>
+
+                    <div class="programP">
+                      <p class="mb-0 desc_P second-font">
+                        توفّر البرامج التوعوية معلومات صحية ونفسية تساعد كبار السن على فهم
+                        احتياجاتهم والتعامل مع التحديات اليومية بثقة، وتهدف إلى رفع مستوى
+                        الوعي بأساليب الحياة الصحية والوقاية من الأمراض وتعزيز الاستقلالية
+                        وجودة الحياة.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                  </a>
+              </div>
+              <!-- Card 4-->
+              <div class=" swiper-slide">
+                <a href="singlecategory.html" class="text-decoration-none">
+                <div class="program-card h-100">
+                  <div class="program-card-img">
+                    <img src="img/Capture2.PNG" class="img-fluid" alt="برامج اجتماعية">
+                  </div>
+                  <div class="program-card-body program-card-edu">
+                    <div class="program_title">
+                      <h1 class="program-card-title fw-bold mb-3 main-font">تعليميه</h1>
+                      <img src="img/2 (4).png" class="programImg">
+                    </div>
+
+                    <div class="programP">
+                      <p class="mb-0 desc_P second-font">
+                        تركز البرامج الاجتماعية على تعزيز الروابط بين كبار السن من خلال
+                        لقاءات ودورات وأنشطة جماعية تسهم في الحد من العزلة الاجتماعية وبناء
+                        شبكة دعم إيجابية تشجّع على التفاعل والمشاركة المستمرة.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                  </a>
+              </div>
+
+            </div>
+            <div class="swiper-button-next ProjectSection-button-next"></div>
+            <div class="swiper-button-prev ProjectSection-button-prev"></div>
+          </div>
+        </div>
+      </section>
+
+
+
+   
+
+  </main>
+
+
+
+  <!--  -->
+  <footer>
+    <div class="row">
+      <div class="col-12 col-lg-3 p-0">
+        <div class="first p-3">
+          <div class="footer-text">
+
+            <h2 class="first-title">عــن الجمعية</h2>
+            <p class="first-text">هي منظمة خيرية غير ربحية تهدف الي دعم و مساعدة اهالي الاحياء الاكثر احتياجا. من خلال
+              تقديم حلول مستدامه تعزز جودة الحياة و تلبي الاحتياجات الاساسية.</p>
+          </div>
+          <div class="socialIncons d-flex justify-content-center align-items-center mt-4">
+            <a class="icon">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a class="icon">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+
+            <a class="icon">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+
+            <a class="icon">
+              <i class="fa-brands fa-x-twitter"></i>
+            </a>
+
+            <a class="icon">
+              <i class="fa-brands fa-snapchat"></i>
+            </a>
+
+            <a class="icon">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+          </div>
+          <p class="mt-1 text-center d-none d-md-block text-white">
+            جميع الحقوق محفوظة 2025 &#169;
+
+          </p>
+        </div>
+      </div>
+      <div class="col-12 col-lg-3 p-0">
+        <div class="secand p-3 h-100">
+          <h5>أهم الروابط :</h5>
+          <ul class="text-center">
+            <li>البرامج الخيرية</li>
+            <li>أهم المشارريع</li>
+            <li>الحالات الطارئة</li>
+            <li>الحسابات البنكية</li>
+            <li>المستفيدين</li>
+            <li>التبرع السريع</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-12 col-lg-3 p-0">
+        <div class="thrid h-100 d-flex flex-column justify-content-center align-items-center p-3 p-lg-0">
+          <div class="ImgContainer d-flex justify-content-between align-items-center">
+            <img src="img/00.png" class="img-fluid" alt="" />
+            <!-- <img src="img/00.png" class="img-fluid" alt="" /> -->
+          </div>
+          <div class="ImgContainer2 d-flex justify-content-center align-items-center mt-2">
+            <img src="img/pay-1.png" class="img-fluid" alt="" />
+            <img src="img/pay-2.png" class="img-fluid" alt="" />
+            <img src="img/pay-4.png" class="img-fluid" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-3  p-0 four">
+        <div class="fourth d-flex flex-column justify-content-start align-items-center h-100">
+          <h2 class="fourth-title">معلومات الاتصال</h2>
+          <div class="fristrow  d-flex justify-content-center align-items-center ">
+            <a class="contact">
+              <span>0500000</span>
+              <i class="fa-solid fa-phone"></i>
+            </a>
+            <a class="contact">
+              <span>0120555</span>
+              <i class="fa-solid fa-blender-phone"></i>
+            </a>
+          </div>
+          <div class="Secandrow  my-3">
+            <a class="contact">
+              <span>
+                email@gmail.com
+              </span>
+              <i id="email-icon" class="fa-solid fa-envelope"></i>
+            </a>
+          </div>
+          <div class="ThridRow d-flex justify-content-between align-items-center">
+            <img src="img/pay-6.png" class="img-fluid" alt="" />
+            <img src="img/pay-7.png" class="img-fluid" alt="" />
+          </div>
+          <p class="mt-3 text-center d-md-none">
+            جميع الحقوق محفوظة 2025 &#169;
+          </p>
         </div>
       </div>
     </div>
-  </section>
+    <img src="./img/1.jpg" style="height: 4rem;
+">
+  </footer>
+  <!--Bootstrap cdn -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/cart.js"></script>
 
-  <!-- سكشن برامج رمضان (كروت شبGRID) -->
-      <section class="RamdanProjects ">
-      <div class="container pb-2 text-center">
-        <h2 class="TheH2">برامج متنوعة تستحق عطائكم و دعمكم</h2>
-        <div class="Ramdan position-relative">
-          <div class="swiper RamdanProjectSwiper">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
+</body>
 
-              <div class="swiper-slide">
-                <!-- Card with input for amount only -->
-                <div class="CardBox custom-card">
-                  <div
-                    class="custom-card-header d-flex align-items-center justify-content-between custom-card-header-bg">
-                    <span class="custom-card-title">إفطار صائم بصحن الحرم</span>
-                    <i class="fa-solid fa-share-nodes custom-card-icon"></i>
-                  </div>
-                  <div onclick="window.location.href='project.html'" class="custom-card-img custom-card-img-bg">
-                    <img src="img/project3.png" alt="project" class="custom-card-img-el">
-                  </div>
-                  <div class="custom-card-body custom-card-body-bg">
-                    <div class="money-collected">
-
-                      <div class="d-flex justify-content-between mb-2 custom-card-amount-row">
-                        <span>تم جمع: <br>500,000 ر.س</span>
-                        <span>المبلغ المتبقي: <br>500,000 ر.س</span>
-                      </div>
-                      <div class="progress mb-2 custom-card-progress">
-                        <div class="progress-bar custom-card-progress-bar">
-                          %50
-                        </div>
-
-                      </div>
-                    </div>
-                    <div class="input-open-container">
-
-                      <input class="form-control open" type="text" placeholder="مبلغ التبرع">
-                    </div>
-
-                    <div class="d-flex align-items-center justify-content-between mb-3 custom-card-action-row">
-                      <input disabled class="form-control custom-card-input" type="text" placeholder=":مبلغ التبرع">
-                      <a href="./project.html">
-                        <button class="btn btn-success flex-grow-1 custom-card-donate-btn">
-                          تبرع الآن
-                        </button>
-                      </a>
-                      <button class="btn btn-outline-secondary custom-card-cart-btn">
-                        <i class="fa-solid fa-cart-plus"></i>
-                      </button>
-                    </div>
-
-                  </div>
-                </div>
-                <!-- <div class="infoBox text-center mt-1">
-                  <button class="button-more d-inline-block"> المزيـــــــــد </button>
-                </div> -->
-              </div>
-
-
-              <div class="swiper-slide">
-                <!-- Card with input and fixed amounts -->
-                <div class="CardBox custom-card">
-                  <div
-                    class="custom-card-header d-flex align-items-center justify-content-between custom-card-header-bg">
-                    <span class="custom-card-title">إفطار صائم بصحن الحرم</span>
-                    <i class="fa-solid fa-share-nodes custom-card-icon"></i>
-                  </div>
-                  <div onclick="window.location.href='project.html'" class="custom-card-img custom-card-img-bg">
-                    <img src="img/project3.png" alt="project" class="custom-card-img-el">
-                  </div>
-                  <div class="custom-card-body custom-card-body-bg">
-                    <div class="money-collected">
-
-                      <div class="d-flex justify-content-between mb-2 custom-card-amount-row">
-                        <span>تم جمع: <br>500,000 ر.س</span>
-                        <span>المبلغ المتبقي: <br>500,000 ر.س</span>
-                      </div>
-                      <div class="progress mb-2 custom-card-progress">
-                        <div class="progress-bar custom-card-progress-bar">
-                          %50
-                        </div>
-                      </div>
-                    </div>
-                    <div class="d-flex align-items-center justify-content-between mb-3 custom-card-btn-row">
-                      <button class="amount-btn amount-btn-500">500 <span>ر.س</span> </button>
-                      <button class="amount-btn amount-btn-100">100 <span>ر.س</span> </button>
-                      <button class="amount-btn amount-btn-50">50 <span>ر.س</span> </button>
-                      <input class="form-control custom-card-input" type="text" placeholder="مبلغ ">
-
-                    </div>
-                    <div class="d-flex align-items-center justify-content-between mb-3 custom-card-action-row">
-                      <input disabled class="form-control custom-card-input" type="text" placeholder=":مبلغ التبرع">
-                      <a href="./project.html">
-                        <button class="btn btn-success flex-grow-1 custom-card-donate-btn">
-                          تبرع الآن
-                        </button>
-                      </a>
-                      <button class="btn btn-outline-secondary custom-card-cart-btn">
-                        <i class="fa-solid fa-cart-plus"></i>
-                      </button>
-                    </div>
-
-
-                  </div>
-                </div>
-                <!-- <div class="infoBox text-center mt-1">
-                  <button class="button-more d-inline-block"> المزيـــــــــد </button>
-                </div> -->
-              </div>
-
-              <div class="swiper-slide">
-                <!-- Card with multiple fixed amounts only -->
-                <div class="CardBox custom-card">
-                  <div
-                    class="custom-card-header d-flex align-items-center justify-content-between custom-card-header-bg">
-                    <span class="custom-card-title">إفطار صائم بصحن الحرم</span>
-                    <i class="fa-solid fa-share-nodes custom-card-icon"></i>
-                  </div>
-                  <div onclick="window.location.href='project.html'" class="custom-card-img custom-card-img-bg">
-                    <img src="img/project3.png" alt="project" class="custom-card-img-el">
-                  </div>
-                  <div class="custom-card-body custom-card-body-bg">
-                    <div class="money-collected">
-
-                      <div class="d-flex justify-content-between mb-2 custom-card-amount-row">
-                        <span>تم جمع: <br>500,000 <span>ر.س</span> </span>
-                        <span>المبلغ المتبقي: <br>500,000 <span>ر.س</span> </span>
-                      </div>
-                      <div class="progress mb-2 custom-card-progress">
-                        <div class="progress-bar custom-card-progress-bar">
-                          %50
-                        </div>
-                      </div>
-                    </div>
-                    <div class="d-flex align-items-center justify-content-between mb-3 custom-card-btn-row">
-                      <button class="amount-btn amount-btn-500">500 <span>ر.س</span> </button>
-                      <button class="amount-btn amount-btn-100">100 <span>ر.س</span> </button>
-                      <button class="amount-btn amount-btn-50">50 <span>ر.س</span> </button>
-                      <!-- <span class="custom-card-donation-label">مبلغ التبرع</span> -->
-                    </div>
-                    <div class="d-flex align-items-center justify-content-between mb-3 custom-card-action-row">
-                      <input disabled class="form-control custom-card-input" type="text" placeholder=":مبلغ التبرع">
-                      <a href="./project.html">
-                        <button class="btn btn-success flex-grow-1 custom-card-donate-btn">
-                          تبرع الآن
-                        </button>
-                      </a>
-                      <button class="btn btn-outline-secondary custom-card-cart-btn">
-                        <i class="fa-solid fa-cart-plus"></i>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-                <!-- <div class="infoBox text-center mt-1">
-                  <button class="button-more d-inline-block"> المزيـــــــــد </button>
-                </div> -->
-              </div>
-
-              <div class="swiper-slide">
-                <!-- Card with one fixed amount only -->
-                <div class="CardBox custom-card">
-                  <div
-                    class="custom-card-header d-flex align-items-center justify-content-between custom-card-header-bg">
-                    <span class="custom-card-title">إفطار صائم بصحن الحرم</span>
-                    <i class="fa-solid fa-share-nodes custom-card-icon"></i>
-                  </div>
-                  <div onclick="window.location.href='project.html'" class="custom-card-img custom-card-img-bg">
-                    <img src="img/project3.png" alt="project" class="custom-card-img-el">
-                  </div>
-                  <div class="custom-card-body custom-card-body-bg">
-                    <div class="money-collected">
-
-                      <div class="d-flex justify-content-between mb-2 custom-card-amount-row">
-                        <span>تم جمع: <br>500,000 <span>ر.س</span> </span>
-                        <span>المبلغ المتبقي: <br>500,000 <span>ر.س</span> </span>
-                      </div>
-                      <div class="progress mb-2 custom-card-progress">
-                        <div class="progress-bar custom-card-progress-bar">
-                          %50
-                        </div>
-                      </div>
-                    </div>
-                    <div class="d-flex align-items-center justify-content-between mb-3 custom-card-btn-row">
-                      <button class="amount-btn amount-btn-500">500 <span>ر.س</span> </button>
-                      <!-- <span class="custom-card-donation-label">مبلغ التبرع</span> -->
-                    </div>
-                    <div class="d-flex align-items-center justify-content-between mb-3 custom-card-action-row">
-                      <input disabled class="form-control custom-card-input" type="text" placeholder=":مبلغ التبرع">
-                      <a href="./project.html">
-                        <button class="btn btn-success flex-grow-1 custom-card-donate-btn">
-                          تبرع الآن
-                        </button>
-                      </a>
-                      <button class="btn btn-outline-secondary custom-card-cart-btn">
-                        <i class="fa-solid fa-cart-plus"></i>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-                <!-- <div class="infoBox text-center mt-1">
-                  <button class="button-more d-inline-block"> المزيـــــــــد </button>
-                </div> -->
-              </div>
-
-            </div>
-          </div>
-          <div class="swiper-button-next RamdanProject-button-next"></div>
-          <div class="swiper-button-prev RamdanProject-button-prev"></div>
-        </div>
-
-      </div>
-    </section>
-</main>
-
-
-    <footer>
-      <div class="row">
-        <div class="col-12 col-lg-3 p-0">
-          <div class="first p-3">
-            <div class="footer-text">
-              <h2 class="first-title">عــن الجمعية</h2>
-              <p class="first-text">
-                هي منظمة خيرية غير ربحية تهدف الي دعم و مساعدة اهالي الاحياء
-                الاكثر احتياجا. من خلال تقديم حلول مستدامه تعزز جودة الحياة و
-                تلبي الاحتياجات الاساسية.
-              </p>
-            </div>
-            <div
-              class="socialIncons d-flex justify-content-center align-items-center mt-4"
-            >
-              <a class="icon">
-                <i class="fa-brands fa-instagram"></i>
-              </a>
-
-              <a class="icon">
-                <i class="fa-brands fa-facebook"></i>
-              </a>
-
-              <a class="icon">
-                <i class="fa-brands fa-youtube"></i>
-              </a>
-
-              <a class="icon">
-                <i class="fa-brands fa-x-twitter"></i>
-              </a>
-
-              <a class="icon">
-                <i class="fa-brands fa-snapchat"></i>
-              </a>
-
-              <a class="icon">
-                <i class="fa-brands fa-whatsapp"></i>
-              </a>
-            </div>
-            <p class="mt-1 text-center d-none d-md-block">
-              جميع الحقوق محفوظة 2025 &#169;
-            </p>
-          </div>
-        </div>
-        <div class="col-12 col-lg-3 p-0">
-          <div class="secand p-3 h-100">
-            <h5>أهم الروابط :</h5>
-            <ul class="text-center">
-              <li>البرامج الخيرية</li>
-              <li>أهم المشارريع</li>
-              <li>الحالات الطارئة</li>
-              <li>الحسابات البنكية</li>
-              <li>المستفيدين</li>
-              <li>التبرع السريع</li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-12 col-lg-3 p-0">
-          <div
-            class="thrid h-100 d-flex flex-column justify-content-center align-items-center p-3 p-lg-0"
-          >
-            <div
-              class="ImgContainer d-flex justify-content-between align-items-center"
-            >
-              <img src="img/Logo 1.png" class="img-fluid" alt="" />
-              <img src="img/Logo 1.png" class="img-fluid" alt="" />
-            </div>
-            <div
-              class="ImgContainer2 d-flex justify-content-center align-items-center mt-2"
-            >
-              <img src="img/pay-1.png" class="img-fluid" alt="" />
-              <img src="img/pay-2.png" class="img-fluid" alt="" />
-              <img src="img/pay-4.png" class="img-fluid" alt="" />
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-lg-3 p-0">
-          <div
-            class="fourth d-flex flex-column justify-content-start align-items-center h-100"
-          >
-            <h2 class="fourth-title">معلومات الاتصال</h2>
-            <div
-              class="fristrow d-flex justify-content-center align-items-center"
-            >
-              <a class="contact">
-                <span>0500000</span>
-                <i class="fa-solid fa-phone"></i>
-              </a>
-              <a class="contact">
-                <span>0120555</span>
-                <i class="fa-solid fa-blender-phone"></i>
-              </a>
-            </div>
-            <div class="Secandrow my-3">
-              <a class="contact">
-                <span> email@gmail.com </span>
-                <i id="email-icon" class="fa-solid fa-envelope"></i>
-              </a>
-            </div>
-            <div
-              class="ThridRow d-flex justify-content-between align-items-center"
-            >
-              <img src="img/pay-6.png" class="img-fluid" alt="" />
-              <img src="img/pay-7.png" class="img-fluid" alt="" />
-            </div>
-            <p class="mt-3 text-center d-md-none">
-              جميع الحقوق محفوظة 2025 &#169;
-            </p>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <!--Bootstrap cdn -->
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/swiper-bundle.js"></script>
-    <!--Animation-->
-    <script src="js/wow.min.js"></script>
-    <!--Custom Script-->
-    <script src="js/main.js"></script>
-    <script src="js/cart.js"></script>
-  </body>
 </html>

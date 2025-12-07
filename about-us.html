@@ -1,124 +1,377 @@
 <!DOCTYPE html>
 <html lang="ar">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>من نحن</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>الصفحة الرئيسية</title>
+  <!--Bootstrap cdn -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/bootstrap-icons.css" rel="stylesheet">
 
-    <!--Bootstrap cdn -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
 
-    <!--Font awsome-->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <!--Animation -->
-    <link rel="stylesheet" href="css/animate.css" />
-    <!--Swiper-->
-    <link rel="stylesheet" href="css/swiper.min.css" />
-    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+  <!--Font awsome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!--Animation -->
+  <link rel="stylesheet" href="css/animate.css" />
+  <!--Swiper-->
+  <link rel="stylesheet" href="css/swiper.min.css" />
+  <link rel="stylesheet" href="css/swiper-bundle.min.css" />
 
-    <!-- Custom Stylsheet-->
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/about-us.css" />
-  </head>
+  <link rel="stylesheet" href="css\bootstrap.min.css">
+  <!-- Custom Stylsheet-->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/category.css" />
+  <link rel="stylesheet" href="css/cart.css" />
+  <link rel="stylesheet" href="css/custom-card.css" />
+  <link rel="stylesheet" href="css/fast-pay.css">
+  <script src="https://unpkg.com/swiper@9/swiper-bundle.min.js"></script>
 
-  <body>
-        <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom" dir="ltr">
-        <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                <ul class="navbar-nav gap-5">
-                     <li class="nav-divider"></li>
+</head>
 
-                     <li class="nav-item">
-                        <a class="nav-link" href="#">المركز الرئيسي </a>
-                    </li>
-                   
-                     <li class="nav-divider"></li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">تواصل معنا</a>
-                    </li>
-                    <li class="nav-divider"></li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">من نحن</a>
-                    </li>
-                    <li class="nav-divider"></li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">الخدمات</a>
-                    </li>
-                    <li class="nav-divider"></li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">الرئيسية </a>
-                    </li>
-                </ul>
-            </div>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom" dir="ltr">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <div class="custom-hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
-    </nav>
+      </button>
 
-    <header class="hero-section"  dir="ltr">
+      <!-- Logo -->
+      <a class="navbar-brand d-lg-none " href="#">
+        <img src="img/00.png" alt="Logo">
+      </a>
 
-                <!-- Left Side - Decorative Pattern -->
-                 <div class="pattern-section">
-        <img src="./img/1.png" alt="زخارف" class="pattern-img">
+      <div class="user-cart d-none d-lg-flex">
+        <a href="login.html"><i class="fa-solid fa-user fs-5"></i></a>
+        <a href="cart.html"><i class="fa-solid fa-cart-shopping mx-3 fs-5"></i></a>
+      </div>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav gap-3">
+          <li class="nav-divider"></li>
+
+          <li class="nav-item">
+                    <a class="nav-link" href="#">الرئيسية</a>
+                </li>
+                <li class="nav-divider"></li>
+                <li class="nav-item">
+                    <a class="nav-link" href="category.html">الخدمات</a>
+                </li>
+                <li class="nav-divider"></li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about-us.html">من نحن</a>
+                </li>
+                <li class="nav-divider"></li>
+                <li class="nav-item">
+                    <a class="nav-link" href="activities.html">الانشطه </a>
+                </li>
+                <li class="nav-divider"></li>
+                <li class="nav-item">
+                    <a class="nav-link" href="new.html">المركز الإعلامي</a>
+                </li>
+
+          <div class="user-cart d-lg-none mt-3">
+            <a href="login.html"><i class="fa-solid fa-user fs-5"></i></a>
+            <a href="cart.html"><i class="fa-solid fa-cart-shopping mx-3 fs-5"></i></a>
+          </div>
+        </ul>
+
+      </div>
+
+
     </div>
-        <div class="container-fluid h-100">
-            <div class="row h-100 align-items-center">
-                
-         <div class="col-lg- col-md-3 d-none d-md-block">
-               
-            </div>
+  </nav>
 
-                <!-- Center - Main Image -->
-                <div class="col-lg-5 col-md-6 col-12 text-center">
-                    <div class="main-image-container">
-                        <img src="./img/3.png" alt="كبار السن" class="img-fluid rounded-4  main-image">
-                    </div>
-                </div>
+  <!-- Header Section -->
+  <header class="hero-section" dir="ltr">
 
-                <!-- Right Side - Content -->
-                <div class="col-lg-4 col-md-3 col-12 content-section">
-                    <div class="content-wrapper">
-                        <!-- Logo -->
-                        <div class="logo-container mb-4">
-                            <img src="./img/00.png" alt="جمعية إكرام المسنين" class="logo-img">
-                        </div>
+    <!-- Left Side - Decorative Pattern -->
+    <div class="pattern-section d-none d-lg-block">
+      <img src="./img/1.png" alt="زخارف" class="pattern-img">
+    </div>
+    <div class="container-fluid h-100">
+      <div class="row h-100 align-items-center">
 
-                      
+        <div class="col-lg- col-md-3 d-none d-md-block">
 
-                      
-
-                        <!-- Description -->
-                        <p class="description second-font">
-                            نسعى لتقديم أفضل الخدمات الإنسانية لتحسين
-                            جودة حياة كبار السن من خلال البرامج والمبادرات
-                            النوعية والشراكات الفاعلة
-                        </p>
-
-                        <!-- CTA Button -->
-                        <a href="#testimonials" class="btn btn-outline-light btn-lg second-font cta-button">
-                            ماذا قالوا عنا ؟؟
-                        </a>
-
-                        <!-- Decorative Stars -->
-                        <div class="stars-decoration">
-                            <span class="star star-1">✦</span>
-                            <span class="star star-2">✦</span>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
         </div>
-    </header>
+
+        <!-- Center - Main Image -->
+        <div class="col-lg-5 col-md-6 col-12 text-center">
+          <div class="main-image-container">
+            <img src="./img/3.png" alt="كبار السن" class="img-fluid rounded-4  main-image">
+          </div>
+        </div>
+
+        <!-- Right Side - Content -->
+        <div class="col-lg-4 col-md-3 col-12 content-section">
+          <div class="content-wrapper">
+            <!-- Logo -->
+            <div class="logo-container mb-4">
+              <img src="./img/00.png" alt="جمعية إكرام المسنين" class="logo-img">
+            </div>
+
+            <!-- Description -->
+            <p class="description second-font">
+              نسعى لتقديم أفضل الخدمات الإنسانية لتحسين
+              جودة حياة كبار السن من خلال البرامج والمبادرات
+              النوعية والشراكات الفاعلة
+            </p>
+
+            <!-- CTA Button -->
+            <a href="#testimonials" class="btn btn-outline-light btn-lg second-font cta-button">
+              ماذا قالوا عنا ؟؟
+            </a>
+
+            <!-- Decorative Stars -->
+            <div class="stars-decoration">
+              <span class="star star-1">✦</span>
+              <span class="star star-2">✦</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+
+  <div class="fast-pay">
+    <div class="container">
+      <div class="white-layer"></div>
+      <span class="plus-btn">+</span>
+      <h6>تبرع سريع</h6>
+    </div>
+
+
+    <div class="donation-form">
+      <div class="form-title">اختر نوع التبرع</div>
+
+      <div class="donation-options">
+        <div class="donation-option active" data-option="الإطعام">الإطعام</div>
+        <div class="donation-option" data-option="السكن">السكن</div>
+        <div class="donation-option" data-option="الكسوة">الكسوة</div>
+      </div>
+
+      <!-- Project selection groups - each for a specific donation type -->
+      <div class="project-selection-container">
+        <!-- Projects for الإطعام -->
+        <div class="project-group" data-for="الإطعام">
+          <div class="form-group">
+            <select class="project-select" data-type="الإطعام">
+              <option selected disabled>اختيار مشروع الإطعام</option>
+              <option value="إفطار صائم">مشروع إفطار صائم</option>
+              <option value="إطعام مسكين">مشروع إطعام مسكين</option>
+              <option value="وجبات الخير">مشروع وجبات الخير</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Projects for السكن -->
+        <div class="project-group" data-for="السكن" style="display: none;">
+          <div class="form-group">
+            <select class="project-select" data-type="السكن">
+              <option selected disabled>اختيار مشروع السكن</option>
+              <option value="ترميم منازل">مشروع ترميم منازل</option>
+              <option value="بناء وحدات سكنية">مشروع بناء وحدات سكنية</option>
+              <option value="تأثيث منازل">مشروع تأثيث منازل</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Projects for الكسوة -->
+        <div class="project-group" data-for="الكسوة" style="display: none;">
+          <div class="form-group">
+            <select class="project-select" data-type="الكسوة">
+              <option selected disabled>اختيار مشروع الكسوة</option>
+              <option value="كسوة العيد">مشروع كسوة العيد</option>
+              <option value="كسوة الشتاء">مشروع كسوة الشتاء</option>
+              <option value="كسوة المدارس">مشروع كسوة المدارس</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <!-- Donation Amount Buttons - Initially Hidden -->
+      <div class="donation-amounts" id="donation-amounts" style="display: none;">
+        <!-- Default amounts for الإطعام -->
+        <div class="amount-group" data-for="الإطعام">
+          <div class="form-title">اختر مبلغ التبرع</div>
+          <div class="amount-buttons">
+            <button type="button" class="amount-btn amount-btn-1">50 <span class="currency">ر.س</span></button>
+            <button type="button" class="amount-btn amount-btn-2">100 <span class="currency">ر.س</span></button>
+            <button type="button" class="amount-btn amount-btn-3">200 <span class="currency">ر.س</span></button>
+            <button type="button" class="amount-btn amount-btn-4">500 <span class="currency">ر.س</span></button>
+          </div>
+        </div>
+
+        <!-- Amounts for السكن -->
+        <div class="amount-group" data-for="السكن" style="display: none;">
+          <div class="form-title">اختر مبلغ التبرع</div>
+          <div class="amount-buttons">
+            <button type="button" class="amount-btn amount-btn-1">200 <span class="currency">ر.س</span></button>
+            <button type="button" class="amount-btn amount-btn-2">500 <span class="currency">ر.س</span></button>
+            <button type="button" class="amount-btn amount-btn-3">1000 <span class="currency">ر.س</span></button>
+            <button type="button" class="amount-btn amount-btn-4">2000 <span class="currency">ر.س</span></button>
+          </div>
+        </div>
+
+        <!-- Amounts for الكسوة -->
+        <div class="amount-group" data-for="الكسوة" style="display: none;">
+          <div class="form-title">اختر مبلغ التبرع</div>
+          <div class="amount-buttons">
+            <button type="button" class="amount-btn amount-btn-1">150 <span class="currency">ر.س</span></button>
+            <button type="button" class="amount-btn amount-btn-3">450 <span class="currency">ر.س</span></button>
+            <button type="button" class="amount-btn amount-btn-4">600 <span class="currency">ر.س</span></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <input type="tel" class="form-control" placeholder="الجوال">
+      </div>
+
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="الاسم">
+      </div>
+
+      <div class="form-title">وسيلة الدفع</div>
+
+      <div class="payment-methods">
+        <div class="img-container">
+
+          <img src="img/pay-4.png" alt="MasterCard">
+          <img src="img/pay-2.png" alt="Visa">
+          <img src="img/pay-1.png" alt="Apple Pay">
+        </div>
+
+      </div>
+
+
+      <div class="bank payment-content">
+        <div class="payment-fields bank-fields">
+          <div class="form-group bank-form">
+            <label for="bank-name">اسم البنك</label>
+            <select class="bank-input" id="bank-name">
+              <option value="alrajhi">مصرف الراجحي</option>
+              <option value="alahli">البنك الأهلي</option>
+              <option value="sabb">بنك ساب</option>
+              <option value="riyad">بنك الرياض</option>
+              <!-- Add more banks as needed -->
+            </select>
+          </div>
+          <div class="form-group bank-form">
+            <label for="account-owner">اسم صاحب الحساب</label>
+            <input class="bank-input " type="text" id="account-owner">
+          </div>
+          <div class="form-group bank-form">
+            <label for="account-number">رقم الحساب</label>
+            <input class="bank-input" type="text" id="account-number">
+          </div>
+          <div class="form-group bank-form">
+            <label for="iban-number">رقم الايبان</label>
+            <input class="bank-input" type="text" id="iban-number">
+          </div>
+          <button type="button" class="pay-btn attach-btn" style="background: #469e8d; min-width: 180px;">
+            ارفاق إيصال الدفع
+            <span style="font-size: 0.9rem; margin-right: 8px; color: #333;">Pdf - jpeg - png</span>
+            <i class="fa fa-paperclip"></i>
+          </button>
+
+        </div>
+        <div class="cart-form-actions">
+          <p class="proceed-text">
+            اتمام الدفع
+          </p>
+          <button type="submit" class="pay-btn"><i class="fa fa-check"></i> الدفع</button>
+          <button type="button" class="cancel-btn"><i class="fa fa-times"></i></button>
+        </div>
+      </div>
+
+      <div class="applepay payment-content">
+        <div class="payment-fields applepay-fields" style="text-align:center;">
+          <div class="form-group applepay-form" style="justify-content:center;">
+            <span class="bank-text" style="font-size:1.2rem;display:block;margin-bottom:.5rem;">الدفع من خلال ابل
+              باي</span>
+          </div>
+        </div>
+        <div class="cart-form-actions">
+          <p class="proceed-text">
+            اتمام الدفع
+          </p>
+          <button type="submit" class="pay-btn"><i class="fa fa-check"></i> الدفع</button>
+          <button type="button" class="cancel-btn"><i class="fa fa-times"></i></button>
+        </div>
+      </div>
+
+      <div class="visa payment-content">
+
+        <div class="label bank-text">
+          <p>الدفع من خلال البطاقة البنكية</p>
+        </div>
+        <div class="payment-fields bank-fields">
+          <div class="form-group bank-form">
+            <label for="card-number">رقم البطاقة</label>
+            <input class="bank-input" type="text" id="card-number">
+          </div>
+          <div class="form-group bank-form">
+            <label for="card-name">اسم على البطاقة</label>
+            <input class="bank-input" type="text" id="card-name">
+          </div>
+          <div class="payment-row fast-pay-payment-row ">
+            <div class="form-group bank-form exp-form">
+              <label for="exp-month">تاريخ الانتهاء</label>
+              <div class="exp-date-inputs">
+                <input class="bank-input" type="text" id="exp-month" name="exp-month" maxlength="2" placeholder="MM">
+                <span class="exp-divider">|</span>
+                <input class="bank-input" type="text" id="exp-year" name="exp-year" maxlength="2" placeholder="YY">
+              </div>
+            </div>
+            <div class="form-group bank-form ccv-form">
+              <label for="ccv">رمز الامان CCV</label>
+              <input class="bank-input ccv-input" type="text" id="ccv" name="ccv">
+            </div>
+
+          </div>
+        </div>
+        <div class="cart-form-options ">
+          <label class="custom-checkbox">
+            <input type="checkbox">
+            <span class="checkmark"></span>
+            أرغب في حفظ بيانات البطاقة
+          </label>
+          <div class="accept-code-form ">
+            <label> ادخل كود التحقق</label>
+            <input type="text" class="bank-input accept-input">
+          </div>
+        </div>
+        <div class="cart-form-actions">
+          <p class="proceed-text">
+            اتمام الدفع
+          </p>
+          <button type="submit" class="pay-btn"><i class="fa fa-check"></i> الدفع</button>
+          <button type="button" class="cancel-btn"><i class="fa fa-times"></i></button>
+        </div>
+        <div class="cart-form-policy bank-form">
+          <label class="custom-checkbox">
+            <input type="checkbox" checked>
+            <span class="checkmark"></span>
+            الموافقة على
+            <a>
+              سياسات التبرع</a>
+          </label>
+        </div>
+
+
+      </div>
+
+    </div>
+  </div>
    <!-- our story -->
 <section class="story-section">
   <div class="container">
