@@ -28,138 +28,66 @@
       </head>
     
 <body>
- <header>
-    <div class="topBar">
-      <img class="back" src="img/header_background.png" alt="">
-      <div class="UserBox ">
-        <div onclick="window.location.href='index.html'" class="logoBox p-4 ">
-          <img src="./img/00.png" class="img-fluid logo-img" alt="" />
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+    <div class="container-fluid">
+
+      <!-- Right side: Logo -->
+      <a class="navbar-brand order-lg-1" href="index.html">
+        <img src="img/00.png" alt="Logo">
+      </a>
+
+      <!-- Middle: Menu -->
+      <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <div class="custom-hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
-        <div class=" d-none d-lg-block phone">
-          <!-- <i class="fas fa-phone"></i> -->
-          <a class="header_contact " style="text-decoration:none;" href="tel:966537066621"><i
-              class="fas fa-phone phoneIcon text-white"></i><b class="navicon">اتصل بنا</b><br /><span
-              class="navicon">966537066621</span></a>
-        </div>
-        <div class="useraction mx-auto mx-lg-0">
-          <!-- <div onclick="window.location.href='index.html'" class="logoBoxModile  d-lg-none text-center">
-            <img src="img/00.png" class="img-fluid" alt="" />
-          </div> -->
+      </button>
 
-          <div class="loginbox ">
-            <div class="user ">
-              <div onclick="window.location.href='cart.html' " class="basket p-2 ms-3 position-relative">
+      <div class="collapse navbar-collapse justify-content-center order-lg-2" id="navbarNav">
+        <ul class="navbar-nav gap-3 align-items-center">
 
-                <i class="fa-solid fa-cart-shopping fs-4 navicon"></i>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">الرئيسية</a>
+          </li>
+          <li class="nav-divider"></li>
+          <li class="nav-item">
+            <a class="nav-link" href="about-us.html">من نحن</a>
+          </li>
+             <li class="nav-divider"></li>
+          <li class="nav-item">
+            <a class="nav-link" href="category.html">الخدمات</a>
+          </li>
+          <li class="nav-divider"></li>
 
-                <span class="Badge position-absolute top-0 start-100 translate-middle badge rounded-pill">
-                  1
-                </span>
-              </div>
-              <div class="user-items">
+          <li class="nav-item">
+            <a class="nav-link" href="hawkama.html">الحوكمه </a>
+          </li>
+          <li class="nav-divider"></li>
 
-                <div onclick="window.location.href='profile.html'  " class="usericon p-2">
-                  <i class="fa-solid fa-user fs-4 navicon"></i>
-                </div>
-                <div onclick="window.location.href='login.html'  " class="usertext px-2">
-                  <a class="me-4" href="./login.html">تسجيل دخول</a>
-                </div>
-              </div>
+          <li class="nav-item">
+            <a class="nav-link" href="activities.html"> الانشطه والفعاليات</a>
+          </li>
+          <li class="nav-divider"></li>
 
-            </div>
-            <div class="DonateNow d-flex justify-content-end">
-              <!-- <div class="usertext DonateNowBox px-2 mt-3">
-                    <a class="me-4"> تبرع الان </a>
-                  </div> -->
-            </div>
-            <div class="nav-left">
-              <div class="user-mobile ">
-                <div onclick="window.location.href='cart.html' " class="basket-mobile  position-relative">
+          <li class="nav-item">
+            <a class="nav-link" href="new.html">المركز الإعلامي</a>
+          </li>
 
-                  <i class="fa-solid fa-cart-shopping fs-4"></i>
-
-                  <span class="Badge ">
-                    1
-                  </span>
-                </div>
-                <div class="user-items-mobile">
-
-                  <div onclick="window.location.href='profile.html'  " class="usericon-mobile ">
-                    <i class="fa-solid fa-user fs-4"></i>
-                  </div>
-
-                </div>
-
-              </div>
-
-
-              <div class="nav-icon">
-                <button class="navbar-toggler custom-hamburger" type="button">
-                  <span class="hamburger-bar"></span>
-                  <span class="hamburger-bar"></span>
-                  <span class="hamburger-bar"></span>
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
+        </ul>
       </div>
+
+      <!-- Left Side: Icons -->
+      <div class="user-cart d-none d-lg-flex order-lg-3">
+        <a href="login.html"><i class="fa-solid fa-user fs-5"></i></a>
+        <a href="cart.html"><i class="fa-solid fa-cart-shopping mx-3 fs-5"></i></a>
+      </div>
+
     </div>
+  </nav>
 
-<nav class="navbar navbar-expand-lg  position-relative">
-      <div class="container nav-content">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-end w-100 pe-0">
-
-            <!-- Example dropdown item -->
-            <li class="nav-item dropdown">
-              <a href="./index.html" class="nav-link ">الرئيسية</a>
-
-            </li>
-            <!-- Repeat for other nav items -->
-            <li class="nav-item dropdown">
-              <a class="nav-link " href="./about-us.html">من نحن</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link" href="./category.html">الاقسام</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link" href="./hawkama.html">الحوكمة</a>
-            </li>
-          <li class="nav-item dropdown">
-              <a class="nav-link " href="./Beneficiary-registration.html">المستفيدين</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link " href="./activities.html">المركز الاعلامى</a>
-            </li>
-
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
-              >الفرص التطوعية</a>
-              <ul class="dropdown-menu text-end">
-                <li><a class="dropdown-item"  href="./Volunteer-registration.html">الفرص المتاحة</a></li>
-                <li><a class="dropdown-item"  href="./Volunteer-registration.html">سجل كمتطوع</a></li>
-                <li><a class="dropdown-item"  href="./Volunteer-registration.html">دليل المتطوع</a></li>
-              </ul>
-            </li>
-              <li class="nav-item dropdown">
-              <a class="nav-link " href="./profile.html">الملف الشخصى</a>
-            </li>
-            <!-- Search form -->
-            <!-- <form class="search-form position-relative" role="search">
-            <input type="search" placeholder="البحث" aria-label="Search" />
-            <i class="fa-solid fa-magnifying-glass position-absolute"></i>
-          </form> -->
-        </div>
-      </div>
-    </nav> 
-  </header>
-
-        <main>
+   <main>
        
 <div class="cart">
   <div class="head">
@@ -276,118 +204,107 @@
 </div>
 </main>
 
-<footer>
-  <div class="row">
-    <div class="col-12 col-lg-3 p-0">
-      <div class="first p-3">
-        <div class="footer-text">
+  <footer>
+    <div class="row">
+      <div class="col-12 col-lg-3 p-0">
+        <div class="first p-3">
+          <div class="footer-text">
 
-          <h2 class="first-title">عــن الجمعية</h2>
-          <p class="first-text">هي منظمة خيرية غير ربحية تهدف الي دعم و مساعدة اهالي الاحياء الاكثر احتياجا. من خلال تقديم حلول مستدامه تعزز جودة الحياة و تلبي الاحتياجات الاساسية.</p>
-        </div>
-        <div
-          class="socialIncons d-flex justify-content-center align-items-center mt-4"
-        >
-          <a class="icon">
-            <i class="fa-brands fa-instagram"></i>
-          </a>
+            <h2 class="first-title">عــن الجمعية</h2>
+            <p class="first-text">هي منظمة خيرية غير ربحية تهدف الي دعم و مساعدة اهالي الاحياء الاكثر احتياجا. من خلال
+              تقديم حلول مستدامه تعزز جودة الحياة و تلبي الاحتياجات الاساسية.</p>
+          </div>
+          <div class="socialIncons d-flex justify-content-center align-items-center mt-4">
+            <a class="icon">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
 
-          <a class="icon">
-            <i class="fa-brands fa-facebook"></i>
-          </a>
+            <a class="icon">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
 
-          <a class="icon">
-            <i class="fa-brands fa-youtube"></i>
-          </a>
+            <a class="icon">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
 
-          <a class="icon">
-            <i class="fa-brands fa-x-twitter"></i>
-          </a>
+            <a class="icon">
+              <i class="fa-brands fa-x-twitter"></i>
+            </a>
 
-          <a class="icon">
-            <i class="fa-brands fa-snapchat"></i>
-          </a>
+            <a class="icon">
+              <i class="fa-brands fa-snapchat"></i>
+            </a>
 
-          <a class="icon">
-            <i class="fa-brands fa-whatsapp"></i>
-          </a>
-        </div>
-        <p class="mt-1 text-center d-none d-md-block">
-          جميع الحقوق محفوظة 2025 &#169;
-          
-        </p>
-      </div>
-    </div>
-    <div class="col-12 col-lg-3 p-0">
-      <div class="secand p-3 h-100">
-        <h5 >أهم الروابط :</h5>
-        <ul class="text-center">
-          <li>البرامج الخيرية</li>
-          <li>أهم المشارريع</li>
-          <li>الحالات الطارئة</li>
-          <li>الحسابات البنكية</li>
-          <li>المستفيدين</li>
-          <li>التبرع السريع</li>
-        </ul>
-      </div>
-    </div>
-    <div class="col-12 col-lg-3 p-0">
-      <div
-        class="thrid h-100 d-flex flex-column justify-content-center align-items-center p-3 p-lg-0"
-      >
-        <div
-          class="ImgContainer d-flex justify-content-between align-items-center"
-        >
-          <img src="img/Logo 1.png" class="img-fluid" alt="" />
-          <img src="img/Logo 1.png" class="img-fluid" alt="" />
-        </div>
-        <div
-          class="ImgContainer2 d-flex justify-content-center align-items-center mt-2"
-        >
-          <img src="img/pay-1.png" class="img-fluid" alt="" />
-          <img src="img/pay-2.png" class="img-fluid" alt="" />
-          <img src="img/pay-4.png" class="img-fluid" alt="" />
+            <a class="icon">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+          </div>
+          <p class="mt-1 text-center d-none d-md-block text-white">
+            جميع الحقوق محفوظة 2025 &#169;
+
+          </p>
         </div>
       </div>
-    </div>
-    <div class="col-12 col-lg-3  p-0">
-      <div
-        class="fourth d-flex flex-column justify-content-start align-items-center h-100"
-      >
-        <h2 class="fourth-title">معلومات الاتصال</h2>
-        <div
-          class="fristrow  d-flex justify-content-center align-items-center "
-        >
-          <a class="contact">
-            <span>0500000</span>
-            <i class="fa-solid fa-phone"></i>
-          </a>
-          <a class="contact">
-            <span>0120555</span>
-            <i class="fa-solid fa-blender-phone"></i>
-          </a>
+      <div class="col-12 col-lg-3 p-0">
+        <div class="secand p-3 h-100">
+          <h5>أهم الروابط :</h5>
+          <ul class="text-center">
+            <li>البرامج الخيرية</li>
+            <li>أهم المشارريع</li>
+            <li>الحالات الطارئة</li>
+            <li>الحسابات البنكية</li>
+            <li>المستفيدين</li>
+            <li>التبرع السريع</li>
+          </ul>
         </div>
-        <div class="Secandrow  my-3">
-          <a class="contact">
-            <span>
-              email@gmail.com
-            </span> 
-            <i id="email-icon" class="fa-solid fa-envelope"></i>
-          </a>
+      </div>
+      <div class="col-12 col-lg-3 p-0">
+        <div class="thrid h-100 d-flex flex-column justify-content-center align-items-center p-3 p-lg-0">
+          <div class="ImgContainer d-flex justify-content-between align-items-center">
+            <img src="img/00.png" class="img-fluid" alt="" />
+            <!-- <img src="img/00.png" class="img-fluid" alt="" /> -->
+          </div>
+          <div class="ImgContainer2 d-flex justify-content-center align-items-center mt-2">
+            <img src="img/pay-1.png" class="img-fluid" alt="" />
+            <img src="img/pay-2.png" class="img-fluid" alt="" />
+            <img src="img/pay-4.png" class="img-fluid" alt="" />
+          </div>
         </div>
-        <div
-          class="ThridRow d-flex justify-content-between align-items-center"
-        >
-          <img src="img/pay-6.png" class="img-fluid" alt="" />
-          <img src="img/pay-7.png" class="img-fluid" alt="" />
+      </div>
+      <div class="col-12 col-lg-3  p-0 four">
+        <div class="fourth d-flex flex-column justify-content-start align-items-center h-100">
+          <h2 class="fourth-title">معلومات الاتصال</h2>
+          <div class="fristrow  d-flex justify-content-center align-items-center ">
+            <a class="contact">
+              <span>0500000</span>
+              <i class="fa-solid fa-phone"></i>
+            </a>
+            <a class="contact">
+              <span>0120555</span>
+              <i class="fa-solid fa-blender-phone"></i>
+            </a>
+          </div>
+          <div class="Secandrow  my-3">
+            <a class="contact">
+              <span>
+                email@gmail.com
+              </span>
+              <i id="email-icon" class="fa-solid fa-envelope"></i>
+            </a>
+          </div>
+          <div class="ThridRow d-flex justify-content-between align-items-center">
+            <img src="img/pay-6.png" class="img-fluid" alt="" />
+            <img src="img/pay-7.png" class="img-fluid" alt="" />
+          </div>
+          <p class="mt-3 text-center d-md-none">
+            جميع الحقوق محفوظة 2025 &#169;
+          </p>
         </div>
-        <p class="mt-3 text-center d-md-none">
-          جميع الحقوق محفوظة 2025 &#169;
-        </p>
       </div>
     </div>
-  </div>
-</footer>
+    <img src="./img/1.jpg" style="height: 4rem;
+">
+  </footer>
 <!--Bootstrap cdn -->
   <script src="js/bootstrap.bundle.min.js"></script>
 

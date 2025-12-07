@@ -1,7 +1,7 @@
-# Yad b Yad (يدا بيد) Charity Website
+# Ekram    ( اكرام كبار السن) Charity Websit
 
 ## Overview
-Yad b Yad ("Hand in Hand" in Arabic) is a charity website designed to facilitate donations, volunteer registration, and beneficiary management. The platform provides a user-friendly interface with RTL (Right-to-Left) support for Arabic content.
+Ekram("Ekram" in Arabic) is a charity website designed to facilitate donations, volunteer registration, and beneficiary management. The platform provides a user-friendly interface with RTL (Right-to-Left) support for Arabic content.
 
 ## Features
 
@@ -86,4 +86,4 @@ Contributions to improve the website are welcome. Please follow these steps:
 
 ---
 
-© 2023 Yad b Yad Charity Organization. All rights reserved.
+© 2023 Ekram Charity Organization. All rights reserved.

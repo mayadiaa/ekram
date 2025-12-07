@@ -4808,7 +4808,8 @@ fieldset:disabled .btn {
         display: flex !important;
         flex-basis: auto;
         justify-content: right !important;
-        
+        align-items: center;
+        justify-content: center !important;
     }
 
     .navbar-expand-lg .navbar-toggler {

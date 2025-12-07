@@ -3458,7 +3458,7 @@ html[dir="rtl"] .RamdanProjects .swiper-button-prev {
 }
 
 .navbar-brand img {
-  height: 50px;
+  height: 70px;
   transition: transform 0.3s ease;
 }
 
@@ -4021,9 +4021,55 @@ html[dir="rtl"] .RamdanProjects .swiper-button-prev {
 }
 
 .user-cart {
-      margin-left: 17rem;
 
       a {
         color: #2c5f5d !important;
       }
+}
+
+/* ترتيب العناصر داخل الناف */
+.navbar .navbar-brand {
+  order: 1;
+}
+
+.navbar .navbar-collapse {
+  order: 2;
+}
+
+.navbar .user-cart {
+  order: 3;
+}
+
+/* توزيع الثلاث مناطق */
+.navbar .container-fluid {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4%;
+}
+
+.navbar-nav {
+  text-align: center;
+}
+
+/* في الشاشات الصغيرة تظهر الأيقونات داخل المنيو */
+@media (max-width: 991px) {
+  .user-cart {
+    display: none !important;
+  }
+
+  .navbar-nav .user-cart {
+    display: flex !important;
+    justify-content: center;
+    margin-top: 15px;
+  }
+}
+.contactImg{
+      height: 27.7rem;
+      width: 49rem;
+
+}
+.contactDiv{
+  margin: 0 !important;
+  padding: 0 !important;
 }

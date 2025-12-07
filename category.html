@@ -33,9 +33,16 @@
 
 <body>
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom" dir="ltr">
+  <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
     <div class="container-fluid">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+
+      <!-- Right side: Logo -->
+      <a class="navbar-brand order-lg-1" href="index.html">
+        <img src="img/00.png" alt="Logo">
+      </a>
+
+      <!-- Middle: Menu -->
+      <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <div class="custom-hamburger">
           <span></span>
           <span></span>
@@ -43,104 +50,47 @@
         </div>
       </button>
 
-      <!-- Logo -->
-      <a class="navbar-brand d-lg-none " href="#">
-        <img src="img/00.png" alt="Logo">
-      </a>
+      <div class="collapse navbar-collapse justify-content-center order-lg-2" id="navbarNav">
+        <ul class="navbar-nav gap-3 align-items-center">
 
-      <div class="user-cart d-none d-lg-flex">
-        <a href="login.html"><i class="fa-solid fa-user fs-5"></i></a>
-        <a href="cart.html"><i class="fa-solid fa-cart-shopping mx-3 fs-5"></i></a>
-      </div>
-      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-        <ul class="navbar-nav gap-3">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">الرئيسية</a>
+          </li>
+          <li class="nav-divider"></li>
+          <li class="nav-item">
+            <a class="nav-link" href="about-us.html">من نحن</a>
+          </li>
+             <li class="nav-divider"></li>
+          <li class="nav-item">
+            <a class="nav-link" href="category.html">الخدمات</a>
+          </li>
           <li class="nav-divider"></li>
 
           <li class="nav-item">
-                    <a class="nav-link" href="#">الرئيسية</a>
-                </li>
-                <li class="nav-divider"></li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">الخدمات</a>
-                </li>
-                <li class="nav-divider"></li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">من نحن</a>
-                </li>
-                <li class="nav-divider"></li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">تواصل معنا</a>
-                </li>
-                <li class="nav-divider"></li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">المركز الإعلامي</a>
-                </li>
+            <a class="nav-link" href="hawkama.html">الحوكمه </a>
+          </li>
+          <li class="nav-divider"></li>
 
-          <div class="user-cart d-lg-none mt-3">
-            <a href="login.html"><i class="fa-solid fa-user fs-5"></i></a>
-            <a href="cart.html"><i class="fa-solid fa-cart-shopping mx-3 fs-5"></i></a>
-          </div>
+          <li class="nav-item">
+            <a class="nav-link" href="activities.html"> الانشطه والفعاليات</a>
+          </li>
+          <li class="nav-divider"></li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="new.html">المركز الإعلامي</a>
+          </li>
+
         </ul>
-
       </div>
 
+      <!-- Left Side: Icons -->
+      <div class="user-cart d-none d-lg-flex order-lg-3">
+        <a href="login.html"><i class="fa-solid fa-user fs-5"></i></a>
+        <a href="cart.html"><i class="fa-solid fa-cart-shopping mx-3 fs-5"></i></a>
+      </div>
 
     </div>
   </nav>
-
-  <!-- Header Section -->
-  <header class="hero-section" dir="ltr">
-
-    <!-- Left Side - Decorative Pattern -->
-    <div class="pattern-section d-none d-lg-block">
-      <img src="./img/1.png" alt="زخارف" class="pattern-img">
-    </div>
-    <div class="container-fluid h-100">
-      <div class="row h-100 align-items-center">
-
-        <div class="col-lg- col-md-3 d-none d-md-block">
-
-        </div>
-
-        <!-- Center - Main Image -->
-        <div class="col-lg-5 col-md-6 col-12 text-center">
-          <div class="main-image-container">
-            <img src="./img/3.png" alt="كبار السن" class="img-fluid rounded-4  main-image">
-          </div>
-        </div>
-
-        <!-- Right Side - Content -->
-        <div class="col-lg-4 col-md-3 col-12 content-section">
-          <div class="content-wrapper">
-            <!-- Logo -->
-            <div class="logo-container mb-4">
-              <img src="./img/00.png" alt="جمعية إكرام المسنين" class="logo-img">
-            </div>
-
-            <!-- Description -->
-            <p class="description second-font">
-              نسعى لتقديم أفضل الخدمات الإنسانية لتحسين
-              جودة حياة كبار السن من خلال البرامج والمبادرات
-              النوعية والشراكات الفاعلة
-            </p>
-
-            <!-- CTA Button -->
-            <a href="#testimonials" class="btn btn-outline-light btn-lg second-font cta-button">
-              ماذا قالوا عنا ؟؟
-            </a>
-
-            <!-- Decorative Stars -->
-            <div class="stars-decoration">
-              <span class="star star-1">✦</span>
-              <span class="star star-2">✦</span>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </header>
-
 
   <div class="fast-pay">
     <div class="container">
