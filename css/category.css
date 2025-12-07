@@ -183,3 +183,103 @@
     height: 170px;
   }
 }
+/* ====== رحلة المستفيد مع خدماتنا ====== */
+
+.service-flow {
+  background-color: #fdf2e2; /* قريب من خلفية الموقع */
+}
+
+.service-flow-title {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #04525a;
+}
+
+.service-flow-subtitle {
+  font-size: 0.95rem;
+  color: #666;
+  margin-top: 10px;
+}
+
+/* الخط الواصل بين الدواير */
+.flow-line {
+  position: absolute;
+  top: 40px;              /* تقريباً في منتصف الدواير */
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(
+    to left,
+    #ee5a34,
+    #f1aa42,
+    #469e8d
+  );
+  border-radius: 999px;
+  opacity: 0.4;
+}
+
+/* كل Step */
+.flow-step {
+  position: relative;
+  padding-top: 50px; /* مساحة فوق علشان الدائرة */
+}
+
+/* الدائرة بتاعة رقم الخطوة */
+.step-circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin: 0 auto 12px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 1.2rem;
+  color: #fff;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* ألوان مختلفة لكل خطوة */
+.step-orange {
+  background-color: #ee5a34;
+}
+
+.step-yellow {
+  background-color: #f1aa42;
+}
+
+.step-green {
+  background-color: #469e8d;
+}
+
+.step-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #04525a;
+  margin-bottom: 6px;
+}
+
+.step-text {
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.9;
+}
+
+/* موبايل / تابلت */
+@media (max-width: 767.98px) {
+  .flow-line {
+    display: none; /* نخفي الخط الواصل في الشاشات الصغيرة */
+  }
+
+  .flow-step {
+    padding-top: 0;
+  }
+
+  .step-circle {
+    margin-bottom: 10px;
+  }
+
+  .service-flow-title {
+    font-size: 1.6rem;
+  }
+}
