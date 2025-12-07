@@ -204,6 +204,14 @@ button {
 }
 
 @media (min-width: 992px) {
+
+  .navbar .container-fluid {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4%;
+  flex-direction: row-reverse;
+}
   .breadcrumb-item {
     font-size: 1rem;
   }
@@ -211,6 +219,9 @@ button {
   .navbar-nav{
   display: flex !important;
     flex-direction: row-reverse !important;
+}
+.navbar-nav2 {
+  flex-direction: row !important;
 }
 }
 
@@ -506,7 +517,7 @@ button {
 .navbar {
   font-family: "IBM Plex Sans Arabic";
   background-color: #04525a;
-  height: 88px;
+  height: 90px;
 
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 
@@ -3463,7 +3474,7 @@ html[dir="rtl"] .RamdanProjects .swiper-button-prev {
 }
 
 .navbar-brand img {
-  height: 70px;
+  height: 60px;
   transition: transform 0.3s ease;
 }
 
@@ -3894,7 +3905,7 @@ html[dir="rtl"] .RamdanProjects .swiper-button-prev {
 .navbar {
   background: #ffffff;
   border-bottom: 1px solid #eee;
-  z-index: 1000;
+  /* z-index: 1000; */
 }
 
 .navbar-nav .nav-link {
@@ -4005,23 +4016,39 @@ html[dir="rtl"] .RamdanProjects .swiper-button-prev {
 
 /* موبايل صغير */
 @media (max-width: 575.98px) {
+ .navbar-nav {
+  gap: 0px !important;
+ }
+ .nav-item {
+  padding: 0.3rem 0.5rem
+ }
+ .navmenu {
+   margin: 6px 24px !important;
+ }
+
+ .navbar .navbar-collapse {
+  order: 2;
+  z-index: 120000 !important;
+}
   .hero-section {
-    height: 475px;
+    height: 500px;
     padding: 0px;
   }
   .hero-section .container-fluid{
     padding: 0px;
     margin: 0px;
+    flex-direction: unset !important;
   }
   .main-image-container {
     max-width: 320px;
     margin-bottom: -40px;
   }
   .content-section{
-    margin-top: -141px;
+    margin-top: -43px;
   }
 .main-image{
-  margin-top: -147px;
+  margin-top: -20px;
+  height: 20rem !important;
 }
   .logo-img {
     width: 130px;
@@ -4047,6 +4074,12 @@ html[dir="rtl"] .RamdanProjects .swiper-button-prev {
         color: #2c5f5d !important;
       }
 }
+.user-cart-2 {
+
+      a {
+        color: #2c5f5d !important;
+      }
+}
 
 /* ترتيب العناصر داخل الناف */
 .navbar .navbar-brand {
@@ -4055,22 +4088,36 @@ html[dir="rtl"] .RamdanProjects .swiper-button-prev {
 
 .navbar .navbar-collapse {
   order: 2;
+  z-index: 12000 !important;
 }
 
 .navbar .user-cart {
   order: 3;
+      margin-left: 263px;
+      z-index: 10000;
+
 }
 
 /* توزيع الثلاث مناطق */
-.navbar .container-fluid {
+/* .navbar .container-fluid {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 4%;
-}
+  flex-direction: row-reverse;
+} */
 
 .navbar-nav {
   text-align: center;
+  z-index: 10000;
+
+}
+.navbar-2{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+    margin-top: -0.5rem;
+  flex-direction: row !important;
 }
 
 /* في الشاشات الصغيرة تظهر الأيقونات داخل المنيو */
