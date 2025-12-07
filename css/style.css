@@ -207,6 +207,11 @@ button {
   .breadcrumb-item {
     font-size: 1rem;
   }
+
+  .navbar-nav{
+  display: flex !important;
+    flex-direction: row-reverse !important;
+}
 }
 
 @media screen and (max-width: 768px) {
@@ -3962,6 +3967,8 @@ html[dir="rtl"] .RamdanProjects .swiper-button-prev {
 /* RESPONSIVE BREAKPOINTS */
 /* ========================================= */
 /* أقل من lg (تابلت وموبايل) */
+
+
 @media (max-width: 991.98px) {
   .hero-section {
     min-height: auto;
@@ -3998,10 +4005,24 @@ html[dir="rtl"] .RamdanProjects .swiper-button-prev {
 
 /* موبايل صغير */
 @media (max-width: 575.98px) {
+  .hero-section {
+    height: 475px;
+    padding: 0px;
+  }
+  .hero-section .container-fluid{
+    padding: 0px;
+    margin: 0px;
+  }
   .main-image-container {
     max-width: 320px;
+    margin-bottom: -40px;
   }
-
+  .content-section{
+    margin-top: -141px;
+  }
+.main-image{
+  margin-top: -147px;
+}
   .logo-img {
     width: 130px;
   }
