@@ -3474,7 +3474,7 @@ html[dir="rtl"] .RamdanProjects .swiper-button-prev {
 }
 
 .navbar-brand img {
-  height: 60px;
+  /* height: 60px; */
   transition: transform 0.3s ease;
 }
 
@@ -4229,4 +4229,9 @@ html[dir="rtl"] .RamdanProjects .swiper-button-prev {
   .about-field-text {
     font-size: 0.85rem;
   }
+}
+.logo-mobile{
+  width: 75px !important;
+  height: 70px !important;
+
 }
