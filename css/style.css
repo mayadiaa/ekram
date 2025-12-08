@@ -4217,6 +4217,13 @@ html[dir="rtl"] .RamdanProjects .swiper-button-prev {
 
 /* موبايل */
 @media (max-width: 575.98px) {
+  .mapdiv{
+    width: 383px !important;
+  }
+  .contactsection{
+    padding:1.5rem ;
+    border-radius: 2rem !important;
+  }
   .about-fields-title {
     font-size: 1.5rem;
   }
