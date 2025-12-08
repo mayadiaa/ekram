@@ -273,21 +273,11 @@ button {
   flex-flow: row;
   justify-content: space-between;
 
-
-
-
-
-
-
-
-
   .phoneIcon {
     font-size: 0.8rem;
     right: -2.3rem;
     top: 2rem;
   }
-
-
 
   .nav-left {
     display: none;
@@ -725,11 +715,7 @@ main {
       }
     }
 
-    /* .swiper-button-prev::after,
-    .swiper-button-next::after {
-      color: #fff;
-      font-size: 50px;
-    } */
+   
   }
 
   .sections {
@@ -806,13 +792,6 @@ main {
       }
     }
 
-    /* .swiper-button-prev {
-      right: 102%;
-    }
-    .swiper-button-next {
-      right: -5%;
-      background: #000;
-    } */
     .swiper-button-prev::after,
     .swiper-button-next::after {
       position: absolute;
@@ -1035,10 +1014,7 @@ main {
 .high-sales-projects {
   position: relative;
 
-  /* .CardBox {
-    padding-bottom: 4rem;
-  } */
-
+  
   .title {
     margin: 4rem 0 2rem 0;
   }
