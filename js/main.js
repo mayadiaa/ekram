@@ -3,10 +3,10 @@ document.addEventListener("DOMContentLoaded", function () {
   const toggler = document.querySelector('.navbar-toggler');
   const hamburger = document.querySelector('.custom-hamburger');
   const navbarCollapse = document.querySelector('.navbar-collapse');
-  
+
   if (toggler && hamburger) {
     // عند الضغط على زرار القائمة
-    toggler.addEventListener('click', function() {
+    toggler.addEventListener('click', function () {
       hamburger.classList.toggle('active');
     });
 
@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
         // لما القائمة تقفل، شيل الـ active class
         hamburger.classList.remove('active');
       });
-      
+
       navbarCollapse.addEventListener('shown.bs.collapse', function () {
         // لما القائمة تفتح، ضيف الـ active class
         hamburger.classList.add('active');
@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // إغلاق القائمة عند الضغط على أي لينك (موبايل فقط)
     const navLinks = document.querySelectorAll('.nav-link');
     navLinks.forEach(link => {
-      link.addEventListener('click', function() {
+      link.addEventListener('click', function () {
         if (window.innerWidth < 992) {
           const bsCollapse = bootstrap.Collapse.getInstance(navbarCollapse);
           if (bsCollapse) {
@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   // ==================== SWIPER INITIALIZATION ====================
-  
+
   // Banner Swiper
   const bannerSwiperElement = document.querySelector(".bannerSwiper");
   if (bannerSwiperElement) {
@@ -108,9 +108,14 @@ document.addEventListener("DOMContentLoaded", function () {
           slidesPerView: 2,
           spaceBetween: 10,
         },
-        1008: {
-          slidesPerView: 3,
+
+        1024: {
+          slidesPerView: 2,
           spaceBetween: 10,
+        },
+        1030: {
+          slidesPerView: 3,
+          spaceBetween: 20,
         },
         1400: {
           slidesPerView: 3,
@@ -167,7 +172,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const ramdanProjectElement = document.querySelector(".RamdanProjectSwiper");
   if (ramdanProjectElement) {
     const ramdanSwiper = new Swiper(".RamdanProjectSwiper", {
-      loop: true,
+      loop: false,
       navigation: {
         nextEl: ".RamdanProject-button-next",
         prevEl: ".RamdanProject-button-prev",
@@ -180,17 +185,22 @@ document.addEventListener("DOMContentLoaded", function () {
           slidesPerView: 2,
           spaceBetween: 10,
         },
-        1008: {
+         1024: {
+          slidesPerView: 2,
+          spaceBetween: 10,
+        },
+        1030: {
           slidesPerView: 3,
           spaceBetween: 20,
         },
+    
         1400: {
           slidesPerView: 3,
           spaceBetween: 10,
         },
       },
       autoplay: {
-        delay: 3000,
+        delay: 300000,
         disableOnInteraction: false,
       },
       slidesPerView: 3,

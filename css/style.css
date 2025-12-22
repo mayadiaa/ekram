@@ -206,23 +206,25 @@ button {
 @media (min-width: 992px) {
 
   .navbar .container-fluid {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 4%;
-  flex-direction: row-reverse;
-}
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4%;
+    flex-direction: row-reverse;
+  }
+
   .breadcrumb-item {
     font-size: 1rem;
   }
 
-  .navbar-nav{
-  display: flex !important;
+  .navbar-nav {
+    display: flex !important;
     flex-direction: row-reverse !important;
-}
-.navbar-nav2 {
-  flex-direction: row !important;
-}
+  }
+
+  .navbar-nav2 {
+    flex-direction: row !important;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -715,7 +717,7 @@ main {
       }
     }
 
-   
+
   }
 
   .sections {
@@ -1014,7 +1016,7 @@ main {
 .high-sales-projects {
   position: relative;
 
-  
+
   .title {
     margin: 4rem 0 2rem 0;
   }
@@ -1106,7 +1108,7 @@ footer {
       }
 
       .first-text {
-        font-size: 16px;
+        font-size: 11px;
         color: #fff;
         font-weight: 500;
       }
@@ -2586,9 +2588,14 @@ html[dir="rtl"] .ProjectSections .swiper-button-prev {
   }
 
   .nav-item a {
-    font-size: 18px !important;
+    font-size: 16px !important;
   }
-
+.navbar .user-cart {
+  margin-left: 189px !important;
+}
+.pattern-img {
+  top: -173px !important;
+}
   .topBar .Name {
     font-size: 24px;
     top: 80px;
@@ -3657,7 +3664,8 @@ html[dir="rtl"] .RamdanProjects .swiper-button-prev {
 
 @keyframes float {
 
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0px);
   }
 
@@ -3673,7 +3681,7 @@ html[dir="rtl"] .RamdanProjects .swiper-button-prev {
 }
 
 .main-image {
-  width: 100%;
+  width: 79%;
   max-width: 500px;
   height: auto;
   object-fit: cover;
@@ -3689,6 +3697,7 @@ html[dir="rtl"] .RamdanProjects .swiper-button-prev {
 .content-section {
   padding: 3rem;
   color: white;
+  margin-left: -4rem;
 }
 
 .content-wrapper {
@@ -3865,6 +3874,92 @@ html[dir="rtl"] .RamdanProjects .swiper-button-prev {
 
 }
 
+/* ================= Hero Tablet Layout Fix ================= */
+
+/* تثبيت ترتيب العناصر */
+.hero-row {
+  position: relative;
+}
+
+/* الصورة */
+.hero-img-col {
+  display: flex;
+  justify-content: center;
+}
+
+.main-image {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ===== Tablet (md فقط) ===== */
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+  /* نخلي الصف كله صف واحد */
+  .hero-row {
+    flex-wrap: nowrap;
+  }
+
+  /* الصورة */
+  .hero-img-col {
+    justify-content: center;
+    margin-bottom: 0;
+  }
+
+  .main-image {
+    max-width: 100%;
+  }
+
+  /* المحتوى */
+  .content-section {
+    padding: 1.5rem;
+  }
+
+  .content-wrapper {
+    max-width: 100%;
+    margin: 0;
+    text-align: right;
+  }
+
+  .logo-container,
+  .description {
+    text-align: right;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1400px) {
+  .content-section {
+    padding: 3rem;
+    color: white;
+    margin-left: -3rem;
+  }
+
+  .content-wrapper {
+    max-width: 493px;
+  }
+
+  .logo-img {
+    width: 133px;
+  }
+
+  .description {
+    font-size: 17px !important;
+  }
+}
+
+/* ===== Mobile ===== */
+@media (max-width: 767.98px) {
+
+  .hero-img-col {
+    margin-bottom: 1.5rem;
+  }
+
+  .content-wrapper {
+    text-align: center;
+  }
+}
+
+/*  */
 .blog1 {
   background-color: #ee5a34;
 }
@@ -3992,40 +4087,49 @@ html[dir="rtl"] .RamdanProjects .swiper-button-prev {
 
 /* موبايل صغير */
 @media (max-width: 575.98px) {
- .navbar-nav {
-  gap: 0px !important;
- }
- .nav-item {
-  padding: 0.3rem 0.5rem
- }
- .navmenu {
-   margin: 6px 24px !important;
- }
+  .navbar-nav {
+    gap: 0px !important;
+  }
 
- .navbar .navbar-collapse {
-  order: 2;
-  z-index: 120000 !important;
-}
+  .nav-item {
+    padding: 0.3rem 0.5rem
+  }
+
+  .navmenu {
+    margin: 6px 24px !important;
+  }
+
+  .navbar .navbar-collapse {
+    order: 2;
+    z-index: 120000 !important;
+  }
+
   .hero-section {
     height: 500px;
     padding: 0px;
   }
-  .hero-section .container-fluid{
+
+  .hero-section .container-fluid {
     padding: 0px;
     margin: 0px;
     flex-direction: unset !important;
   }
+
   .main-image-container {
     max-width: 320px;
     margin-bottom: -40px;
   }
-  .content-section{
-    margin-top: -43px;
+
+  .content-section {
+    margin-top: -78px;
+    margin-left: 0.4rem;
   }
-.main-image{
-  margin-top: -20px;
-  height: 20rem !important;
-}
+
+  .main-image {
+    margin-top: -20px;
+    height: 20rem !important;
+  }
+
   .logo-img {
     width: 130px;
   }
@@ -4046,15 +4150,16 @@ html[dir="rtl"] .RamdanProjects .swiper-button-prev {
 
 .user-cart {
 
-      a {
-        color: #2c5f5d !important;
-      }
+  a {
+    color: #2c5f5d !important;
+  }
 }
+
 .user-cart-2 {
 
-      a {
-        color: #2c5f5d !important;
-      }
+  a {
+    color: #2c5f5d !important;
+  }
 }
 
 /* ترتيب العناصر داخل الناف */
@@ -4069,8 +4174,8 @@ html[dir="rtl"] .RamdanProjects .swiper-button-prev {
 
 .navbar .user-cart {
   order: 3;
-      margin-left: 263px;
-      z-index: 10000;
+  margin-left: 263px;
+  z-index: 10000;
 
 }
 
@@ -4088,11 +4193,12 @@ html[dir="rtl"] .RamdanProjects .swiper-button-prev {
   z-index: 10000;
 
 }
-.navbar-2{
+
+.navbar-2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-    margin-top: -0.5rem;
+  margin-top: -0.5rem;
   flex-direction: row !important;
 }
 
@@ -4108,15 +4214,18 @@ html[dir="rtl"] .RamdanProjects .swiper-button-prev {
     margin-top: 15px;
   }
 }
-.contactImg{
-      height: 27.7rem;
-      width: 49rem;
+
+.contactImg {
+  height: 27.7rem;
+  width: 49rem;
 
 }
-.contactDiv{
+
+.contactDiv {
   margin: 0 !important;
   padding: 0 !important;
 }
+
 /* about section */
 
 .about-fields-title {
@@ -4126,10 +4235,10 @@ html[dir="rtl"] .RamdanProjects .swiper-button-prev {
 }
 
 .about-fields-subtitle {
-    font-size: 1.3rem;
-    color: #04525a;
-    line-height: 1.9;
-    font-weight: 600;
+  font-size: 1.3rem;
+  color: #04525a;
+  line-height: 1.9;
+  font-weight: 600;
 
 }
 
@@ -4156,7 +4265,7 @@ html[dir="rtl"] .RamdanProjects .swiper-button-prev {
 
 .field-green {
 
-    background-color: #faa440;
+  background-color: #faa440;
 }
 
 .field-dark {
@@ -4184,22 +4293,24 @@ html[dir="rtl"] .RamdanProjects .swiper-button-prev {
 }
 
 .about-field-text {
- font-size: 0.9rem;
-    line-height: 1.8;
-    margin-bottom: 0;
-    color: white;
-    font-weight: 600;
+  font-size: 0.9rem;
+  line-height: 1.8;
+  margin-bottom: 0;
+  color: white;
+  font-weight: 600;
 }
 
 /* موبايل */
 @media (max-width: 575.98px) {
-  .mapdiv{
+  .mapdiv {
     width: 383px !important;
   }
-  .contactsection{
-    padding:1.5rem ;
+
+  .contactsection {
+    padding: 1.5rem;
     border-radius: 2rem !important;
   }
+
   .about-fields-title {
     font-size: 1.5rem;
   }
@@ -4213,8 +4324,291 @@ html[dir="rtl"] .RamdanProjects .swiper-button-prev {
     font-size: 0.85rem;
   }
 }
-.logo-mobile{
+
+.logo-mobile {
   width: 75px;
   height: 75px;
 
+}
+
+/* new page */
+/* تقدر تنقلي الجزء ده لملف style.css لو حابة */
+.news-details-page {
+  background: #f6f7f9;
+  min-height: 100vh;
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+
+.news-details-card {
+  background: #ffffff;
+  border-radius: 24px;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.10);
+  overflow: hidden;
+  padding: 2rem 3%;
+}
+
+.news-breadcrumb {
+  font-size: 13px;
+  color: #777;
+  margin-bottom: 8px;
+}
+
+.news-breadcrumb a {
+  color: #04525a;
+  text-decoration: none;
+}
+
+.news-breadcrumb span.separator {
+  margin: 0 6px;
+  color: #aaa;
+}
+
+.news-details-header {
+  padding: 18px 22px 10px;
+}
+
+.news-details-title {
+  font-size: 24px;
+  font-weight: 800;
+  color: #04525a;
+  line-height: 1.6;
+  margin-bottom: 6px;
+}
+
+.news-meta {
+  font-size: 13px;
+  color: #999;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.news-meta span i {
+  margin-left: 4px;
+  color: #ee5a34;
+}
+
+.cardDiv {
+  width: 100%;
+}
+
+.blogImg {
+  height: 65vh;
+}
+
+.news-back-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 10px;
+  padding: 6px 16px;
+  border-radius: 999px;
+  border: 1px solid #04525a;
+  background: #ffffff;
+  color: #04525a;
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+.news-back-btn:hover {
+  background: #04525a;
+  color: #ffffff;
+}
+
+.article1 {
+  padding: 1rem 2%;
+  color: #000000ad;
+
+}
+
+/* footer */
+.footerImg {
+  width: 5rem;
+}
+.swiperProject{
+  margin-left: -47px !important;
+}
+@media (min-width: 1000px) and (max-width: 1024px) {
+  .swiperProject{
+  margin-left: -47px !important;
+}
+}
+
+/* ================= Media Center (New Design) ================= */
+
+.media-center-section{
+  padding: 60px 0;
+}
+
+.media-title{
+  text-align: center;
+  font-family: cairo;
+  font-weight: 900;
+  margin-bottom: 28px;
+  font-size: 42px;
+  line-height: 1.2;
+}
+.media-title .t1{ color:#f28c28; }
+.media-title .t2{ color:#2c7a78; }
+
+.media-grid{
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  align-items: stretch;
+}
+
+.media-card{
+  border-radius: 22px;
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid rgba(0,0,0,.08);
+  box-shadow: 0 16px 40px rgba(0,0,0,.08);
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.media-card:hover{
+  transform: translateY(-6px);
+  box-shadow: 0 20px 55px rgba(0,0,0,.12);
+}
+
+.media-link{
+  display:block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.media-img{
+  position: relative;
+  height: 220px;
+  overflow: hidden;
+}
+.media-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.02);
+  transition: transform .35s ease;
+}
+.media-card:hover .media-img img{
+  transform: scale(1.08);
+}
+
+/* overlay gradient for readability */
+.media-img::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background: linear-gradient(to top, rgba(0,0,0,.55), rgba(0,0,0,0) 55%);
+}
+
+.media-badge{
+  position:absolute;
+  top: 14px;
+  right: 14px;
+  z-index: 2;
+  background: rgba(44,122,120,.95);
+  color:#fff;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-family: cairo;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.media-body{
+  padding: 16px 16px 18px;
+  font-family: cairo;
+}
+
+.media-meta{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  color: rgba(0,0,0,.55);
+  font-size: 13px;
+  margin-bottom: 8px;
+}
+.media-dot{
+  width:4px; height:4px;
+  background: rgba(0,0,0,.3);
+  border-radius: 50%;
+}
+
+.media-heading{
+  font-size: 18px;
+  font-weight: 900;
+  color:#10353c;
+  line-height: 1.5;
+  margin: 0 0 8px;
+  min-height: 54px; /* يخلي الكروت متساوية */
+}
+
+.media-desc{
+  margin: 0 0 14px;
+  color: rgba(16,53,60,.75);
+  font-size: 14px;
+  line-height: 1.8;
+  min-height: 52px;
+}
+
+.media-cta{
+  display:flex;
+  align-items:center;
+  justify-content: space-between;
+  padding-top: 10px;
+  border-top: 1px solid rgba(0,0,0,.06);
+}
+
+.media-btn{
+  color:#2c7a78;
+  font-weight: 900;
+  font-size: 14px;
+}
+
+.media-arrow{
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background: rgba(44,122,120,.10);
+  color:#2c7a78;
+  font-weight: 900;
+}
+
+.media-more-wrap{
+  display:flex;
+  justify-content:center;
+  margin-top: 26px;
+}
+
+.media-more-btn{
+  background:#2c7a78;
+  color:#fff;
+  font-family:cairo;
+  font-weight:900;
+  padding: 12px 34px;
+  border-radius: 999px;
+  text-decoration:none;
+  transition: .25s ease;
+}
+.media-more-btn:hover{
+  opacity: .9;
+  transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 991.98px){
+  .media-grid{ grid-template-columns: repeat(2, minmax(0,1fr)); }
+  .media-title{ font-size: 34px; }
+}
+
+@media (max-width: 575.98px){
+  .media-grid{ grid-template-columns: 1fr; }
+  .media-img{ height: 200px; }
 }
