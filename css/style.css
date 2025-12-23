@@ -4518,7 +4518,7 @@ html[dir="rtl"] .RamdanProjects .swiper-button-prev {
   overflow: hidden;
   background: #fff;
   border: 1px solid rgba(0,0,0,.08);
-  box-shadow: 0 16px 40px rgba(0,0,0,.08);
+  /* box-shadow: 0 16px 40px rgba(0,0,0,.08); */
   transition: transform .25s ease, box-shadow .25s ease;
 }
 
