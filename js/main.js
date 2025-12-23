@@ -243,7 +243,7 @@ document.addEventListener("DOMContentLoaded", function () {
         },
       },
       autoplay: {
-        delay: 3000000,
+        delay: 3000,
         disableOnInteraction: false,
       },
       slidesPerView: 3,
