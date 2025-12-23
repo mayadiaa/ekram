@@ -167,10 +167,9 @@ document.addEventListener("DOMContentLoaded", function () {
       spaceBetween: 30,
     });
   }
-
-  // Ramadan Project Swiper
-  const ramdanProjectElement = document.querySelector(".RamdanProjectSwiper");
-  if (ramdanProjectElement) {
+ // Ramadan Project Swiper
+  const ramdanProjectElementt = document.querySelector(".RamdanProjectSwiper");
+  if (ramdanProjectElementt) {
     const ramdanSwiper = new Swiper(".RamdanProjectSwiper", {
       loop: false,
       navigation: {
@@ -180,6 +179,8 @@ document.addEventListener("DOMContentLoaded", function () {
       breakpoints: {
         320: {
           slidesPerView: 1,
+          spaceBetween: 10,
+
         },
         640: {
           slidesPerView: 2,
@@ -200,13 +201,105 @@ document.addEventListener("DOMContentLoaded", function () {
         },
       },
       autoplay: {
-        delay: 300000,
+        delay: 3000,
         disableOnInteraction: false,
       },
       slidesPerView: 3,
       spaceBetween: 30,
     });
   }
+
+  // Ramadan Project Swiper
+  const ramdanProjectElement = document.querySelector(".RamdanProject");
+  if (ramdanProjectElement) {
+    const ramdanSwiper = new Swiper(".RamdanProject", {
+      loop: false,
+      navigation: {
+        nextEl: ".RamdanProjectt-button-next",
+        prevEl: ".RamdanProjectt-button-prev",
+      },
+      breakpoints: {
+        320: {
+          slidesPerView: 1,
+          spaceBetween: 10,
+
+        },
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 10,
+        },
+         1024: {
+          slidesPerView: 2,
+          spaceBetween: 10,
+        },
+        1030: {
+          slidesPerView: 3,
+          spaceBetween: 20,
+        },
+    
+        1400: {
+          slidesPerView: 3,
+          spaceBetween: 10,
+        },
+      },
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      slidesPerView: 3,
+      spaceBetween: 30,
+    });
+  }
+
+ // Media Swiper
+const mediaSwiperEl = document.querySelector(".media-grid.swiper");
+
+if (mediaSwiperEl) {
+  // امنع التهيئة مرتين
+  if (mediaSwiperEl.swiper) {
+    mediaSwiperEl.swiper.destroy(true, true);
+  }
+
+  new Swiper(".media-grid.swiper", {
+    loop: false,
+    slidesPerView: 3,
+    spaceBetween: 30,
+
+    navigation: {
+      nextEl: ".media-section-button-next",
+      prevEl: ".media-section-button-prev",
+    },
+
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+        spaceBetween: 10,
+      },
+      640: {
+        slidesPerView: 2,
+        spaceBetween: 10,
+      },
+      1024: {
+        slidesPerView: 2,
+        spaceBetween: 10,
+      },
+      1030: {
+        slidesPerView: 3,
+        spaceBetween: 20,
+      },
+      1400: {
+        slidesPerView: 3,
+        spaceBetween: 10,
+      },
+    },
+
+    autoplay: {
+      delay: 3000000,
+      disableOnInteraction: false,
+    },
+  });
+}
+
 
   // ==================== CARDS CLICK EVENT ====================
   const cards = document.querySelectorAll(".home .Card");
@@ -362,4 +455,39 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   setActiveNavLink();
+});
+// 
+const ramdanSwiper = new Swiper(".RamdanProjectSwiper", {
+  loop: false,                 // مهم جدًا لتثبيت المسافات
+  centeredSlides: false,       // مهم جدًا
+  slidesPerView: 1,
+  spaceBetween: 14,
+  watchOverflow: true,
+  observer: true,
+  observeParents: true,
+
+  navigation: {
+    nextEl: ".RamdanProject-button-next",
+    prevEl: ".RamdanProject-button-prev",
+  },
+
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+      spaceBetween: 14,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 24,
+    },
+    1025: {
+      slidesPerView: 3,
+      spaceBetween: 28,
+    },
+  },
+});
+
+/* تحديث بعد تحميل الصور عشان Swiper يحسب المقاسات صح */
+window.addEventListener("load", () => {
+  ramdanSwiper.update();
 });

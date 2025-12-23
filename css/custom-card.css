@@ -512,10 +512,94 @@
     width: 38px;
     height: 38px;
   }
+  .media-section-button-next,
+  .media-section-button-prev{
+    width: 38px;
+    height: 38px;
+  }
+  .RamdanProjectt-button-next,
+  .RamdanProjectt-button-prev{
+    width: 38px;
+    height: 38px;
+  }
   .RamdanProject-button-prev{ left: -8px; }
   .RamdanProject-button-next{ right: -8px; }
+  .media-section-button-prev{ left: -8px; }
+  .media-section-button-next{ right: -8px; }
+  .RamdanProjectt-button-prev{ left: -8px; }
+  .RamdanProjectt-button-next{ right: -8px; }
   .sliderProject{
     margin-left: 21px !important;
   }
+}
+
+/*  */
+/* ===== Show BOTH arrows (RTL safe) ===== */
+.media-center-section{
+  position: relative;
+}
+
+/* مهم: السلايدر يقص الكارت الرابع */
+.media-grid.swiper{
+  overflow: hidden !important;
+}
+
+/* الأسهم */
+.media-section-button-next,
+.media-section-button-prev{
+  position: absolute !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+
+  width: 46px !important;
+  height: 46px !important;
+  border-radius: 50% !important;
+
+  background: #fff !important;
+  box-shadow: 0 8px 20px rgba(0,0,0,.15) !important;
+
+  z-index: 9999 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  opacity: 1 !important;
+  visibility: visible !important;
+  pointer-events: auto !important;
+}
+
+/* خلي كل واحد في ناحية */
+.media-section-button-next{
+  right: 4rem !important;
+  left: auto !important;
+}
+
+.media-section-button-prev{
+  left: 4rem !important;
+  right: auto !important;
+}
+@media screen and (min-width: 1000px) and (max-width: 1026px) {
+  .media-section-button-next{
+  right: 0.5rem !important;
+  left: auto !important;
+}
+
+.media-section-button-prev{
+  left: 0.5rem !important;
+  right: auto !important;
+}
+}
+/* لو Swiper عامل disabled يخفيه */
+.media-section-button-next.swiper-button-disabled,
+.media-section-button-prev.swiper-button-disabled{
+  opacity: .35 !important;
+  pointer-events: none !important;
+  display: flex !important;
+}
+
+/* موبايل */
+@media (max-width: 576px){
+  .media-section-button-next{ right: 6px !important; }
+  .media-section-button-prev{ left: 6px !important; }
 }
 

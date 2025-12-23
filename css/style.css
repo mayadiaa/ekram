@@ -996,6 +996,24 @@ main {
   position: absolute;
   right: 90% !important;
 }
+.media-section-button-next {
+  position: absolute;
+  right: 0% !important;
+}
+
+.media-section-button-prev {
+  position: absolute;
+  right: 90% !important;
+}
+.RamdanProjectt-button-next {
+  position: absolute;
+  right: 0% !important;
+}
+
+.RamdanProjectt-button-prev {
+  position: absolute;
+  right: 90% !important;
+}
 
 .RamdanProjects {
 
@@ -1367,6 +1385,14 @@ footer {
   }
 
   .RamdanProject-button-prev {
+    position: absolute;
+    right: 100% !important;
+  }
+  .media-section-button-prev {
+    position: absolute;
+    right: 100% !important;
+  }
+  .RamdanProjectt-button-prev {
     position: absolute;
     right: 100% !important;
   }
@@ -2432,6 +2458,24 @@ html[dir="rtl"] .ProjectSections .swiper-button-prev {
   position: absolute;
   right: 106% !important;
 }
+.media-section-button-next {
+  position: absolute;
+  right: -4% !important;
+}
+
+.media-section-button-prev {
+  position: absolute;
+  right: 106% !important;
+}
+.RamdanProjectt-button-next {
+  position: absolute;
+  right: -4% !important;
+}
+
+.RamdanProjectt-button-prev {
+  position: absolute;
+  right: 106% !important;
+}
 
 .RamdanProjects {
 
@@ -2507,6 +2551,14 @@ html[dir="rtl"] .ProjectSections .swiper-button-prev {
   }
 
   .RamdanProject-button-prev {
+    position: absolute;
+    right: 100% !important;
+  }
+  .media-section-button-prev {
+    position: absolute;
+    right: 100% !important;
+  }
+  .RamdanProjectt-button-prev {
     position: absolute;
     right: 100% !important;
   }
@@ -4612,3 +4664,51 @@ html[dir="rtl"] .RamdanProjects .swiper-button-prev {
   .media-grid{ grid-template-columns: 1fr; }
   .media-img{ height: 200px; }
 }
+/*  */
+/* ================= Swiper FIX (All) ================= */
+.RamdanProjectSwiper {
+  width: 100%;
+  overflow: hidden;          /* يمنع ظهور أجزاء من سلايد تاني */
+}
+
+.RamdanProjectSwiper .swiper-wrapper {
+  align-items: stretch;
+}
+
+.RamdanProjectSwiper .swiper-slide {
+  display: flex;
+  justify-content: center;   /* يوسّط الكارت */
+  box-sizing: border-box;
+}
+
+/* الكارت الافتراضي */
+.custom-card{
+  width: 350px;
+  max-width: 100%;
+}
+
+/* ============ Mobile: كارت واحدة Full ============ */
+@media (max-width: 576px){
+  .RamdanProjectSwiper .swiper-slide{
+    width: 100% !important;
+  }
+  .custom-card{
+    width: 92vw !important;       /* ياخد عرض الشاشة بدون كسر */
+    max-width: 420px !important;
+    margin: 0 auto !important;
+  }
+  body{ overflow-x: hidden; }
+}
+
+/* ============ Tablet: كارتين Gap ثابت ============ */
+@media (min-width: 768px) and (max-width: 1024px){
+  .custom-card{
+    width: 340px !important;      /* يقلل ضغط التابلت */
+  }
+}
+/* @media (min-width: 390px) and (max-width: 560px) {
+  .swiperMargin{
+    margin-left: 2rem !important;
+  }
+} */
+ 
