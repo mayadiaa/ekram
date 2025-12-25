@@ -1079,6 +1079,7 @@ footer {
     display: flex;
     flex-flow: row;
     gap: 5px;
+    /* margin-left: 7rem !important; */
   }
 
   .icon {
@@ -1134,7 +1135,7 @@ footer {
   }
 
   .secand {
-    background: #469e8d;
+    background: #04525a;
     width: 100%;
     display: flex;
     flex-flow: column nowrap;
@@ -1153,6 +1154,8 @@ footer {
     ul {
       list-style: none;
       list-style-position: outside;
+          margin-left: 4rem;
+
 
       li {
         transform: translateX(-1.9rem);
@@ -1212,7 +1215,7 @@ footer {
   }
 
   .fourth {
-    background: #469e8d;
+    background: #04525a;
     padding-bottom: 2rem;
 
     .fourth-title {
@@ -1220,7 +1223,7 @@ footer {
       font-weight: bolder;
       font-size: 29px;
       font-weight: 700;
-      padding: 1rem 2rem;
+      padding: 0rem 2rem;
       margin: 1rem 0;
     }
 
@@ -1261,8 +1264,8 @@ footer {
         text-align: left;
         border-radius: 10px;
         padding: 4px 10px;
-        color: #fff;
-        background-color: #04525a;
+        color: #04525a;
+        background-color: #fff;
         font-size: 17px;
         text-decoration: none;
         display: flex;
@@ -1279,8 +1282,8 @@ footer {
         width: 100%;
         text-align: left;
         border-radius: 10px;
-        color: #fff;
-        background-color: #015263;
+        color: #015263;
+        background-color: #fff;
         font-size: 17px;
         text-decoration: none;
         display: flex;
@@ -4711,4 +4714,10 @@ html[dir="rtl"] .RamdanProjects .swiper-button-prev {
     margin-left: 2rem !important;
   }
 } */
- 
+ .footerimg{
+      width: 6rem;
+
+ }
+ .imgg{
+  width: 5rem;
+ }
